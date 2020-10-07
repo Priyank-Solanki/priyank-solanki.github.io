@@ -1,0 +1,617 @@
+<?php
+	ini_set('display_errors', 1); ini_set('display_startup_errors', 1); error_reporting(E_ALL);
+?>
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <title>Priyank Solanki | Jr. Software Engineer</title>
+
+    <!--meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!--//meta tags ends here-->
+    <!--booststrap-->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <!--//booststrap end-->
+    <!-- font-awesome icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome icons -->
+    <!-- Nav-CSS -->
+    <link href="css/nav.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="js/modernizr.custom.js"></script>
+    <!-- //Nav-CSS -->
+    <link rel="stylesheet" href="css/lightbox.css">
+    <!--gallery-->
+
+    <!--stylesheets-->
+    <link href="css/style.css" rel='stylesheet' type='text/css' media="all">
+    <!--//stylesheets-->
+
+    <link href="//fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
+
+    <style>
+        @media only screen and (min-width: 768px) {
+            .experience-block{
+                padding: 10em 0em !important
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navigation section -->
+    <div class="header-outs" id="home">
+        <div class="header-w3layouts" id="header">
+            <div class="container">
+
+                <div class="right-side">
+                    <p>
+                        <button id="trigger-overlay" type="button">
+                            <span class="fa fa-bars" aria-hidden="true"></span>
+                        </button>
+                    </p>
+                </div>
+                <!-- open/close -->
+                <div class="overlay overlay-hugeinc">
+                    <button type="button" class="overlay-close">Close</button>
+                    <nav>
+                        <ul>
+                            <li><a href="#home" class="scroll">Home</a></li>
+                            <li><a href="#about" class="scroll">About</a></li>
+                            <li><a href="#services" class="scroll">Services</a></li>
+                            <li><a href="#project" class="scroll">Projects</a></li>
+                            <li><a href="#experience" class="scroll">Experiences</a></li>
+                            <li><a href="#education" class="scroll">Qualifications</a></li>
+                            <li><a href="#gallery" class="scroll">Gallery</a></li>
+                            <li><a href="#contact" class="scroll">Contact</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+                <div class="hedder-logo">
+                    <h1><a href="javascrip:void(0)">Intro</a></h1>
+                </div>
+                <!-- /open/close -->
+                <!-- /navigation section -->
+            </div>
+            <div class="clearfix"> </div>
+
+        </div>
+        <!-- Slideshow 4 -->
+        <div class="slider">
+            <div class="callbacks_container">
+                <ul class="rslides" id="slider4">
+                    <li>
+                        <div class="slider-img">
+                            <div class="container">
+                                <div class="slider-info">
+                                    <h4>I am Priyank Solanki
+                                    </h4>
+                                    <p>Web Design</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider-img ">
+                            <div class="container">
+                                <div class="slider-info">
+                                    <h4>Jr. Software Engineer
+                                    </h4>
+                                    <p>My Passion</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider-img ">
+                            <div class="container">
+                                <div class="slider-info">
+                                    <h4>Photography
+                                    </h4>
+                                    <p>My Hobby</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <!-- //banner -->
+    <!--about -->
+    <div class="about" id="about">
+        <div class="container">
+            <div class="col-md-4 about-left ">
+                <img src="images/ab3.JPG" class="img-responsive" alt="">
+            </div>
+            <div class="col-md-7 about-right">
+                <div class="about-me">
+                    <h2>Priyank Solanki</h2>
+                    <h4>Jr. Software Engineer</h4>
+                </div>
+                <div class="w3layouts_more-buttn">
+                    <p>I love to do programming in two language one is WEB based and the
+                        second one is Mobile Plateform Based.
+                        Also I am good in C/C++, JAVA, ANDROID, HTML, PHP, PYTHON.</p>
+                    <div class="buttn-about">
+                        <a href="#services" class="scroll">Read More</a>
+                    </div>
+                    <div class="buttom-social-grids">
+                        <ul>
+                            <li><a href="https://www.facebook.com/Pickachu007" target="_blank"><span class="fa fa-facebook"></span></a></li>
+                            <li><a href="https://twitter.com/digo301971" target="_blank"><span class="fa fa-twitter"></span></a></li>
+                            <li><a href="https://www.linkedin.com/in/priyank-solanki-320578102/" target="_blank"><span class="fa fa-linkedin "></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="clearfix"> </div>
+            <div class="my-ser-info">
+                <div class="col-md-5 my-datas">
+                    <h3>My Personal Data</h3>
+                    <ul class="address">
+                        <li>
+                            <ul class="address-text ">
+                                <li><b>Name </b></li>
+                                <li>: Priyank Solanki</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="address-text ">
+                                <li><b>D.O.B </b></li>
+                                <li>: 30-01-1997</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="address-text">
+                                <li><b>PHONE </b></li>
+                                <li>: +91 9726868355</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="address-text">
+                                <li><b>GMAIL </b></li>
+                                <li><a href="mailto:priyanksolanki30197@gmail.com">: priyanksolanki30197@gmail.com</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="hire-w3lgrids">
+                        <a href="document/Priyank-Solanki.pdf" class="there-more" download>
+                            Download
+                        </a>
+                        <a href="#contact" class="there-more scroll">
+                            Contant Me
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-7 aboutmy-services">
+
+                    <div class="col-md-6 col-sm-6 col-xs-6 about-ser-grid">
+                        <div class="about-gap">
+                            <span class="fa fa-television" aria-hidden="true"></span>
+                            <h3>Web Development</h3>
+                            <p>I have experience with web development</p>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6 about-ser-grid">
+                        <div class="about-gap clr-green">
+                            <span class="fa fa-database" aria-hidden="true"></span>
+                            <h3>Database</h3>
+                            <p>I have strong knowledge of the database</p>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6 about-ser-grid">
+                        <div class="about-gap clr-green">
+                            <span class="fa fa-picture-o" aria-hidden="true"></span>
+                            <h3>Photography</h3>
+                            <p>I love to do photography and that's my free time hobby</p>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6 about-ser-grid">
+                        <div class="about-gap">
+                            <span class="fa fa-mobile" aria-hidden="true"></span>
+                            <h3>App Development</h3>
+                            <p>I worked with android app development.</p>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="clearfix"> </div>
+
+        </div>
+    </div>
+    <!--//about -->
+    <div class="services" id="services">
+        <div class="container">
+            <h3 class="title clr">Services</h3>
+            <div class="banner-bottom-girds">
+
+                <div class="col-md-5 my-ser-right">
+                    <div class="w3l_about_bottom_grid_right bar-grids">
+                        <h6>HTML<span> 100% </span></h6>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped active" style="width: 100%">
+                            </div>
+                        </div>
+                        <div class="mid-bar">
+                            <h6>CSS<span> 80% </span></h6>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped active" style="width: 80%">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mid-bar">
+                            <h6>Bootstrap<span> 85% </span></h6>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped active" style="width: 85%">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mid-bar">
+                            <h6>JS / JQuery <span> 90% </span></h6>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped active" style="width: 90%">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mid-bar">
+                            <h6>Core PHP<span> 95% </span></h6>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped active" style="width: 95%">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mid-bar">
+                            <h6>C / C++<span> 70% </span></h6>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped active" style="width: 70%">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mid-bar">
+                            <h6>Database<span> 85% </span></h6>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped active" style="width: 85%">
+                                </div>
+                            </div>
+                        </div>
+                        <h6>Java<span>75% </span></h6>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped active" style="width: 75%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 my-ser-left">
+                    <div class="white-shadow">
+                        <div class=" col-md-3 col-sm-3 col-xs-3 service-num-left">
+                            <h6>1</h6>
+                        </div>
+                        <div class="col-md-9 col-sm-9 col-xs-9 service-info-left">
+                            <h4>Web / API Development</h4>
+                            <p>I'm good into the web development also into api development. I made some android and flutter application with the api.</p>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="white-shadow">
+                        <div class=" col-md-3 col-sm-3 col-xs-3 service-num-left">
+                            <h6>2</h6>
+                        </div>
+                        <div class="col-md-9 col-sm-9 col-xs-9 service-info-left">
+                            <h4>New Learner</h4>
+                            <p>I always try to learn something new in my career like new languages or new ideas for learnt language</p>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="white-shadow">
+                        <div class=" col-md-3 col-sm-3 col-xs-3 service-num-left">
+                            <h6>3</h6>
+                        </div>
+                        <div class="col-md-9 col-sm-9 col-xs-9 service-info-left">
+                            <h4>Time Management</h4>
+                            <p>I worked with time limit projects so I have experience of deadline projects</p>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="white-shadow">
+                        <div class=" col-md-3 col-sm-3 col-xs-3 service-num-left">
+                            <h6>4</h6>
+                        </div>
+                        <div class="col-md-9 col-sm-9 col-xs-9 service-info-left">
+                            <h4>Photography</h4>
+                            <p>I love to do the photography also I took so many photos and some of are in gallary. <a href="#gallery" class="scroll" style="color:black;">Click here to see</a></p>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!--// services-->
+    <div id="project" class="experience">
+        <div class="container">
+            <h3 class="title">Projects</h3>
+            <div class="education">
+                <div class="edu-right back-shadow col-md-6 customleft">
+                    <h6>Last year of Bachelor</h6>
+                    <h5>Leave Management System<br>( In Android )</h5>
+                    <p>In this project, We tried to manage the leaves of employees and make the whole leave management system in an android application.</p>
+                    <p>I managed the four types of user roles like Super Admin, Admin, Employee.</p>
+                </div>
+                <div class="clearfix"></div>
+                <div class="edu-right back-shadow clr-green col-md-6 customright">
+                    <h6>Last year of Masters</h6>
+                    <h5>Counselling Application<br>( In Android )</h5>
+                    <p>In this project, We tried to manage the Counselling of students and make the whole Counselling management system in an android application.</p>
+                    <p>I managed the four types of user roles like Super Admin, Admin, Faculty, Student.</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <div id="experience" class="experience">
+        <div class="container">
+            <h3 class="title">Experiences</h3>
+            <div class="education">
+                <div class="edu-right back-shadow col-md-6 customleft">
+                    <h6>July, 2019 - Present</h6>
+                    <h5>Junior Software Engineer</h5>
+                    <p>I'm Working with live project at BizTech Consultancy Pvt. Ltd.</p>
+                </div>
+                <div class="clearfix"></div>
+                <div class="edu-right back-shadow clr-green col-md-6 customright">
+                    <h6>January, 2019 - June, 2019</h6>
+                    <h5>Trainee Software Engineer</h5>
+                    <p>I was trainned at BizTech Consultancy Pvt. Ltd.</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <div id="education" class="experience">
+        <div class="container">
+            <h3 class="title">Qualifications</h3>
+            <div class="education">
+                <div class="edu-right back-shadow col-md-6 customleft">
+                    <h6>2017-2019</h6>
+                    <h5>Master of Computer Application</h5>
+                    <p>I have passed Master of Computer Application at SMT.CHANDABEN MOHANBHAI PATEL OF INSTITUDE OF COMPUTER APPLICATION with 7.89 CGPA</p>
+                </div>
+                <div class="clearfix"></div>
+                <div class="edu-right back-shadow clr-green col-md-6 customright">
+                    <h6>2014-2017</h6>
+                    <h5>Bachelor Of Computer Application</h5>
+                    <p>I have passed Bachelor of Computer Application at SMT.CHANDABEN MOHANBHAI PATEL OF INSTITUDE OF COMPUTER APPLICATION with 6.75 CGPA</p>
+                </div>
+                <div class="clearfix"></div>
+                <div class="edu-right back-shadow col-md-6 customleft">
+                    <h6>2012-2014</h6>
+                    <h5>HSC</h5>
+                    <p>I have passed HSC at Vidhyut Board Vidhyalaya (GSEB) with 61%</p>
+                </div>
+                <div class="clearfix"></div>
+                <div class="edu-right back-shadow clr-green col-md-6 customright">
+                    <h6>2011-2012</h6>
+                    <h5>SSC</h5>
+                    <p>I have passed SSC at Vidhyut Board Vidhyalaya (GSEB) with 89%</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- gallery-->
+    <div id="gallery" class="gallery">
+        <div class="container">
+            <h3 class="title clr">Gallery</h3>
+            <div class="gallery-info">
+                <div class="col-md-3 col-sm-6 col-xs-6 gallery-grids">
+                    <a href="images/g1.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="images/g1.jpg" alt="" class="img-responsive zoom-img">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 gallery-grids">
+                    <a href="images/g2.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="images/g2.jpg" alt="" class="img-responsive zoom-img">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 gallery-grids">
+                    <a href="images/g3.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="images/g3.jpg" alt="" class="img-responsive zoom-img">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 gallery-grids">
+                    <a href="images/g4.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="images/g4.jpg" alt="" class="img-responsive zoom-img">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 gallery-grids grid-mdl">
+                    <a href="images/g5.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="images/g5.jpg" alt="" class="img-responsive zoom-img">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 gallery-grids  grid-mdl">
+                    <a href="images/g6.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="images/g6.jpg" alt="" class="img-responsive zoom-img">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 gallery-grids  grid-mdl">
+                    <a href="images/g7.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="images/g7.jpg" alt="" class="img-responsive zoom-img">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 gallery-grids  grid-mdl">
+                    <a href="images/g8.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="images/g8.jpg" alt="" class="img-responsive zoom-img">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 gallery-grids  grid-mdl">
+                    <a href="images/g9.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="images/g9.jpg" alt="" class="img-responsive zoom-img">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 gallery-grids  grid-mdl">
+                    <a href="images/g12.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="images/g12.jpg" alt="" class="img-responsive zoom-img">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 gallery-grids  grid-mdl">
+                    <a href="images/g10.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="images/g10.jpg" alt="" class="img-responsive zoom-img">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 gallery-grids  grid-mdl">
+                    <a href="images/g11.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="images/g11.jpg" alt="" class="img-responsive zoom-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //gallery-->
+    <!--contact-->
+    <div class="contact" id="contact">
+        <div class="container">
+            <h3 class="title">Contact</h3>
+            <div class="clearfix"> </div>
+            <div class=" col-md-8 col-sm-8 col-xs-7 contact-map">
+                <div class="map-grid">
+                    <iframe src="https://www.google.co.in/maps/d/embed?mid=1tVJt36vp01Qmf16CmSfrwwvANsd363YS"></iframe>
+                </div>
+            </div>
+
+            <div class=" col-md-4 col-sm-4 col-xs-5 contact-icons">
+                <div class="footer_grid_left">
+                    <h5>Address</h5>
+                    <p>Type 3, 59/2. GSECL Colony,<span> Wanakbori Tharmal Power Station,</span><span>Galteshwar,
+                            Kheda-388239,</span><span> Gujarat , India.</span></p>
+                </div>
+                <div class="footer_grid_left">
+                    <h5> Contact</h5>
+                    <p>(+91) 9726868355</p>
+                </div>
+                <div class="footer_grid_left">
+                    <h5>Email</h5>
+                    <p>
+                        <a href="mailto:priyanksolanki30197@gmail.com">priyanksolanki30197@gmail.com</a>
+                        <span><a href="mailto:digo30197@gmail.com">digo30197@gmail.com</a></span>
+                    </p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <footer>
+        <div class="social-icons">
+            <ul>
+                <li><a href="https://www.facebook.com/Pickachu007" target="_blank"><span class="fa fa-facebook"></span></a></li>
+                <li><a href="https://twitter.com/digo301971" target="_blank"><span class="fa fa-twitter"></span></a></li>
+                <li><a href="https://www.linkedin.com/in/priyank-solanki-320578102/" target="_blank"><span class="fa fa-linkedin "></span></a></li>
+            </ul>
+        </div>
+
+        <p>©<?php echo date("Y");?> All Rights Reserved | Mr. Priyank Solanki</a>
+        </p>
+    </footer>
+    <!--js working-->
+    <script src='js/jquery-2.2.3.min.js'></script>
+    <script src="js/bootstrap.js"></script>
+    <!--//js working-->
+    <!--nav menu-->
+    <script src="js/classie.js"></script>
+    <script src="js/demo1.js"></script>
+    <!-- //nav menu-->
+    <!-- gallery -->
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <!-- //gallery -->
+    <!--banner-->
+
+    <script src="js/responsiveslides.min.js"></script>
+
+    <script>
+        // You can also use "$(window).load(function() {"
+        $(function () {
+            // Slideshow 4
+            $("#slider4").responsiveSlides({
+                auto: true,
+                pager: false,
+                nav: true,
+                speed: 900,
+                namespace: "callbacks",
+                before: function () {
+                    $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                    $('.events').append("<li>after event fired.</li>");
+                }
+            });
+
+        });
+    </script>
+    <!--// banner-->
+    <!-- OnScroll-Number-Increase-JavaScript -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.countup.js"></script>
+    <script>
+        $('.counter').countUp();
+    </script>
+    <!-- //OnScroll-Number-Increase-JavaScript -->
+
+    <!-- start-smoth-scrolling -->
+    <script src="js/move-top.js"></script>
+    <script src="js/easing.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 900);
+            });
+        });
+    </script>
+    <!-- start-smoth-scrolling -->
+    <!-- here stars scrolling icon -->
+    <script>
+        $(document).ready(function () {
+
+            var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear'
+            };
+
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <!-- //here ends scrolling icon -->
+</body>
+
+</html>
