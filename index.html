@@ -1,6 +1,3 @@
-<?php
-	ini_set('display_errors', 1); ini_set('display_startup_errors', 1); error_reporting(E_ALL);
-?>
 <!DOCTYPE html>
 <html lang="eng">
 
@@ -19,6 +16,7 @@
         function hideURLbar() {
             window.scrollTo(0, 1);
         }
+        document.getElementById("year").innerHTML = new Date().getFullYear();
     </script>
     <!--//meta tags ends here-->
     <!--booststrap-->
@@ -532,7 +530,7 @@
             </ul>
         </div>
 
-        <p>©<?php echo date("Y");?> All Rights Reserved | Mr. Priyank Solanki</a>
+        <p>©<span id="year"></span> All Rights Reserved | Mr. Priyank Solanki</a>
         </p>
     </footer>
     <!--js working-->
