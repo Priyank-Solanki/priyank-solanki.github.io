@@ -409,20 +409,8 @@ section {
   background: #fff;
 }
 
-.facts .count-box i {
-  position: absolute;
-  top: -25px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 24px;
-  background: #0563bb;
-  padding: 12px;
-  color: #fff;
-  border-radius: 50px;
-}
-
 .facts .count-box span {
-  font-size: 36px;
+  font-size: 22px;
   display: block;
   font-weight: 600;
   color: #011426;
@@ -1178,4 +1166,8 @@ i.colored {
 
 i.devAdd {
   font-size: 30px !important;
+}
+
+i.interest {
+  font-size: 50px !important;
 }
