@@ -509,160 +509,90 @@
         skillsType: '',
         // list of skills items to loop through it
         skillsItems: [{
-          imgUrl: 'https://via.placeholder.com/48',
-          title: 'HTML5'
+          imgUrl: '/assets/images/skills/html.png',
+          title: 'HTML'
         }, {
-          imgUrl: 'https://via.placeholder.com/48',
-          title: 'CSS3'
+          imgUrl: '/assets/images/skills/css.png',
+          title: 'CSS'
         }, {
-          imgUrl: 'https://via.placeholder.com/48',
+          imgUrl: '/assets/images/skills/javascript.png',
           title: 'JavaScript'
         }, {
-          imgUrl: 'https://via.placeholder.com/48',
+          imgUrl: '/assets/images/skills/typescript.png',
           title: 'TypeScript'
         }, {
-          imgUrl: 'https://via.placeholder.com/48',
+          imgUrl: '/assets/images/skills/jquery.png',
           title: 'jQuery'
         }, {
-          imgUrl: 'https://via.placeholder.com/48',
+          imgUrl: '/assets/images/skills/bootstrap.png',
           title: 'Bootstrap'
         }, {
-          imgUrl: 'https://via.placeholder.com/48',
+          imgUrl: '/assets/images/skills/angular.png',
           title: 'Angular'
         }, {
-          imgUrl: 'https://via.placeholder.com/48',
+          imgUrl: '/assets/images/skills/react.png',
           title: 'React'
         }, {
-          imgUrl: 'https://via.placeholder.com/48',
-          title: 'Vue'
+          imgUrl: '/assets/images/skills/flutter.png',
+          title: 'Flutter'
         }, {
-          imgUrl: 'https://via.placeholder.com/48',
-          title: 'Firebase'
+          imgUrl: '/assets/images/skills/php.png',
+          title: 'PHP'
         }, {
-          imgUrl: 'https://via.placeholder.com/48',
-          title: 'PugJS'
+          imgUrl: '/assets/images/skills/laravel.png',
+          title: 'Laravel'
         }, {
-          imgUrl: 'https://via.placeholder.com/48',
+          imgUrl: '/assets/images/skills/sass.png',
           title: 'SASS'
         }],
         // list of tools items to loop through it
         toolsItems: [{
-          imgUrl: 'https://via.placeholder.com/48',
-          title: 'Ajax'
+          imgUrl: '/assets/images/tools/swagger.png',
+          title: 'Swagger'
         }, {
-          imgUrl: 'https://via.placeholder.com/48',
+          imgUrl: '/assets/images/tools/gulp.png',
           title: 'Gulp'
         }, {
-          imgUrl: 'https://via.placeholder.com/48',
-          title: 'Webpack'
+          imgUrl: '/assets/images/tools/jira.png',
+          title: 'Jira'
         }, {
-          imgUrl: 'https://via.placeholder.com/48',
+          imgUrl: '/assets/images/tools/github.png',
           title: 'Git (Github)'
         }, {
-          imgUrl: 'https://via.placeholder.com/48',
-          title: 'Npm'
+          imgUrl: '/assets/images/tools/npm.png',
+          title: 'NPM'
         }, {
-          imgUrl: 'https://via.placeholder.com/48',
-          title: 'Command Line'
+          imgUrl: '/assets/images/tools/jenkins.png',
+          title: 'Jenkins'
         }, {
-          imgUrl: 'https://via.placeholder.com/48',
+          imgUrl: '/assets/images/tools/vscode.png',
           title: 'VS Code'
         }, {
-          imgUrl: 'https://via.placeholder.com/48',
-          title: 'Trello'
+          imgUrl: '/assets/images/tools/nvm.png',
+          title: 'NVM'
         }, {
-          imgUrl: 'https://via.placeholder.com/48',
-          title: 'ClickUp'
+          imgUrl: '/assets/images/tools/stripe.png',
+          title: 'Stripe'
         }, {
-          imgUrl: 'https://via.placeholder.com/48',
+          imgUrl: '/assets/images/tools/slack.png',
           title: 'Slack'
         }, {
-          imgUrl: 'https://via.placeholder.com/48',
-          title: 'Photoshop'
+          imgUrl: '/assets/images/tools/xero.png',
+          title: 'Xero'
         }, {
-          imgUrl: 'https://via.placeholder.com/48',
-          title: 'Adobe XD'
+          imgUrl: '/assets/images/tools/docker.png',
+          title: 'Docker'
         }],
         // list of experience items to loop through it
         experienceItems: [{
-          date: '2010',
+          date: '2019',
           companyName: {
-            en: 'Google Inc.',
-            ar: 'شركة جوجل'
+            en: 'Biztech Consulting & Solutions',
+            ar: 'بيزتك للاستشارات والحلول'
           },
           jobTitle: {
-            en: 'Front-End Developer',
-            ar: 'مطور الواجهة الأمامية'
-          },
-          desc: {
-            en: 'Monitored technical aspects of the front-end delivery for projects.',
-            ar: 'مراقبة الجوانب الفنية لتطوير الواجهات الأمامية للمشاريع.'
-          }
-        }, {
-          date: '2012',
-          companyName: {
-            en: 'Facebook Inc.',
-            ar: 'شركة فيسبوك'
-          },
-          jobTitle: {
-            en: 'Full Stack Developer',
-            ar: 'مطوّر الويب المتكامل'
-          },
-          desc: {
-            en: 'Collaborate with creative and development teams on the execution of ideas.',
-            ar: 'تعاونت مع الفرق الإبداعية في تطوير وتنفيذ أفكار مبتكرة.'
-          }
-        }, {
-          date: '2014',
-          companyName: {
-            en: 'Envato Inc.',
-            ar: 'شركة انفاتو'
-          },
-          jobTitle: {
-            en: 'UI/UX Developer',
-            ar: 'مطور UI/UX'
-          },
-          desc: {
-            en: 'Converted Photoshop layouts to web pages using HTML, CSS, and JavaScript.',
-            ar: 'تم تحويل تخطيطات Photoshop إلى صفحات ويب باستخدام HTML و CSS و JavaScript.'
-          }
-        }, {
-          date: '2016',
-          companyName: {
-            en: 'Google Inc.',
-            ar: 'شركة جوجل'
-          },
-          jobTitle: {
-            en: 'Front-End Developer',
-            ar: 'مطور الواجهة الأمامية'
-          },
-          desc: {
-            en: 'Monitored technical aspects of the front-end delivery for projects.',
-            ar: 'مراقبة الجوانب الفنية لتطوير الواجهات الأمامية للمشاريع.'
-          }
-        }, {
-          date: '2018',
-          companyName: {
-            en: 'Facebook Inc.',
-            ar: 'شركة فيسبوك'
-          },
-          jobTitle: {
-            en: 'Full Stack Developer',
-            ar: 'مطوّر الويب المتكامل'
-          },
-          desc: {
-            en: 'Collaborate with creative and development teams on the execution of ideas.',
-            ar: 'تعاونت مع الفرق الإبداعية في تطوير وتنفيذ أفكار مبتكرة.'
-          }
-        }, {
-          date: '2020',
-          companyName: {
-            en: 'Google Inc.',
-            ar: 'شركة جوجل'
-          },
-          jobTitle: {
-            en: 'Front-End Developer',
-            ar: 'مطور الواجهة الأمامية'
+            en: 'Back-End Developer',
+            ar: 'المطور الخلفي'
           },
           desc: {
             en: 'Monitored technical aspects of the front-end delivery for projects.',
@@ -671,18 +601,18 @@
         }, {
           date: '2022',
           companyName: {
-            en: 'Facebook Inc.',
-            ar: 'شركة فيسبوك'
+            en: 'Consumer Sketch',
+            ar: 'رسم المستهلك'
           },
           jobTitle: {
-            en: 'Full Stack Developer',
-            ar: 'مطوّر الويب المتكامل'
+            en: 'Mean-Stack Developer',
+            ar: 'متوسط نهاية المطور'
           },
           desc: {
             en: 'Collaborate with creative and development teams on the execution of ideas.',
             ar: 'تعاونت مع الفرق الإبداعية في تطوير وتنفيذ أفكار مبتكرة.'
           }
-        }, {}, {}],
+        },{}],
         // current page of portfolio items
         portfolioItemsPage: 1,
         // portfolio items per page
