@@ -1246,7 +1246,6 @@
 
 
           this.endLoading();
-          console.log(data);
         }).catch(err => console.log(err));
       },
 
@@ -1292,8 +1291,12 @@
 
     },
     computed: {
+      countOfProject() {
+        return this.allPortfolioItems.length;
+      },
+
       countOfTestimonials() {
-        return this.testimonialsItems.length - 2;
+        return this.testimonialsItems.length;
       },
 
       // flag to toggle ajax loading spinner
