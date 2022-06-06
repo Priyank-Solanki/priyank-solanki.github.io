@@ -547,17 +547,17 @@
         }],
         // list of tools items to loop through it
         toolsItems: [{
-          imgUrl: '/assets/images/tools/swagger.png',
-          title: 'Swagger'
-        }, {
           imgUrl: '/assets/images/tools/gulp.png',
           title: 'Gulp'
+        },{
+          imgUrl: '/assets/images/tools/confluence.png',
+          title: 'Confluence'
         }, {
           imgUrl: '/assets/images/tools/jira.png',
           title: 'Jira'
         }, {
-          imgUrl: '/assets/images/tools/github.png',
-          title: 'Git (Github)'
+          imgUrl: '/assets/images/tools/git.png',
+          title: 'Git (Github & Gitlab)'
         }, {
           imgUrl: '/assets/images/tools/npm.png',
           title: 'NPM'
@@ -568,17 +568,17 @@
           imgUrl: '/assets/images/tools/vscode.png',
           title: 'VS Code'
         }, {
-          imgUrl: '/assets/images/tools/nvm.png',
-          title: 'NVM'
+          imgUrl: '/assets/images/tools/filezilla.png',
+          title: 'FileZilla'
         }, {
-          imgUrl: '/assets/images/tools/stripe.png',
-          title: 'Stripe'
+          imgUrl: '/assets/images/tools/markdown.png',
+          title: 'Markdown'
         }, {
           imgUrl: '/assets/images/tools/slack.png',
           title: 'Slack'
         }, {
-          imgUrl: '/assets/images/tools/xero.png',
-          title: 'Xero'
+          imgUrl: '/assets/images/tools/nginx.png',
+          title: 'Nginx'
         }, {
           imgUrl: '/assets/images/tools/docker.png',
           title: 'Docker'

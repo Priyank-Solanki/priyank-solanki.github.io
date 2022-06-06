@@ -3429,6 +3429,7 @@ html[dir=rtl] .about-section .section-content .about-img .layer:first-of-type:be
 .skills-section .section-content .skills-items li .skill-icon img {
   display: block;
   width: 48px;
+  height: 48px;
   margin: auto;
 }
 .skills-section .section-content .skills-items li:focus {
