@@ -1292,6 +1292,10 @@
 
     },
     computed: {
+      countOfTestimonials() {
+        return this.testimonialsItems.length - 2;
+      },
+
       // flag to toggle ajax loading spinner
       isAjaxLoading() {
         return this.ajaxLoading.some(state => state === true);
