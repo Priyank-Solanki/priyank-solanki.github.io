@@ -595,7 +595,7 @@
             ar: ''
           },
           desc: {
-            en: '',
+            en: 'Worked as the API(PHP) Developer',
             ar: ''
           }
         }, {
@@ -609,7 +609,7 @@
             ar: ''
           },
           desc: {
-            en: '',
+            en: 'Working as the Front-end, Back-end developer & at some level of leadership as a learning part',
             ar: ''
           }
         },{}],
@@ -750,6 +750,20 @@
           },
           jobTitle: {
             en: 'Software Engineer',
+            ar: ''
+          }
+        },{
+          imgUrl: '/assets/images/testimonials/divya-tailor.jpg',
+          quoteContent: {
+            en: '',
+            ar: ''
+          },
+          quoteAuthor: {
+            en: 'Divya Tailor',
+            ar: ''
+          },
+          jobTitle: {
+            en: 'Developer for Ionic | Angular | Flutter | React Native',
             ar: ''
           }
         }]
