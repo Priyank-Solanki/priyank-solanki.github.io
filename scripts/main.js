@@ -755,7 +755,7 @@
         },{
           imgUrl: '/assets/images/testimonials/divya-tailor.jpg',
           quoteContent: {
-            en: '',
+            en: 'He has good programming skill and good team player.',
             ar: ''
           },
           quoteAuthor: {
