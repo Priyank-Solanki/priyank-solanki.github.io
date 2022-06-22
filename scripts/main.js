@@ -983,6 +983,124 @@
               }
             }
           }
+        }, {
+          id: 7,
+          url: '/single-portfolio.html?id=7',
+          imgUrl: 'https://via.placeholder.com/355x200',
+          title: {
+            en: 'IgoWork',
+            ar: ''
+          },
+          companyTitle: {
+            en: 'Project Under Consumer Sketch - Web Design & Mobile App Development',
+            ar: ''
+          },
+          date: {
+            en: 'February 2022 - April 2022',
+            ar: ''
+          },
+          desc: {
+            en: '',
+            ar: ''
+          },
+          category: 'React',
+          tools: ['ReactJS', 'Laravel'],
+          screenshots: {
+            img1: {
+              url: 'https://via.placeholder.com/355x200',
+              caption: {
+                en: 'caption 5',
+                ar: ''
+              }
+            },
+            img2: {
+              url: 'https://via.placeholder.com/330x460',
+              caption: {
+                en: 'caption 4',
+                ar: ''
+              }
+            },
+            img3: {
+              url: 'https://via.placeholder.com/300x225',
+              caption: {
+                en: 'caption 3',
+                ar: ''
+              }
+            },
+            img4: {
+              url: 'https://via.placeholder.com/300x225',
+              caption: {
+                en: 'caption 2',
+                ar: ''
+              }
+            },
+            img5: {
+              url: 'https://via.placeholder.com/300x225',
+              caption: {
+                en: 'caption 1',
+                ar: ''
+              }
+            }
+          }
+        }, {
+          id: 8,
+          url: '/single-portfolio.html?id=8',
+          imgUrl: 'https://via.placeholder.com/355x200',
+          title: {
+            en: 'WatchO',
+            ar: ''
+          },
+          companyTitle: {
+            en: 'Project Under Consumer Sketch - Web Design & Mobile App Development',
+            ar: ''
+          },
+          date: {
+            en: 'February 2022 - Current',
+            ar: ''
+          },
+          desc: {
+            en: '',
+            ar: ''
+          },
+          category: 'HandlebarJS',
+          tools: ['HandlebarJS', 'Bigcommerce'],
+          screenshots: {
+            img1: {
+              url: 'https://via.placeholder.com/355x200',
+              caption: {
+                en: 'caption 5',
+                ar: ''
+              }
+            },
+            img2: {
+              url: 'https://via.placeholder.com/330x460',
+              caption: {
+                en: 'caption 4',
+                ar: ''
+              }
+            },
+            img3: {
+              url: 'https://via.placeholder.com/300x225',
+              caption: {
+                en: 'caption 3',
+                ar: ''
+              }
+            },
+            img4: {
+              url: 'https://via.placeholder.com/300x225',
+              caption: {
+                en: 'caption 2',
+                ar: ''
+              }
+            },
+            img5: {
+              url: 'https://via.placeholder.com/300x225',
+              caption: {
+                en: 'caption 1',
+                ar: ''
+              }
+            }
+          }
         }].reverse(),
         // viewed portfolio items
         portfolioItems: [],
