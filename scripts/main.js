@@ -1,4 +1,4 @@
-(function() {
+(function () {
   'use strict';
 
   /* ------------------------------------- */
@@ -182,6 +182,9 @@
           }).from(box.querySelector(".subtitle"), {
             autoAlpha: 0,
             top: 50
+          }).from(box.querySelector(".companySubtitle"), {
+            autoAlpha: 0,
+            top: 50
           }).from(box.querySelector("h2"), {
             autoAlpha: 0,
             y: 50
@@ -356,6 +359,9 @@
             scrub: 0.3
           }
         }).from(".testimonials-section .section-title .subtitle", {
+          autoAlpha: 0,
+          top: 50
+        }).from(".testimonials-section .section-title .companySubtitle", {
           autoAlpha: 0,
           top: 50
         }).from(".testimonials-section .section-title .title", {
@@ -549,7 +555,7 @@
         toolsItems: [{
           imgUrl: '/assets/images/tools/gulp.png',
           title: 'Gulp'
-        },{
+        }, {
           imgUrl: '/assets/images/tools/confluence.png',
           title: 'Confluence'
         }, {
@@ -612,13 +618,13 @@
             en: 'Working as the Front-end, Back-end developer & at some level of leadership as a learning part',
             ar: ''
           }
-        },{}],
+        }, {}],
         // current page of portfolio items
         portfolioItemsPage: 1,
         // portfolio items per page
         itemsPerPage: 5,
         // portfolio items filter by type
-        filters: ['All', 'Android', 'Flutter', 'React'],
+        filters: ['All', 'Android', 'Flutter', 'React', 'PHP'],
         currentFilter: 'All',
         // portfolio archive name
         portfolioArchiveName: '',
@@ -626,9 +632,13 @@
         allPortfolioItems: [{
           id: 1,
           url: '/single-portfolio.html?id=1',
-          imgUrl: '',
+          imgUrl: 'https://via.placeholder.com/355x200',
           title: {
-            en: 'Counselling Management System',
+            en: 'Leave Management System',
+            ar: ''
+          },
+          companyTitle: {
+            en: 'Project Under Bachelor of Computer Application',
             ar: ''
           },
           date: {
@@ -636,11 +646,306 @@
             ar: ''
           },
           desc: {
-            en: 'In this project, We tried to manage the Counselling of students and make the whole Counselling management system in an android application. I managed the four types of user roles like Super Admin, Admin, Faculty, Student.',
+            en: 'In this project, We tried to manage the leaves of employees & students and make the whole leave management system in an android application with Core PHP API. We managed the four types of user roles like Super Admin, Admin, Faculty, Student. This is the part of Counselling Management System.',
             ar: ''
           },
           category: 'Android',
           tools: ['Android', 'PHP'],
+          screenshots: {
+            img1: {
+              url: 'https://via.placeholder.com/355x200',
+              caption: {
+                en: 'caption 5',
+                ar: ''
+              }
+            },
+            img2: {
+              url: 'https://via.placeholder.com/330x460',
+              caption: {
+                en: 'caption 4',
+                ar: ''
+              }
+            },
+            img3: {
+              url: 'https://via.placeholder.com/300x225',
+              caption: {
+                en: 'caption 3',
+                ar: ''
+              }
+            },
+            img4: {
+              url: 'https://via.placeholder.com/300x225',
+              caption: {
+                en: 'caption 2',
+                ar: ''
+              }
+            },
+            img5: {
+              url: 'https://via.placeholder.com/300x225',
+              caption: {
+                en: 'caption 1',
+                ar: ''
+              }
+            }
+          }
+        }, {
+          id: 2,
+          url: '/single-portfolio.html?id=2',
+          imgUrl: 'https://via.placeholder.com/330x460',
+          title: {
+            en: 'Counselling Management System',
+            ar: ''
+          },
+          companyTitle: {
+            en: 'Project Under Master of Computer Application',
+            ar: ''
+          },
+          date: {
+            en: 'March 2019',
+            ar: ''
+          },
+          desc: {
+            en: 'In this project, We tried to manage the Counselling of students and make the whole Counselling management system in an android application. We managed the four types of user roles like Super Admin, Admin, Faculty, Student.',
+            ar: ''
+          },
+          category: 'Android',
+          tools: ['Android', 'PHP'],
+          screenshots: {
+            img1: {
+              url: 'https://via.placeholder.com/355x200',
+              caption: {
+                en: 'caption 5',
+                ar: ''
+              }
+            },
+            img2: {
+              url: 'https://via.placeholder.com/330x460',
+              caption: {
+                en: 'caption 4',
+                ar: ''
+              }
+            },
+            img3: {
+              url: 'https://via.placeholder.com/300x225',
+              caption: {
+                en: 'caption 3',
+                ar: ''
+              }
+            },
+            img4: {
+              url: 'https://via.placeholder.com/300x225',
+              caption: {
+                en: 'caption 2',
+                ar: ''
+              }
+            },
+            img5: {
+              url: 'https://via.placeholder.com/300x225',
+              caption: {
+                en: 'caption 1',
+                ar: ''
+              }
+            }
+          }
+        }, {
+          id: 3,
+          url: '/single-portfolio.html?id=3',
+          imgUrl: 'https://via.placeholder.com/300x225',
+          title: {
+            en: 'GetPass System',
+            ar: ''
+          },
+          companyTitle: {
+            en: 'Personal Project',
+            ar: ''
+          },
+          date: {
+            en: 'Lockdown Time',
+            ar: ''
+          },
+          desc: {
+            en: 'In this project, I tried to manage the IN-OUT system of vehicle for WTPS Town ship in an flutter application with PHP API. I managed the four types of user roles like Super Admin, Admin, User, Get Security.',
+            ar: ''
+          },
+          category: 'Flutter',
+          tools: ['Flutter', 'PHP'],
+          screenshots: {
+            img1: {
+              url: 'https://via.placeholder.com/355x200',
+              caption: {
+                en: 'caption 5',
+                ar: ''
+              }
+            },
+            img2: {
+              url: 'https://via.placeholder.com/330x460',
+              caption: {
+                en: 'caption 4',
+                ar: ''
+              }
+            },
+            img3: {
+              url: 'https://via.placeholder.com/300x225',
+              caption: {
+                en: 'caption 3',
+                ar: ''
+              }
+            },
+            img4: {
+              url: 'https://via.placeholder.com/300x225',
+              caption: {
+                en: 'caption 2',
+                ar: ''
+              }
+            },
+            img5: {
+              url: 'https://via.placeholder.com/300x225',
+              caption: {
+                en: 'caption 1',
+                ar: ''
+              }
+            }
+          }
+        }, {
+          id: 4,
+          url: '/single-portfolio.html?id=4',
+          imgUrl: 'https://via.placeholder.com/300x225',
+          title: {
+            en: 'Personal Cards',
+            ar: ''
+          },
+          companyTitle: {
+            en: 'Personal Project',
+            ar: ''
+          },
+          date: {
+            en: 'Lockdown Time',
+            ar: ''
+          },
+          desc: {
+            en: 'In this project, I tried to manage the all personal documents with there images and passwords. In this project, I used the json and the master passwords as authentication.',
+            ar: ''
+          },
+          category: 'Flutter',
+          tools: ['Flutter', 'PHP'],
+          screenshots: {
+            img1: {
+              url: 'https://via.placeholder.com/355x200',
+              caption: {
+                en: 'caption 5',
+                ar: ''
+              }
+            },
+            img2: {
+              url: 'https://via.placeholder.com/330x460',
+              caption: {
+                en: 'caption 4',
+                ar: ''
+              }
+            },
+            img3: {
+              url: 'https://via.placeholder.com/300x225',
+              caption: {
+                en: 'caption 3',
+                ar: ''
+              }
+            },
+            img4: {
+              url: 'https://via.placeholder.com/300x225',
+              caption: {
+                en: 'caption 2',
+                ar: ''
+              }
+            },
+            img5: {
+              url: 'https://via.placeholder.com/300x225',
+              caption: {
+                en: 'caption 1',
+                ar: ''
+              }
+            }
+          }
+        }, {
+          id: 5,
+          url: '/single-portfolio.html?id=5',
+          imgUrl: 'https://via.placeholder.com/330x460',
+          title: {
+            en: 'PME & PA',
+            ar: ''
+          },
+          companyTitle: {
+            en: 'Project Under Biztech IT Consultancy Pvt Ltd.',
+            ar: ''
+          },
+          date: {
+            en: 'July 2019 - January 2020',
+            ar: ''
+          },
+          desc: {
+            en: 'Proofread My Essay is a UK based company that offers quality proofreading services to students, professionals as well as business owners. Initially, the company used to work with students and offered “Pay as you go” option. It recently came up with “Pay uponinvoice” option for businesses and organizations so that they can submit bulk work and documents for proofreading. BiztechCS developed the company’s website cum web application with custom modules, payment gateway and other integrations.',
+            ar: ''
+          },
+          category: 'PHP',
+          tools: ['PHP'],
+          screenshots: {
+            img1: {
+              url: 'https://via.placeholder.com/355x200',
+              caption: {
+                en: 'caption 5',
+                ar: ''
+              }
+            },
+            img2: {
+              url: 'https://via.placeholder.com/330x460',
+              caption: {
+                en: 'caption 4',
+                ar: ''
+              }
+            },
+            img3: {
+              url: 'https://via.placeholder.com/300x225',
+              caption: {
+                en: 'caption 3',
+                ar: ''
+              }
+            },
+            img4: {
+              url: 'https://via.placeholder.com/300x225',
+              caption: {
+                en: 'caption 2',
+                ar: ''
+              }
+            },
+            img5: {
+              url: 'https://via.placeholder.com/300x225',
+              caption: {
+                en: 'caption 1',
+                ar: ''
+              }
+            }
+          }
+        }, {
+          id: 6,
+          url: '/single-portfolio.html?id=6',
+          imgUrl: 'https://via.placeholder.com/355x200',
+          title: {
+            en: 'InCTRL',
+            ar: ''
+          },
+          companyTitle: {
+            en: 'Project Under Biztech IT Consultancy Pvt Ltd.',
+            ar: ''
+          },
+          date: {
+            en: 'January 2020 - January 2022',
+            ar: ''
+          },
+          desc: {
+            en: 'Waste Management App Supplier and facility',
+            ar: ''
+          },
+          category: 'PHP',
+          tools: ['PHP'],
           screenshots: {
             img1: {
               url: 'https://via.placeholder.com/355x200',
@@ -696,7 +1001,7 @@
             en: 'Software Engineer (javascript)',
             ar: ''
           }
-        },{
+        }, {
           imgUrl: '/assets/images/testimonials/kumar-sahitya.jpg',
           quoteContent: {
             en: 'I had pleasure to work with Priyank. Hard working, game changer, goal achiever. Highly recommended!',
@@ -710,7 +1015,7 @@
             en: 'Senior Software Engineer',
             ar: ''
           }
-        },{
+        }, {
           imgUrl: '/assets/images/testimonials/wasim-bakali.jpg',
           quoteContent: {
             en: 'Good knowledge in PHP Frameworks and flutter. hardworking guy :-)',
@@ -724,7 +1029,7 @@
             en: 'Senior Software Engineer',
             ar: ''
           }
-        },{
+        }, {
           imgUrl: '/assets/images/testimonials/bharat-nagdev.jpg',
           quoteContent: {
             en: 'He is the most enthusiastic person in team. Works efficiently under pressure. Good at the knowledge of technology. Apart from coding he has good photography skills too.',
@@ -738,7 +1043,7 @@
             en: 'Ionic Developer | Angular Developer',
             ar: ''
           }
-        },{
+        }, {
           imgUrl: '/assets/images/testimonials/vedang-yagnik.jpg',
           quoteContent: {
             en: 'He is passionate person for technology with great learning abilities. He deep dives into anything you give and he always get excited and have desire of accomplishment when given challenging tasks. I had a pleasure of mentoring him.👍🏻',
@@ -752,7 +1057,7 @@
             en: 'Software Engineer',
             ar: ''
           }
-        },{
+        }, {
           imgUrl: '/assets/images/testimonials/divya-tailor.jpg',
           quoteContent: {
             en: 'He has good programming skill and good team player.',
@@ -912,13 +1217,11 @@
 
             if (e.code === 'Tab') {
               if (e.shiftKey)
-              /* shift + tab */
-              {
+              /* shift + tab */ {
                 // if this is the first item, move to the last item
                 isFirstTabStop && lastTabStop.focus();
               } else
-              /* tab */
-              {
+              /* tab */ {
                 // if this is the last item, go back to the first item
                 isLastTabStop && firstTabStop.focus();
               } // close nav menu on Escape button press
