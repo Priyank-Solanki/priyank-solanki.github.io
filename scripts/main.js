@@ -1000,7 +1000,7 @@
             ar: ''
           },
           desc: {
-            en: '',
+            en: 'IgoWork is site where you can advertise jobs and search for resumes. They are an integral part of almost every hiring process and using them effectively will translate into qualified candidates for relatively low costs. IgoWork is developing into ReactJS with Laravel API.',
             ar: ''
           },
           category: 'React',
@@ -1009,38 +1009,24 @@
             img1: {
               url: '/assets/images/portfolio/igowork/igowork.png',
               caption: {
-                en: 'Desktop Version',
+                en: 'IgoWork - Desktop',
                 ar: ''
               }
             },
             img2: {
-              url: 'https://via.placeholder.com/330x460',
+              url: '/assets/images/portfolio/igowork/igowork-mobile.png',
               caption: {
-                en: 'caption 4',
+                en: 'IgoWork - Mobile',
                 ar: ''
               }
             },
             img3: {
-              url: 'https://via.placeholder.com/300x225',
+              url: '/assets/images/portfolio/igowork/igowork-app.gif',
               caption: {
-                en: 'caption 3',
+                en: 'IgoWork - App',
                 ar: ''
               }
             },
-            img4: {
-              url: 'https://via.placeholder.com/300x225',
-              caption: {
-                en: 'caption 2',
-                ar: ''
-              }
-            },
-            img5: {
-              url: 'https://via.placeholder.com/300x225',
-              caption: {
-                en: 'caption 1',
-                ar: ''
-              }
-            }
           }
         }, {
           id: 8,
