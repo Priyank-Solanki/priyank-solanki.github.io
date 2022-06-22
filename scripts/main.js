@@ -927,7 +927,7 @@
         }, {
           id: 6,
           url: '/single-portfolio.html?id=6',
-          imgUrl: 'https://via.placeholder.com/355x200',
+          imgUrl: '/assets/images/portfolio/inctrl/inctrl.png',
           title: {
             en: 'InCTRL',
             ar: ''
@@ -945,43 +945,29 @@
             ar: ''
           },
           category: 'PHP',
-          tools: ['PHP'],
+          tools: ['Ionic', 'PHP'],
           screenshots: {
             img1: {
-              url: 'https://via.placeholder.com/355x200',
+              url: '/assets/images/portfolio/inctrl/inctrl.png',
               caption: {
-                en: 'caption 5',
+                en: 'InCTRL - Desktop',
                 ar: ''
               }
             },
             img2: {
-              url: 'https://via.placeholder.com/330x460',
+              url: '/assets/images/portfolio/inctrl/inctrl-mobile.png',
               caption: {
-                en: 'caption 4',
+                en: 'InCTRL - Mobile',
                 ar: ''
               }
             },
             img3: {
-              url: 'https://via.placeholder.com/300x225',
+              url: '/assets/images/portfolio/inctrl/inctrl-app.png',
               caption: {
-                en: 'caption 3',
+                en: 'InCTRL - App',
                 ar: ''
               }
             },
-            img4: {
-              url: 'https://via.placeholder.com/300x225',
-              caption: {
-                en: 'caption 2',
-                ar: ''
-              }
-            },
-            img5: {
-              url: 'https://via.placeholder.com/300x225',
-              caption: {
-                en: 'caption 1',
-                ar: ''
-              }
-            }
           }
         }, {
           id: 7,
