@@ -986,7 +986,7 @@
         }, {
           id: 7,
           url: '/single-portfolio.html?id=7',
-          imgUrl: 'https://via.placeholder.com/355x200',
+          imgUrl: '/assets/images/portfolio/igowork/igowork.png',
           title: {
             en: 'IgoWork',
             ar: ''
@@ -1007,9 +1007,9 @@
           tools: ['ReactJS', 'Laravel'],
           screenshots: {
             img1: {
-              url: 'https://via.placeholder.com/355x200',
+              url: '/assets/images/portfolio/igowork/igowork.png',
               caption: {
-                en: 'caption 5',
+                en: 'Desktop Version',
                 ar: ''
               }
             },
@@ -1045,9 +1045,9 @@
         }, {
           id: 8,
           url: '/single-portfolio.html?id=8',
-          imgUrl: 'https://via.placeholder.com/355x200',
+          imgUrl: '/assets/images/portfolio/watcho/watcho.png',
           title: {
-            en: 'WatchO',
+            en: 'WatchO - DCLeake',
             ar: ''
           },
           companyTitle: {
@@ -1059,47 +1059,40 @@
             ar: ''
           },
           desc: {
-            en: '',
+            en: 'BigCommerce is a NASDAQ-listed ecommerce platform that provides software as a service services to retailers. The company\'s platform includes online store creation, search engine optimization, hosting, and marketing and security from small to Enterprise sized businesses. WatchO \& DCLeake are the online store which is handle by Client and we have to do the custimization into theme and do some logics for custom functionalities. BigCommerce\'s theme is working with the Handlebar JS.',
             ar: ''
           },
           category: 'HandlebarJS',
-          tools: ['HandlebarJS', 'Bigcommerce'],
+          tools: ['HandlebarJS', 'BigCommerce'],
           screenshots: {
             img1: {
-              url: 'https://via.placeholder.com/355x200',
+              url: '/assets/images/portfolio/watcho/watcho.png',
               caption: {
-                en: 'caption 5',
+                en: 'WatchO - Desktop',
                 ar: ''
               }
             },
             img2: {
-              url: 'https://via.placeholder.com/330x460',
+              url: '/assets/images/portfolio/watcho/watcho-mobile.png',
               caption: {
-                en: 'caption 4',
+                en: 'WatchO - Mobile',
                 ar: ''
               }
             },
             img3: {
-              url: 'https://via.placeholder.com/300x225',
+              url: '/assets/images/portfolio/watcho/dcleake.png',
               caption: {
-                en: 'caption 3',
+                en: 'DCLeake - Desktop',
                 ar: ''
               }
             },
             img4: {
-              url: 'https://via.placeholder.com/300x225',
+              url: '/assets/images/portfolio/watcho/dcleake-mobile.png',
               caption: {
-                en: 'caption 2',
+                en: 'DCLeake - Mobile',
                 ar: ''
               }
             },
-            img5: {
-              url: 'https://via.placeholder.com/300x225',
-              caption: {
-                en: 'caption 1',
-                ar: ''
-              }
-            }
           }
         }].reverse(),
         // viewed portfolio items
