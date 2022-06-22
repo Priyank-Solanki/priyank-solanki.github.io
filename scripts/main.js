@@ -632,7 +632,7 @@
         allPortfolioItems: [{
           id: 1,
           url: '/single-portfolio.html?id=1',
-          imgUrl: 'https://via.placeholder.com/355x200',
+          imgUrl: 'https://via.placeholder.com/330x460',
           title: {
             en: 'Leave Management System',
             ar: ''
@@ -750,7 +750,7 @@
         }, {
           id: 3,
           url: '/single-portfolio.html?id=3',
-          imgUrl: 'https://via.placeholder.com/300x225',
+          imgUrl: 'https://via.placeholder.com/330x460',
           title: {
             en: 'GetPass System',
             ar: ''
@@ -809,7 +809,7 @@
         }, {
           id: 4,
           url: '/single-portfolio.html?id=4',
-          imgUrl: 'https://via.placeholder.com/300x225',
+          imgUrl: 'https://via.placeholder.com/330x460',
           title: {
             en: 'Personal Cards',
             ar: ''
@@ -830,7 +830,7 @@
           tools: ['Flutter', 'PHP'],
           screenshots: {
             img1: {
-              url: 'https://via.placeholder.com/355x200',
+              url: 'https://via.placeholder.com/330x460',
               caption: {
                 en: 'caption 5',
                 ar: ''
