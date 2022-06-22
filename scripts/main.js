@@ -868,7 +868,7 @@
         }, {
           id: 5,
           url: '/single-portfolio.html?id=5',
-          imgUrl: 'https://via.placeholder.com/330x460',
+          imgUrl: '/assets/images/portfolio/pme/pme.png',
           title: {
             en: 'PME & PA',
             ar: ''
@@ -889,40 +889,19 @@
           tools: ['PHP'],
           screenshots: {
             img1: {
-              url: 'https://via.placeholder.com/355x200',
+              url: '/assets/images/portfolio/pme/pme.png',
               caption: {
-                en: 'caption 5',
+                en: 'PME - Desktop',
                 ar: ''
               }
             },
             img2: {
-              url: 'https://via.placeholder.com/330x460',
+              url: '/assets/images/portfolio/pme/pme-mobile.png',
               caption: {
-                en: 'caption 4',
+                en: 'PME - Mobile',
                 ar: ''
               }
             },
-            img3: {
-              url: 'https://via.placeholder.com/300x225',
-              caption: {
-                en: 'caption 3',
-                ar: ''
-              }
-            },
-            img4: {
-              url: 'https://via.placeholder.com/300x225',
-              caption: {
-                en: 'caption 2',
-                ar: ''
-              }
-            },
-            img5: {
-              url: 'https://via.placeholder.com/300x225',
-              caption: {
-                en: 'caption 1',
-                ar: ''
-              }
-            }
           }
         }, {
           id: 6,
