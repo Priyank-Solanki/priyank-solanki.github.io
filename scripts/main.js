@@ -809,7 +809,7 @@
         }, {
           id: 4,
           url: '/single-portfolio.html?id=4',
-          imgUrl: 'https://via.placeholder.com/330x460',
+          imgUrl: '/assets/images/portfolio/personal-cards/personal-cards.png',
           title: {
             en: 'Personal Cards',
             ar: ''
@@ -830,40 +830,33 @@
           tools: ['Flutter', 'PHP'],
           screenshots: {
             img1: {
-              url: 'https://via.placeholder.com/330x460',
+              url: '/assets/images/portfolio/personal-cards/personal-cards.png',
               caption: {
-                en: 'caption 5',
+                en: 'Personal-Cards-Authentication',
                 ar: ''
               }
             },
             img2: {
-              url: 'https://via.placeholder.com/330x460',
+              url: '/assets/images/portfolio/personal-cards/personal-cards-1.png',
               caption: {
-                en: 'caption 4',
+                en: 'Personal-Cards-Dashboard-1',
                 ar: ''
               }
             },
             img3: {
-              url: 'https://via.placeholder.com/300x225',
+              url: '/assets/images/portfolio/personal-cards/personal-cards-2.png',
               caption: {
-                en: 'caption 3',
+                en: 'Personal-Cards-Dashboard-2',
                 ar: ''
               }
             },
             img4: {
-              url: 'https://via.placeholder.com/300x225',
+              url: '/assets/images/portfolio/personal-cards/personal-cards-3.png',
               caption: {
-                en: 'caption 2',
+                en: 'Personal-Cards-AboutUs',
                 ar: ''
               }
             },
-            img5: {
-              url: 'https://via.placeholder.com/300x225',
-              caption: {
-                en: 'caption 1',
-                ar: ''
-              }
-            }
           }
         }, {
           id: 5,
