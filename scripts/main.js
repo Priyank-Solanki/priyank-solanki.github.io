@@ -634,7 +634,7 @@
           url: '/single-portfolio.html?id=1',
           imgUrl: 'https://via.placeholder.com/330x460',
           title: {
-            en: 'Leave Management System',
+            en: 'Leave Management System (GSECL)',
             ar: ''
           },
           companyTitle: {
@@ -646,7 +646,7 @@
             ar: ''
           },
           desc: {
-            en: 'In this project, We tried to manage the leaves of employees & students and make the whole leave management system in an android application with Core PHP API. We managed the four types of user roles like Super Admin, Admin, Faculty, Student. This is the part of Counselling Management System.',
+            en: 'In this project, It provide information about the leave to different user and also Employee can view leave, take leave, and delete the leave',
             ar: ''
           },
           category: 'Android',
@@ -693,7 +693,7 @@
           url: '/single-portfolio.html?id=2',
           imgUrl: 'https://via.placeholder.com/330x460',
           title: {
-            en: 'Counselling Management System',
+            en: 'Leave Management System ( Charusat University )',
             ar: ''
           },
           companyTitle: {
@@ -705,7 +705,7 @@
             ar: ''
           },
           desc: {
-            en: 'In this project, We tried to manage the Counselling of students and make the whole Counselling management system in an android application. We managed the four types of user roles like Super Admin, Admin, Faculty, Student.',
+            en: 'In this project, We tried to manage the leaves of employees & students and make the whole leave management system in an android application with Core PHP API. We managed the four types of user roles like Super Admin, Admin, Faculty, Student. This is the part of Counselling Management System.',
             ar: ''
           },
           category: 'Android',
