@@ -632,7 +632,7 @@
         allPortfolioItems: [{
           id: 1,
           url: '/single-portfolio.html?id=1',
-          imgUrl: 'https://via.placeholder.com/330x460',
+          imgUrl: '/assets/images/portfolio/gsecl/gsecl.png',
           title: {
             en: 'Leave Management System (GSECL)',
             ar: ''
@@ -653,37 +653,30 @@
           tools: ['Android', 'PHP'],
           screenshots: {
             img1: {
-              url: 'https://via.placeholder.com/355x200',
+              url: '/assets/images/portfolio/gsecl/gsecl.png',
               caption: {
-                en: 'caption 5',
+                en: 'Login',
                 ar: ''
               }
             },
             img2: {
-              url: 'https://via.placeholder.com/330x460',
+              url: '/assets/images/portfolio/gsecl/gsecl-dashboard.png',
               caption: {
-                en: 'caption 4',
+                en: 'Dashboard',
                 ar: ''
               }
             },
             img3: {
-              url: 'https://via.placeholder.com/300x225',
+              url: '/assets/images/portfolio/gsecl/gsecl-take-leave.png',
               caption: {
-                en: 'caption 3',
+                en: 'Take Leave',
                 ar: ''
               }
             },
             img4: {
-              url: 'https://via.placeholder.com/300x225',
+              url: '/assets/images/portfolio/gsecl/gsecl-view-leave.png',
               caption: {
-                en: 'caption 2',
-                ar: ''
-              }
-            },
-            img5: {
-              url: 'https://via.placeholder.com/300x225',
-              caption: {
-                en: 'caption 1',
+                en: 'View Leave',
                 ar: ''
               }
             }
@@ -691,9 +684,9 @@
         }, {
           id: 2,
           url: '/single-portfolio.html?id=2',
-          imgUrl: 'https://via.placeholder.com/330x460',
+          imgUrl: '/assets/images/portfolio/charusat/charusat.png',
           title: {
-            en: 'Leave Management System ( Charusat University )',
+            en: 'Leave Management System (Charusat)',
             ar: ''
           },
           companyTitle: {
@@ -712,7 +705,7 @@
           tools: ['Android', 'PHP'],
           screenshots: {
             img1: {
-              url: 'https://via.placeholder.com/355x200',
+              url: '/assets/images/portfolio/charusat/charusat.png',
               caption: {
                 en: 'caption 5',
                 ar: ''
@@ -750,65 +743,6 @@
         }, {
           id: 3,
           url: '/single-portfolio.html?id=3',
-          imgUrl: 'https://via.placeholder.com/330x460',
-          title: {
-            en: 'GetPass System',
-            ar: ''
-          },
-          companyTitle: {
-            en: 'Personal Project',
-            ar: ''
-          },
-          date: {
-            en: 'Lockdown Time',
-            ar: ''
-          },
-          desc: {
-            en: 'In this project, I tried to manage the IN-OUT system of vehicle for WTPS Town ship in an flutter application with PHP API. I managed the four types of user roles like Super Admin, Admin, User, Get Security.',
-            ar: ''
-          },
-          category: 'Flutter',
-          tools: ['Flutter', 'PHP'],
-          screenshots: {
-            img1: {
-              url: 'https://via.placeholder.com/355x200',
-              caption: {
-                en: 'caption 5',
-                ar: ''
-              }
-            },
-            img2: {
-              url: 'https://via.placeholder.com/330x460',
-              caption: {
-                en: 'caption 4',
-                ar: ''
-              }
-            },
-            img3: {
-              url: 'https://via.placeholder.com/300x225',
-              caption: {
-                en: 'caption 3',
-                ar: ''
-              }
-            },
-            img4: {
-              url: 'https://via.placeholder.com/300x225',
-              caption: {
-                en: 'caption 2',
-                ar: ''
-              }
-            },
-            img5: {
-              url: 'https://via.placeholder.com/300x225',
-              caption: {
-                en: 'caption 1',
-                ar: ''
-              }
-            }
-          }
-        }, {
-          id: 4,
-          url: '/single-portfolio.html?id=4',
           imgUrl: '/assets/images/portfolio/personal-cards/personal-cards.png',
           title: {
             en: 'Personal Cards',
@@ -839,28 +773,28 @@
             img2: {
               url: '/assets/images/portfolio/personal-cards/personal-cards-1.png',
               caption: {
-                en: 'Personal-Cards-Dashboard-1',
+                en: 'Dashboard-1',
                 ar: ''
               }
             },
             img3: {
               url: '/assets/images/portfolio/personal-cards/personal-cards-2.png',
               caption: {
-                en: 'Personal-Cards-Dashboard-2',
+                en: 'Dashboard-2',
                 ar: ''
               }
             },
             img4: {
               url: '/assets/images/portfolio/personal-cards/personal-cards-3.png',
               caption: {
-                en: 'Personal-Cards-AboutUs',
+                en: 'AboutUs',
                 ar: ''
               }
             },
           }
         }, {
-          id: 5,
-          url: '/single-portfolio.html?id=5',
+          id: 4,
+          url: '/single-portfolio.html?id=4',
           imgUrl: '/assets/images/portfolio/pme/pme.png',
           title: {
             en: 'PME & PA',
@@ -884,21 +818,21 @@
             img1: {
               url: '/assets/images/portfolio/pme/pme.png',
               caption: {
-                en: 'PME - Desktop',
+                en: 'Desktop',
                 ar: ''
               }
             },
             img2: {
               url: '/assets/images/portfolio/pme/pme-mobile.png',
               caption: {
-                en: 'PME - Mobile',
+                en: 'Mobile',
                 ar: ''
               }
             },
           }
         }, {
-          id: 6,
-          url: '/single-portfolio.html?id=6',
+          id: 5,
+          url: '/single-portfolio.html?id=5',
           imgUrl: '/assets/images/portfolio/inctrl/inctrl.png',
           title: {
             en: 'InCTRL',
@@ -922,28 +856,28 @@
             img1: {
               url: '/assets/images/portfolio/inctrl/inctrl.png',
               caption: {
-                en: 'InCTRL - Desktop',
+                en: 'Desktop',
                 ar: ''
               }
             },
             img2: {
               url: '/assets/images/portfolio/inctrl/inctrl-mobile.png',
               caption: {
-                en: 'InCTRL - Mobile',
+                en: 'Mobile',
                 ar: ''
               }
             },
             img3: {
               url: '/assets/images/portfolio/inctrl/inctrl-app.png',
               caption: {
-                en: 'InCTRL - App',
+                en: 'App',
                 ar: ''
               }
             },
           }
         }, {
-          id: 7,
-          url: '/single-portfolio.html?id=7',
+          id: 6,
+          url: '/single-portfolio.html?id=6',
           imgUrl: '/assets/images/portfolio/igowork/igowork.png',
           title: {
             en: 'IgoWork',
@@ -967,28 +901,28 @@
             img1: {
               url: '/assets/images/portfolio/igowork/igowork.png',
               caption: {
-                en: 'IgoWork - Desktop',
+                en: 'Desktop',
                 ar: ''
               }
             },
             img2: {
               url: '/assets/images/portfolio/igowork/igowork-mobile.png',
               caption: {
-                en: 'IgoWork - Mobile',
+                en: 'Mobile',
                 ar: ''
               }
             },
             img3: {
               url: '/assets/images/portfolio/igowork/igowork-app.gif',
               caption: {
-                en: 'IgoWork - App',
+                en: 'App',
                 ar: ''
               }
             },
           }
         }, {
-          id: 8,
-          url: '/single-portfolio.html?id=8',
+          id: 7,
+          url: '/single-portfolio.html?id=7',
           imgUrl: '/assets/images/portfolio/watcho/watcho.png',
           title: {
             en: 'WatchO - DCLeake',
