@@ -686,7 +686,7 @@
           url: '/single-portfolio.html?id=2',
           imgUrl: '/assets/images/portfolio/charusat/charusat.png',
           title: {
-            en: 'Leave Management System (Charusat)',
+            en: 'Counselling Management System (Charusat)',
             ar: ''
           },
           companyTitle: {
@@ -698,7 +698,7 @@
             ar: ''
           },
           desc: {
-            en: 'In this project, We tried to manage the leaves of employees & students and make the whole leave management system in an android application with Core PHP API. We managed the four types of user roles like Super Admin, Admin, Faculty, Student. This is the part of Counselling Management System.',
+            en: 'In this project, We tried to manage the leaves & personal questions of students and make the whole counselling management system in an android application with Core PHP API. We managed the four types of user roles like Super Admin, Admin, Faculty, Student.',
             ar: ''
           },
           category: 'Android',
@@ -707,35 +707,35 @@
             img1: {
               url: '/assets/images/portfolio/charusat/charusat.png',
               caption: {
-                en: 'caption 5',
+                en: 'Login',
                 ar: ''
               }
             },
             img2: {
-              url: 'https://via.placeholder.com/330x460',
+              url: '/assets/images/portfolio/charusat/charusat-student.png',
               caption: {
-                en: 'caption 4',
+                en: 'Student Dashboard',
                 ar: ''
               }
             },
             img3: {
-              url: 'https://via.placeholder.com/300x225',
+              url: '/assets/images/portfolio/charusat/charusat-faculty.png',
               caption: {
-                en: 'caption 3',
+                en: 'Faculty Dashboard',
                 ar: ''
               }
             },
             img4: {
-              url: 'https://via.placeholder.com/300x225',
+              url: '/assets/images/portfolio/charusat/charusat-admin.png',
               caption: {
-                en: 'caption 2',
+                en: 'Admin Dashboard',
                 ar: ''
               }
             },
             img5: {
-              url: 'https://via.placeholder.com/300x225',
+              url: '/assets/images/portfolio/charusat/charusat-super-admin.png',
               caption: {
-                en: 'caption 1',
+                en: 'Super Admin Dashboard',
                 ar: ''
               }
             }
