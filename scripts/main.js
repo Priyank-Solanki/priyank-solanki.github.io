@@ -611,7 +611,7 @@
             ar: ''
           },
           jobTitle: {
-            en: 'Mean-Stack Developer',
+            en: 'Full-Stack Developer',
             ar: ''
           },
           desc: {
