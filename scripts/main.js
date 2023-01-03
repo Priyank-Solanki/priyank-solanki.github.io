@@ -1520,39 +1520,33 @@
       },
 
       // send message from contact form
-      sendContactFormMessage(form) {
-        const url = form.getAttribute('action');
-        const formData = new FormData(form); // start loading spinner
+      async sendContactFormMessage(form) {
+        let savingData = {
+          name: form.querySelector('input[name="name"]').value,
+          email: form.querySelector('input[name="email"]').value,
+          phone: form.querySelector('input[name="phone"]').value,
+          message: form.querySelector('textarea').value,
+        };
 
         this.startLoading(); // send post request
+        try {
+          await window.firebaseAddDoc(window.firebaseCollection(window.firebaseDb, "contact-me"), savingData);
+          this.setNotify({
+            className: 'success',
+            msg: form.getAttribute('data-success-msg'),
+            time: 5000
+          })
+          form.reset(); // remove inputs valid classes
 
-        fetch(url, {
-          method: 'POST',
-          body: formData
-        }).then(res => res.text()).then(data => {
-          if (data === 'success') {
-            // show success message
-            this.setNotify({
-              className: 'success',
-              msg: form.getAttribute('data-success-msg'),
-              time: 5000
-            }); // reset all form inputs
-
-            form.reset(); // remove inputs valid classes
-
-            form.querySelectorAll('.valid').forEach(el => el.classList.remove('valid'));
-          } else if (data === 'error') {
-            // show error message
-            this.setNotify({
-              className: 'danger',
-              msg: form.getAttribute('data-err-msg'),
-              time: 5000
-            });
-          } // end loading spinner
-
-
-          this.endLoading();
-        }).catch(err => console.log(err));
+          form.querySelectorAll('.valid').forEach(el => el.classList.remove('valid'));
+        } catch (error) {
+          this.setNotify({
+            className: 'danger',
+            msg: form.getAttribute('data-err-msg'),
+            time: 5000
+          });
+        }
+        this.endLoading();
       },
 
       // show messages by toast notifications

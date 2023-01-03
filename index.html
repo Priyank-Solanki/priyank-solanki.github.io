@@ -34,7 +34,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JJK1PGDMGF"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-JJK1PGDMGF');
@@ -295,7 +295,8 @@
                 </p>
                 <div class="btns-container">
                   <a href="#contact" class="btn btn-primary">Hire Me</a>
-                  <a href="https://docs.google.com/document/d/1A5IJKbuF_5WGXMiUEyxrVeJy7APOGxufX4IQZjaqZ_A/edit?usp=sharing" class="btn btn-outline-light" target="_blank">Download CV</a>
+                  <a href="https://docs.google.com/document/d/1A5IJKbuF_5WGXMiUEyxrVeJy7APOGxufX4IQZjaqZ_A/edit?usp=sharing"
+                    class="btn btn-outline-light" target="_blank">Download CV</a>
                 </div>
                 <!-- <div class="btns-container">
                   <a download href="/assets/documents/Cover_Letter.pdf" class="btn btn-outline-light">Download Cover Letter</a>
@@ -405,7 +406,11 @@
                   With Great Knowledge!
                 </h2>
                 <p>
-                  I worked with different types of projects which contain payment method migration, billing method migration, and backend of the cross-platform application. At company level experience, I worked with the ISMS policy, the Agile based on the project and teamwork. I started new learning like Laravel, React, Angular and Stencil likewise frontend and backend related languages. Also, started learning of deployment and cloud based enviroment.
+                  I worked with different types of projects which contain payment method migration, billing method
+                  migration, and backend of the cross-platform application. At company level experience, I worked with
+                  the ISMS policy, the Agile based on the project and teamwork. I started new learning like Laravel,
+                  React, Angular and Stencil likewise frontend and backend related languages. Also, started learning of
+                  deployment and cloud based enviroment.
                 </p>
               </div>
             </div>
@@ -506,7 +511,7 @@
           <div class="section-content row">
 
             <!-- text box -->
-            <div class="contact-text">
+            <div class="contact-text col-lg-6">
               <div class="text-box-inline">
                 <span class="subtitle">contact</span>
                 <h2>
@@ -591,6 +596,71 @@
                 </li>
               </ul>
             </div>
+
+            <!-- contact form -->
+            <div class="col-lg-6">
+              <form ref="contactForm" class="contact-form form-styled" data-success-msg="Message sent successfully!"
+                data-err-msg="Oops! something went wrong, please try again.">
+                <div class="group">
+                  <label>Name</label>
+                  <div class="control has-prefix-icon">
+                    <input type="text" name="name" placeholder="e.g. Firstname Lastname" minlength="3" required
+                      id="contact_name">
+                    <i class="fa fa-user-circle prefix-icon" aria-hidden="true"></i>
+
+                    <!-- validation errors messages -->
+                    <div class="errors-msgs">
+                      <input class="required" type="hidden" value="Name is required">
+                      <input class="minLength" type="hidden" value="Name must be at least 3 characters">
+                    </div>
+                  </div>
+                </div>
+                <div class="group">
+                  <label>Email</label>
+                  <div class="control has-prefix-icon">
+                    <input class="ltr-dir" type="email" inputmode="email" name="email"
+                      placeholder="e.g. example@example.com" required id="contact_email">
+                    <i class="fa fa-envelope prefix-icon" aria-hidden="true"></i>
+
+                    <!-- validation errors messages -->
+                    <div class="errors-msgs">
+                      <input class="required" type="hidden" value="Email is required">
+                      <input class="invalid" type="hidden" value="Please enter a valid email address">
+                    </div>
+                  </div>
+                </div>
+                <div class="group phone-number">
+                  <label>Phone <span class="optional">(Optional)</span></label>
+                  <div class="control has-prefix-icon">
+                    <input type="tel" inputmode="tel" name="phone" placeholder="e.g. +919876543210" id="contact_number">
+                    <i class="fa fa-phone prefix-icon" aria-hidden="true"></i>
+
+                    <!-- validation errors messages -->
+                    <div class="errors-msgs">
+                      <input class="invalid" type="hidden" value="Please enter a valid Phone Number">
+                    </div>
+                  </div>
+                </div>
+                <div class="group">
+                  <label>Message</label>
+                  <div class="control has-prefix-icon">
+                    <textarea name="message" placeholder="Write message..." required id="contact_message"></textarea>
+                    <i class="fa fa-comments prefix-icon" aria-hidden="true"></i>
+
+                    <!-- validation errors messages -->
+                    <div class="errors-msgs">
+                      <input class="required" type="hidden" value="Message is required">
+                    </div>
+                  </div>
+                </div>
+                <div class="group">
+                  <div class="control">
+                    <button class="submit-btn btn btn-dark" type="button" @click="contactFormValidation"
+                      id="contact-me">Send</button>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -641,6 +711,24 @@
       </div>
     </div>
   </div>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+    import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBVwqoGuJpflHYtT1IycTnaIaxMJqW0Pzg",
+      authDomain: "priyank-s-portfolio.firebaseapp.com",
+      projectId: "priyank-s-portfolio",
+      storageBucket: "priyank-s-portfolio.appspot.com",
+      messagingSenderId: "182045991167",
+      appId: "1:182045991167:web:41b5cd11423e319b4aecca"
+    };
+    const app = initializeApp(firebaseConfig);
+    window.firebaseDb = getFirestore();
+    window.firebaseAddDoc = addDoc;
+    window.firebaseCollection = collection;
+  </script>
 
   <!-- js plugins file -->
   <script src="scripts/plugins.min.js"></script>
