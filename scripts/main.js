@@ -795,179 +795,37 @@
         }, {
           id: 4,
           url: '/single-portfolio.html?id=4',
-          imgUrl: '/assets/images/portfolio/pme/pme.png',
+          imgUrl: '/assets/images/portfolio/creative-informative/creative-informative.png',
           title: {
-            en: 'PME & PA',
+            en: 'Creative Informative',
             ar: ''
           },
           companyTitle: {
-            en: 'Project Under Biztech IT Consultancy Pvt Ltd.',
+            en: 'Personal Project',
             ar: ''
           },
           date: {
-            en: 'July 2019 - January 2020',
+            en: 'Side Work',
             ar: ''
           },
           desc: {
-            en: 'Proofread My Essay is a UK based company that offers quality proofreading services to students, professionals as well as business owners. Initially, the company used to work with students and offered “Pay as you go” option. It recently came up with “Pay uponinvoice” option for businesses and organizations so that they can submit bulk work and documents for proofreading. BiztechCS developed the company’s website cum web application with custom modules, payment gateway and other integrations.',
-            ar: ''
-          },
-          category: 'PHP',
-          tools: ['PHP'],
-          screenshots: {
-            img1: {
-              url: '/assets/images/portfolio/pme/pme.png',
-              caption: {
-                en: 'Desktop',
-                ar: ''
-              }
-            },
-            img2: {
-              url: '/assets/images/portfolio/pme/pme-mobile.png',
-              caption: {
-                en: 'Mobile',
-                ar: ''
-              }
-            },
-          }
-        }, {
-          id: 5,
-          url: '/single-portfolio.html?id=5',
-          imgUrl: '/assets/images/portfolio/inctrl/inctrl.png',
-          title: {
-            en: 'InCTRL',
-            ar: ''
-          },
-          companyTitle: {
-            en: 'Project Under Biztech IT Consultancy Pvt Ltd.',
-            ar: ''
-          },
-          date: {
-            en: 'January 2020 - January 2022',
-            ar: ''
-          },
-          desc: {
-            en: 'Waste Management App Supplier and facility',
-            ar: ''
-          },
-          category: 'PHP',
-          tools: ['Ionic', 'PHP'],
-          screenshots: {
-            img1: {
-              url: '/assets/images/portfolio/inctrl/inctrl.png',
-              caption: {
-                en: 'Desktop',
-                ar: ''
-              }
-            },
-            img2: {
-              url: '/assets/images/portfolio/inctrl/inctrl-mobile.png',
-              caption: {
-                en: 'Mobile',
-                ar: ''
-              }
-            },
-            img3: {
-              url: '/assets/images/portfolio/inctrl/inctrl-app.png',
-              caption: {
-                en: 'App',
-                ar: ''
-              }
-            },
-          }
-        }, {
-          id: 6,
-          url: '/single-portfolio.html?id=6',
-          imgUrl: '/assets/images/portfolio/igowork/igowork.png',
-          title: {
-            en: 'IgoWork',
-            ar: ''
-          },
-          companyTitle: {
-            en: 'Project Under Consumer Sketch - Web Design & Mobile App Development',
-            ar: ''
-          },
-          date: {
-            en: 'February 2022 - April 2022',
-            ar: ''
-          },
-          desc: {
-            en: 'IgoWork is site where you can advertise jobs and search for resumes. They are an integral part of almost every hiring process and using them effectively will translate into qualified candidates for relatively low costs. IgoWork is developing into ReactJS with Laravel API.',
+            en: 'In this project, I tried to manage the all commands or basic information which is known by me and It is kind of cheatbook for particular point',
             ar: ''
           },
           category: 'React',
-          tools: ['ReactJS', 'Laravel'],
+          tools: ['React'],
           screenshots: {
             img1: {
-              url: '/assets/images/portfolio/igowork/igowork.png',
+              url: '/assets/images/portfolio/creative-informative/creative-informative.png',
               caption: {
-                en: 'Desktop',
+                en: 'Creative-Informative-Desktop',
                 ar: ''
               }
             },
             img2: {
-              url: '/assets/images/portfolio/igowork/igowork-mobile.png',
+              url: '/assets/images/portfolio/creative-informative/creative-informative-mobile.png',
               caption: {
-                en: 'Mobile',
-                ar: ''
-              }
-            },
-            img3: {
-              url: '/assets/images/portfolio/igowork/igowork-app.gif',
-              caption: {
-                en: 'App',
-                ar: ''
-              }
-            },
-          }
-        }, {
-          id: 7,
-          url: '/single-portfolio.html?id=7',
-          imgUrl: '/assets/images/portfolio/watcho/watcho.png',
-          title: {
-            en: 'WatchO - DCLeake',
-            ar: ''
-          },
-          companyTitle: {
-            en: 'Project Under Consumer Sketch - Web Design & Mobile App Development',
-            ar: ''
-          },
-          date: {
-            en: 'February 2022 - Current',
-            ar: ''
-          },
-          desc: {
-            en: 'BigCommerce is a NASDAQ-listed ecommerce platform that provides software as a service services to retailers. The company\'s platform includes online store creation, search engine optimization, hosting, and marketing and security from small to Enterprise sized businesses. WatchO \& DCLeake are the online store which is handle by Client and we have to do the custimization into theme and do some logics for custom functionalities. BigCommerce\'s theme is working with the Handlebar JS.',
-            ar: ''
-          },
-          category: 'HandlebarJS',
-          tools: ['HandlebarJS', 'BigCommerce'],
-          screenshots: {
-            img1: {
-              url: '/assets/images/portfolio/watcho/watcho.png',
-              caption: {
-                en: 'WatchO - Desktop',
-                ar: ''
-              }
-            },
-            img2: {
-              url: '/assets/images/portfolio/watcho/watcho-mobile.png',
-              caption: {
-                en: 'WatchO - Mobile',
-                ar: ''
-              }
-            },
-            img3: {
-              url: '/assets/images/portfolio/watcho/dcleake.png',
-              caption: {
-                en: 'DCLeake - Desktop',
-                ar: ''
-              }
-            },
-            img4: {
-              url: '/assets/images/portfolio/watcho/dcleake-mobile.png',
-              caption: {
-                en: 'DCLeake - Mobile',
+                en: 'Creative-Informative-mobile',
                 ar: ''
               }
             },
