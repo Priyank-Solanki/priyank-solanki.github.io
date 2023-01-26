@@ -456,6 +456,22 @@
 
     data() {
       return {
+        desktopCoverDetails: {
+          tagLine: 'I love making things simple, intuitive and expertly crafted!',
+          description: 'To work for my career growth and better prospects, which contribute to the productivity of the organization. To seek challenges and responsibilities, with an opportunity for growth and advancement as successful achievements'
+        },
+        profileData: {
+          personalEmail: 'priyanksolanki30197@gmail.com',
+          personalEmailLink: 'mailto:priyanksolanki30197@gmail.com',
+          freelancerEmail: 'priyanksolanki2410@gmail.com',
+          freelancerEmailLink: 'mailto:priyanksolanki2410@gmail.com',
+          addressLine1: 'B-12 Pragati Society, Near Prime arcade,',
+          addressLine2: 'Opp. Rai Apartment, New Rander Road,',
+          addressLine3: 'Adajan,Surat-395009',
+          addressLine4: 'Gujarat, India.',
+          phoneNumber: '(+91) 9726868355',
+          phoneNumberLink: 'tel:+919726868355'
+        },
         // the date my career started (change to yours)
         careerStartDate: 2019,
         // the date copyright started (change to yours)
