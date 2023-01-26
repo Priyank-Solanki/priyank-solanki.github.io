@@ -624,7 +624,7 @@
         // portfolio items per page
         itemsPerPage: 5,
         // portfolio items filter by type
-        filters: ['All', 'Android', 'Flutter', 'React', 'PHP'],
+        filters: ['All', 'Android', 'Flutter', 'React'],
         currentFilter: 'All',
         // portfolio archive name
         portfolioArchiveName: '',
