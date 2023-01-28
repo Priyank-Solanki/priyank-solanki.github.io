@@ -846,6 +846,44 @@
               }
             },
           }
+        }, {
+          id: 5,
+          url: '/single-portfolio.html?id=5',
+          imgUrl: '/assets/images/portfolio/personal-information-holder/personal-information-holder.png',
+          title: {
+            en: 'Personal Information Holder (PIH)',
+            ar: ''
+          },
+          companyTitle: {
+            en: 'Personal Project',
+            ar: ''
+          },
+          date: {
+            en: 'Side Work',
+            ar: ''
+          },
+          desc: {
+            en: 'In this project, I tried to manage the storing personal data which can helpful to family member and sharing information with your connections',
+            ar: ''
+          },
+          category: 'Flutter',
+          tools: ['Flutter', 'Laravel'],
+          screenshots: {
+            img1: {
+              url: '/assets/images/portfolio/personal-information-holder/personal-information-holder.png',
+              caption: {
+                en: 'personal-information-holder-information',
+                ar: ''
+              }
+            },
+            img2: {
+              url: '/assets/images/portfolio/personal-information-holder/personal-information-holder-mobile.png',
+              caption: {
+                en: 'personal-information-holder-mobile',
+                ar: ''
+              }
+            },
+          }
         }].reverse(),
         // viewed portfolio items
         portfolioItems: [],
