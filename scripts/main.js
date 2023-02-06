@@ -456,6 +456,22 @@
 
     data() {
       return {
+        desktopCoverDetails: {
+          tagLine: 'I love making things simple, intuitive and expertly crafted!',
+          description: 'To work for my career growth and better prospects, which contribute to the productivity of the organization. To seek challenges and responsibilities, with an opportunity for growth and advancement as successful achievements'
+        },
+        profileData: {
+          personalEmail: 'priyanksolanki30197@gmail.com',
+          personalEmailLink: 'mailto:priyanksolanki30197@gmail.com',
+          freelancerEmail: 'priyanksolanki2410@gmail.com',
+          freelancerEmailLink: 'mailto:priyanksolanki2410@gmail.com',
+          addressLine1: 'B-12 Pragati Society, Near Prime arcade,',
+          addressLine2: 'Opp. Rai Apartment, New Rander Road,',
+          addressLine3: 'Adajan,Surat-395009',
+          addressLine4: 'Gujarat, India.',
+          phoneNumber: '(+91) 9726868355',
+          phoneNumberLink: 'tel:+919726868355'
+        },
         // the date my career started (change to yours)
         careerStartDate: 2019,
         // the date copyright started (change to yours)
@@ -624,7 +640,7 @@
         // portfolio items per page
         itemsPerPage: 5,
         // portfolio items filter by type
-        filters: ['All', 'Android', 'Flutter', 'React', 'PHP'],
+        filters: ['All', 'Android', 'Flutter', 'React'],
         currentFilter: 'All',
         // portfolio archive name
         portfolioArchiveName: '',
@@ -826,6 +842,44 @@
               url: '/assets/images/portfolio/creative-informative/creative-informative-mobile.png',
               caption: {
                 en: 'Creative-Informative-mobile',
+                ar: ''
+              }
+            },
+          }
+        }, {
+          id: 5,
+          url: '/single-portfolio.html?id=5',
+          imgUrl: '/assets/images/portfolio/personal-information-holder/personal-information-holder.png',
+          title: {
+            en: 'Personal Information Holder (PIH)',
+            ar: ''
+          },
+          companyTitle: {
+            en: 'Personal Project',
+            ar: ''
+          },
+          date: {
+            en: 'Side Work',
+            ar: ''
+          },
+          desc: {
+            en: 'In this project, I tried to manage the storing personal data which can helpful to family member and sharing information with your connections',
+            ar: ''
+          },
+          category: 'Flutter',
+          tools: ['Flutter', 'Laravel'],
+          screenshots: {
+            img1: {
+              url: '/assets/images/portfolio/personal-information-holder/personal-information-holder.png',
+              caption: {
+                en: 'personal-information-holder-information',
+                ar: ''
+              }
+            },
+            img2: {
+              url: '/assets/images/portfolio/personal-information-holder/personal-information-holder-mobile.png',
+              caption: {
+                en: 'personal-information-holder-mobile',
                 ar: ''
               }
             },

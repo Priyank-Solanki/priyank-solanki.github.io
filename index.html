@@ -93,13 +93,10 @@
                 <!-- about us -->
                 <div class="about-us">
                   <p>
-                    I love making things simple, intuitive and expertly crafted!
+                    {{ desktopCoverDetails.tagLine }}
                   </p>
                   <h4 class="block-title custom-font-size">
-                    To work for my career growth and better prospects, which contribute to the productivity of the
-                    organization.
-                    To seek challenges and responsibilities, with an opportunity for growth and advancement as
-                    successful achievements
+                    {{ desktopCoverDetails.description }}
                   </h4>
                 </div>
 
@@ -108,9 +105,8 @@
                   <li class="col-lg-4">
                     <h4 class="block-title">Email</h4>
                     <ul>
-                      <li><a href="mailto:priyanksolanki30197@gmail.com">Professional :
-                          priyanksolanki30197@gmail.com</a></li>
-                      <li><a href="mailto:priyanksolanki2410@gmail.com">Freelance : priyanksolanki2410@gmail.com</a>
+                      <li><a :href="profileData.personalEmailLink">Professional : {{ profileData.personalEmail }}</a></li>
+                      <li><a :href="profileData.freelancerEmailLink">Freelance : {{ profileData.freelancerEmail }}</a>
                       </li>
                     </ul>
                   </li>
@@ -118,17 +114,17 @@
                     <h4 class="block-title">Address</h4>
                     <ul>
                       <li>
-                        Type 3, 59/2. GSECL Colony, <br />
-                        Wanakbori Tharmal Power Station, <br />
-                        Galteshwar,Kheda-388239, <br />
-                        Gujarat , India.
+                        {{ profileData.addressLine1 }}<br />
+                        {{ profileData.addressLine2 }}<br />
+                        {{ profileData.addressLine3 }}<br />
+                        {{ profileData.addressLine4 }}
                       </li>
                     </ul>
                   </li>
                   <li class="col-lg-4">
                     <h4 class="block-title">Phone</h4>
                     <ul>
-                      <li><a href="tel:+919726868355">(+91) 9726868355</a></li>
+                      <li><a :href="profileData.phoneNumberLink">{{ profileData.phoneNumber }}</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -167,7 +163,7 @@
 
         <div class="hero-text">
           <h2>
-            WebAPI & Frontend Developer
+            Full-Stack Developer
             <br>
             Photographer
           </h2>
@@ -528,10 +524,10 @@
                   <img src="assets/images/icons/address.png" alt="Address">
                   <div>
                     <strong>Address:</strong>
-                    B-12 Pragati Society, Near Prime arcade, <br />
-                    Opp. Rai Apartment, New Rander Road, <br />
-                    Adajan,Surat-395009 <br />
-                    Gujarat, India.
+                    {{ profileData.addressLine1 }}<br />
+                    {{ profileData.addressLine2 }}<br />
+                    {{ profileData.addressLine3 }}<br />
+                    {{ profileData.addressLine4 }}
                   </div>
                 </li>
                 <li>
@@ -539,7 +535,7 @@
                   <div>
                     <strong>Phone:</strong>
                     <ul>
-                      <li><a href="tel:+919726868355" class="ltr-dir">(+91) 9726868355</a></li>
+                      <li><a :href="profileData.phoneNumberLink" class="ltr-dir">{{ profileData.phoneNumber }}</a></li>
                     </ul>
                   </div>
                 </li>
@@ -549,10 +545,10 @@
                     <strong>Email:</strong>
                     <ul>
                       <li>
-                        <a href="mailto:priyanksolanki30197@gmail.com">Professional : priyanksolanki30197@gmail.com</a>
+                        <a :href="profileData.personalEmailLink">Professional : {{ profileData.personalEmail }}</a>
                       </li>
                       <li>
-                        <a href="mailto:priyanksolanki2410@gmail.com">Freelance : priyanksolanki2410@gmail.com</a>
+                        <a :href="profileData.freelancerEmailLink">Freelance : {{ profileData.freelancerEmail }}</a>
                       </li>
                     </ul>
                   </div>
