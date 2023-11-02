@@ -3246,8 +3246,8 @@ html[dir="rtl"] .notifications-container .notify-leave-active {
 }
 .hero-section .hero-img .layer:first-of-type {
   height: 100%;
-  -webkit-mask-image: url("../assets/images/splash.png");
-  mask-image: url("../assets/images/splash.png");
+  -webkit-mask-image: url("../assets/images/splash.webp");
+  mask-image: url("../assets/images/splash.webp");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-position: center;
@@ -3734,8 +3734,8 @@ html[dir="rtl"] .statistics-section .section-content .statistics-items a > .fa {
 }
 .about-section .section-content .about-img .layer:first-of-type {
   height: 100%;
-  -webkit-mask-image: url("../assets/images/blob-shape.png");
-  mask-image: url("../assets/images/blob-shape.png");
+  -webkit-mask-image: url("../assets/images/blob-shape.webp");
+  mask-image: url("../assets/images/blob-shape.webp");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-position: center;
@@ -3755,8 +3755,8 @@ html[dir="rtl"] .statistics-section .section-content .statistics-items a > .fa {
     hsl(var(--main-color-one)) 0%,
     hsl(var(--main-color-two)) 100%
   );
-  -webkit-mask-image: url("../assets/images/blob-shape.png");
-  mask-image: url("../assets/images/blob-shape.png");
+  -webkit-mask-image: url("../assets/images/blob-shape.webp");
+  mask-image: url("../assets/images/blob-shape.webp");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-position: center;

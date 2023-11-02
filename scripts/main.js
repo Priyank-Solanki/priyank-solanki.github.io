@@ -531,78 +531,78 @@
         skillsType: '',
         // list of skills items to loop through it
         skillsItems: [{
-          imgUrl: '/assets/images/skills/html.png',
+          imgUrl: '/assets/images/skills/html.webp',
           title: 'HTML'
         }, {
-          imgUrl: '/assets/images/skills/css.png',
+          imgUrl: '/assets/images/skills/css.webp',
           title: 'CSS'
         }, {
-          imgUrl: '/assets/images/skills/javascript.png',
+          imgUrl: '/assets/images/skills/javascript.webp',
           title: 'JavaScript'
         }, {
-          imgUrl: '/assets/images/skills/typescript.png',
+          imgUrl: '/assets/images/skills/typescript.webp',
           title: 'TypeScript'
         }, {
-          imgUrl: '/assets/images/skills/jquery.png',
+          imgUrl: '/assets/images/skills/jquery.webp',
           title: 'jQuery'
         }, {
-          imgUrl: '/assets/images/skills/bootstrap.png',
+          imgUrl: '/assets/images/skills/bootstrap.webp',
           title: 'Bootstrap'
         }, {
-          imgUrl: '/assets/images/skills/angular.png',
+          imgUrl: '/assets/images/skills/angular.webp',
           title: 'Angular'
         }, {
-          imgUrl: '/assets/images/skills/react.png',
+          imgUrl: '/assets/images/skills/react.webp',
           title: 'React'
         }, {
-          imgUrl: '/assets/images/skills/flutter.png',
+          imgUrl: '/assets/images/skills/flutter.webp',
           title: 'Flutter'
         }, {
-          imgUrl: '/assets/images/skills/php.png',
+          imgUrl: '/assets/images/skills/php.webp',
           title: 'PHP'
         }, {
-          imgUrl: '/assets/images/skills/laravel.png',
+          imgUrl: '/assets/images/skills/laravel.webp',
           title: 'Laravel'
         }, {
-          imgUrl: '/assets/images/skills/sass.png',
+          imgUrl: '/assets/images/skills/sass.webp',
           title: 'SASS'
         }],
         // list of tools items to loop through it
         toolsItems: [{
-          imgUrl: '/assets/images/tools/gulp.png',
+          imgUrl: '/assets/images/tools/gulp.webp',
           title: 'Gulp'
         }, {
-          imgUrl: '/assets/images/tools/confluence.png',
+          imgUrl: '/assets/images/tools/confluence.webp',
           title: 'Confluence'
         }, {
-          imgUrl: '/assets/images/tools/jira.png',
+          imgUrl: '/assets/images/tools/jira.webp',
           title: 'Jira'
         }, {
-          imgUrl: '/assets/images/tools/git.png',
+          imgUrl: '/assets/images/tools/git.webp',
           title: 'Git (Github & Gitlab)'
         }, {
-          imgUrl: '/assets/images/tools/npm.png',
+          imgUrl: '/assets/images/tools/npm.webp',
           title: 'NPM'
         }, {
-          imgUrl: '/assets/images/tools/jenkins.png',
+          imgUrl: '/assets/images/tools/jenkins.webp',
           title: 'Jenkins'
         }, {
-          imgUrl: '/assets/images/tools/vscode.png',
+          imgUrl: '/assets/images/tools/vscode.webp',
           title: 'VS Code'
         }, {
-          imgUrl: '/assets/images/tools/filezilla.png',
+          imgUrl: '/assets/images/tools/filezilla.webp',
           title: 'FileZilla'
         }, {
-          imgUrl: '/assets/images/tools/markdown.png',
+          imgUrl: '/assets/images/tools/markdown.webp',
           title: 'Markdown'
         }, {
-          imgUrl: '/assets/images/tools/slack.png',
+          imgUrl: '/assets/images/tools/slack.webp',
           title: 'Slack'
         }, {
-          imgUrl: '/assets/images/tools/nginx.png',
+          imgUrl: '/assets/images/tools/nginx.webp',
           title: 'Nginx'
         }, {
-          imgUrl: '/assets/images/tools/docker.png',
+          imgUrl: '/assets/images/tools/docker.webp',
           title: 'Docker'
         }],
         // list of experience items to loop through it
@@ -648,7 +648,7 @@
         allPortfolioItems: [{
           id: 1,
           url: '/single-portfolio.html?id=1',
-          imgUrl: '/assets/images/portfolio/gsecl/gsecl.png',
+          imgUrl: '/assets/images/portfolio/gsecl/gsecl.webp',
           title: {
             en: 'Leave Management System (GSECL)',
             ar: ''
@@ -669,28 +669,28 @@
           tools: ['Android', 'PHP'],
           screenshots: {
             img1: {
-              url: '/assets/images/portfolio/gsecl/gsecl.png',
+              url: '/assets/images/portfolio/gsecl/gsecl.webp',
               caption: {
                 en: 'Login',
                 ar: ''
               }
             },
             img2: {
-              url: '/assets/images/portfolio/gsecl/gsecl-dashboard.png',
+              url: '/assets/images/portfolio/gsecl/gsecl-dashboard.webp',
               caption: {
                 en: 'Dashboard',
                 ar: ''
               }
             },
             img3: {
-              url: '/assets/images/portfolio/gsecl/gsecl-take-leave.png',
+              url: '/assets/images/portfolio/gsecl/gsecl-take-leave.webp',
               caption: {
                 en: 'Take Leave',
                 ar: ''
               }
             },
             img4: {
-              url: '/assets/images/portfolio/gsecl/gsecl-view-leave.png',
+              url: '/assets/images/portfolio/gsecl/gsecl-view-leave.webp',
               caption: {
                 en: 'View Leave',
                 ar: ''
@@ -700,7 +700,7 @@
         }, {
           id: 2,
           url: '/single-portfolio.html?id=2',
-          imgUrl: '/assets/images/portfolio/charusat/charusat.png',
+          imgUrl: '/assets/images/portfolio/charusat/charusat.webp',
           title: {
             en: 'Counselling Management System (Charusat)',
             ar: ''
@@ -721,35 +721,35 @@
           tools: ['Android', 'PHP'],
           screenshots: {
             img1: {
-              url: '/assets/images/portfolio/charusat/charusat.png',
+              url: '/assets/images/portfolio/charusat/charusat.webp',
               caption: {
                 en: 'Login',
                 ar: ''
               }
             },
             img2: {
-              url: '/assets/images/portfolio/charusat/charusat-student.png',
+              url: '/assets/images/portfolio/charusat/charusat-student.webp',
               caption: {
                 en: 'Student Dashboard',
                 ar: ''
               }
             },
             img3: {
-              url: '/assets/images/portfolio/charusat/charusat-faculty.png',
+              url: '/assets/images/portfolio/charusat/charusat-faculty.webp',
               caption: {
                 en: 'Faculty Dashboard',
                 ar: ''
               }
             },
             img4: {
-              url: '/assets/images/portfolio/charusat/charusat-admin.png',
+              url: '/assets/images/portfolio/charusat/charusat-admin.webp',
               caption: {
                 en: 'Admin Dashboard',
                 ar: ''
               }
             },
             img5: {
-              url: '/assets/images/portfolio/charusat/charusat-super-admin.png',
+              url: '/assets/images/portfolio/charusat/charusat-super-admin.webp',
               caption: {
                 en: 'Super Admin Dashboard',
                 ar: ''
@@ -759,7 +759,7 @@
         }, {
           id: 3,
           url: '/single-portfolio.html?id=3',
-          imgUrl: '/assets/images/portfolio/personal-cards/personal-cards.png',
+          imgUrl: '/assets/images/portfolio/personal-cards/personal-cards.webp',
           title: {
             en: 'Personal Cards',
             ar: ''
@@ -780,28 +780,28 @@
           tools: ['Flutter', 'PHP'],
           screenshots: {
             img1: {
-              url: '/assets/images/portfolio/personal-cards/personal-cards.png',
+              url: '/assets/images/portfolio/personal-cards/personal-cards.webp',
               caption: {
                 en: 'Personal-Cards-Authentication',
                 ar: ''
               }
             },
             img2: {
-              url: '/assets/images/portfolio/personal-cards/personal-cards-1.png',
+              url: '/assets/images/portfolio/personal-cards/personal-cards-1.webp',
               caption: {
                 en: 'Dashboard-1',
                 ar: ''
               }
             },
             img3: {
-              url: '/assets/images/portfolio/personal-cards/personal-cards-2.png',
+              url: '/assets/images/portfolio/personal-cards/personal-cards-2.webp',
               caption: {
                 en: 'Dashboard-2',
                 ar: ''
               }
             },
             img4: {
-              url: '/assets/images/portfolio/personal-cards/personal-cards-3.png',
+              url: '/assets/images/portfolio/personal-cards/personal-cards-3.webp',
               caption: {
                 en: 'AboutUs',
                 ar: ''
@@ -811,7 +811,7 @@
         }, {
           id: 4,
           url: '/single-portfolio.html?id=4',
-          imgUrl: '/assets/images/portfolio/creative-informative/creative-informative.png',
+          imgUrl: '/assets/images/portfolio/creative-informative/creative-informative.webp',
           title: {
             en: 'Creative Informative',
             ar: ''
@@ -832,14 +832,14 @@
           tools: ['React'],
           screenshots: {
             img1: {
-              url: '/assets/images/portfolio/creative-informative/creative-informative.png',
+              url: '/assets/images/portfolio/creative-informative/creative-informative.webp',
               caption: {
                 en: 'Creative-Informative-Desktop',
                 ar: ''
               }
             },
             img2: {
-              url: '/assets/images/portfolio/creative-informative/creative-informative-mobile.png',
+              url: '/assets/images/portfolio/creative-informative/creative-informative-mobile.webp',
               caption: {
                 en: 'Creative-Informative-mobile',
                 ar: ''
@@ -849,7 +849,7 @@
         }, {
           id: 5,
           url: '/single-portfolio.html?id=5',
-          imgUrl: '/assets/images/portfolio/personal-information-holder/personal-information-holder.png',
+          imgUrl: '/assets/images/portfolio/personal-information-holder/personal-information-holder.webp',
           title: {
             en: 'Personal Information Holder (PIH)',
             ar: ''
@@ -870,14 +870,14 @@
           tools: ['Flutter', 'Laravel'],
           screenshots: {
             img1: {
-              url: '/assets/images/portfolio/personal-information-holder/personal-information-holder.png',
+              url: '/assets/images/portfolio/personal-information-holder/personal-information-holder.webp',
               caption: {
                 en: 'personal-information-holder-information',
                 ar: ''
               }
             },
             img2: {
-              url: '/assets/images/portfolio/personal-information-holder/personal-information-holder-mobile.png',
+              url: '/assets/images/portfolio/personal-information-holder/personal-information-holder-mobile.webp',
               caption: {
                 en: 'personal-information-holder-mobile',
                 ar: ''
@@ -889,7 +889,7 @@
         portfolioItems: [],
         // list of testimonials items to loop through it
         testimonialsItems: [{
-          imgUrl: '/assets/images/testimonials/darshan-pandya.jpg',
+          imgUrl: '/assets/images/testimonials/darshan-pandya.webp',
           quoteContent: {
             en: 'Has good grip on PHP frameworks and had been always there when team needs any help.',
             ar: ''
@@ -903,7 +903,7 @@
             ar: ''
           }
         }, {
-          imgUrl: '/assets/images/testimonials/kumar-sahitya.jpg',
+          imgUrl: '/assets/images/testimonials/kumar-sahitya.webp',
           quoteContent: {
             en: 'I had pleasure to work with Priyank. Hard working, game changer, goal achiever. Highly recommended!',
             ar: ''
@@ -917,7 +917,7 @@
             ar: ''
           }
         }, {
-          imgUrl: '/assets/images/testimonials/wasim-bakali.jpg',
+          imgUrl: '/assets/images/testimonials/wasim-bakali.webp',
           quoteContent: {
             en: 'Good knowledge in PHP Frameworks and flutter. hardworking guy :-)',
             ar: ''
@@ -931,7 +931,7 @@
             ar: ''
           }
         }, {
-          imgUrl: '/assets/images/testimonials/bharat-nagdev.jpg',
+          imgUrl: '/assets/images/testimonials/bharat-nagdev.webp',
           quoteContent: {
             en: 'He is the most enthusiastic person in team. Works efficiently under pressure. Good at the knowledge of technology. Apart from coding he has good photography skills too.',
             ar: ''
@@ -945,7 +945,7 @@
             ar: ''
           }
         }, {
-          imgUrl: '/assets/images/testimonials/vedang-yagnik.jpg',
+          imgUrl: '/assets/images/testimonials/vedang-yagnik.webp',
           quoteContent: {
             en: 'He is passionate person for technology with great learning abilities. He deep dives into anything you give and he always get excited and have desire of accomplishment when given challenging tasks. I had a pleasure of mentoring him.👍🏻',
             ar: ''
@@ -959,7 +959,7 @@
             ar: ''
           }
         }, {
-          imgUrl: '/assets/images/testimonials/divya-tailor.jpg',
+          imgUrl: '/assets/images/testimonials/divya-tailor.webp',
           quoteContent: {
             en: 'He has good programming skill and good team player.',
             ar: ''
