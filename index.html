@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Hi! I'm Priyank Solanki, a 4+ years experienced WebAPI & Frontend Developer. I'm passionate about creating intuitive and efficient solutions. Contact me to learn more.">
+  <meta name="description"
+    content="Hi! I'm Priyank Solanki, a 4+ years experienced WebAPI & Frontend Developer. I'm passionate about creating intuitive and efficient solutions. Contact me to learn more.">
 
   <!-- title of the browser tab -->
   <title>Priyank Solanki - Full-Stack Developer</title>
@@ -105,7 +107,8 @@
                   <li class="col-lg-4">
                     <h4 class="block-title">Email</h4>
                     <ul>
-                      <li><a :href="profileData.personalEmailLink">Professional : {{ profileData.personalEmail }}</a></li>
+                      <li><a :href="profileData.personalEmailLink">Professional : {{ profileData.personalEmail }}</a>
+                      </li>
                       <li><a :href="profileData.freelancerEmailLink">Freelance : {{ profileData.freelancerEmail }}</a>
                       </li>
                     </ul>
@@ -157,7 +160,7 @@
       <div id="hero" class="hero-section hide-in-preloading" data-paneffect="true" ref="heroSection">
         <div class="hero-img">
           <div class="layer" v-clone>
-            <img width="" height="" src="/assets/images/hero-img.webp" alt="Priyank Solanki">
+            <img width="" height="" src="/assets/images/hero-img.webp" alt="Priyank Solanki" />
           </div>
         </div>
 
@@ -219,7 +222,7 @@
               <li class="col-sm-12 col-md-6 col-lg-4">
                 <a href="#experience">
                   <div class="icon">
-                    <img width="" height="" src="assets/images/icons/emblem.webp" alt="Years of Experience">
+                    <img width="" height="" src="assets/images/icons/emblem.webp" alt="Years of Experience" />
                   </div>
                   <div class="text">
                     <h3>{{ experienceYears }}+</h3>
@@ -231,7 +234,8 @@
               <li class="col-sm-12 col-md-6 col-lg-4">
                 <a href="#portfolio">
                   <div class="icon">
-                    <img width="" height="" src="assets/images/icons/check-mark.webp" alt="Completed Projects">
+                    <img width="" height="" src="assets/images/icons/check-mark.webp"
+                      alt="Completed Projects" />
                   </div>
                   <div class="text">
                     <h3>{{ countOfProject }}+</h3>
@@ -243,7 +247,7 @@
               <li class="col-sm-12 col-md-6 col-lg-4">
                 <a href="#testimonials">
                   <div class="icon">
-                    <img width="" height="" src="assets/images/icons/happy.webp" alt="Co-Workers's Review">
+                    <img width="" height="" src="assets/images/icons/happy.webp" alt="Co-Workers's Review" />
                   </div>
                   <div class="text">
                     <h3>{{ countOfTestimonials }}+</h3>
@@ -266,7 +270,7 @@
             <!-- about image -->
             <div class="about-img col-lg-6">
               <div class="layer" v-clone>
-                <img width="" height="" src="/assets/images/about-img.webp" alt="Priyank Solanki">
+                <img width="" height="" src="/assets/images/about-img.webp" alt="Priyank Solanki" />
               </div>
             </div>
 
@@ -337,7 +341,7 @@
                 <li tabindex="0" v-for="skill in skillsItems" :key="skill.title"
                   v-tooltip="{text: skill.title, dir: 'top'}">
                   <div class="skill-icon">
-                    <img width="" height="" :src="skill.imgUrl" :alt="skill.title">
+                    <img width="" height="" :src="skill.imgUrl" :alt="skill.title" />
                   </div>
                 </li>
               </ul>
@@ -347,7 +351,7 @@
                 <li tabindex="0" v-for="tool in toolsItems" :key="tool.title"
                   v-tooltip="{text: tool.title, dir: 'top'}">
                   <div class="skill-icon">
-                    <img width="" height="" :src="tool.imgUrl" :alt="tool.title">
+                    <img width="" height="" :src="tool.imgUrl" :alt="tool.title" />
                   </div>
                 </li>
               </ul>
@@ -446,7 +450,7 @@
               <li class="portfolio-item" v-for="work in filteredPortfolioItems" :key="work.title.en">
                 <a :href="work.url" target="_blank" rel="noopener">
                   <div class="item-img">
-                    <img width="" height="" :src="work.imgUrl" :alt="work.title.en">
+                    <img width="" height="" :src="work.imgUrl" :alt="work.title.en" />
                   </div>
                   <div class="item-details">
                     <h3 class="title">{{ work.title.en }}</h3>
@@ -483,7 +487,8 @@
             <li class="has-ultimate-tooltip" tabindex="0" v-for="item in testimonialsItems" :key="item.quoteAuthor.en">
               <div class="testimonials-item">
                 <div class="testimonial-author-img">
-                  <img width="" height="" :src="item.imgUrl || 'assets/images/testimonials/anonymous-user.webp'" :alt="item.quoteAuthor.en">
+                  <img width="" height="" :src="item.imgUrl || 'assets/images/testimonials/anonymous-user.webp'"
+                    :alt="item.quoteAuthor.en" />
                 </div>
                 <div class="ultimate-tooltip">
                   <p>{{ item.quoteContent.en }}</p>
@@ -521,7 +526,7 @@
               <!-- contact info -->
               <ul class="contact-info">
                 <li>
-                  <img width="" height="" src="assets/images/icons/address.webp" alt="Address">
+                  <img width="" height="" src="assets/images/icons/address.webp" alt="Address" />
                   <div>
                     <strong>Address:</strong>
                     {{ profileData.addressLine1 }}<br />
@@ -531,7 +536,7 @@
                   </div>
                 </li>
                 <li>
-                  <img width="" height="" src="assets/images/icons/phone.webp" alt="Phone">
+                  <img width="" height="" src="assets/images/icons/phone.webp" alt="Phone" />
                   <div>
                     <strong>Phone:</strong>
                     <ul>
@@ -540,7 +545,7 @@
                   </div>
                 </li>
                 <li>
-                  <img width="" height="" src="assets/images/icons/email.webp" alt="Email">
+                  <img width="" height="" src="assets/images/icons/email.webp" alt="Email" />
                   <div>
                     <strong>Email:</strong>
                     <ul>
@@ -671,7 +676,9 @@
             </div>
             <div class="col-lg-6">
               &copy; {{ copyrightDate }} Proudly Powered by
-              <a href="https://www.priyank-solanki.com/" target="_blank" rel="noopener">Priyank Solanki</a>
+              <a href="https://www.priyank-solanki.com/" target="_blank" rel="noopener"
+                aria-label="Priyank Solanki">Priyank
+                Solanki</a>
             </div>
           </div>
         </div>

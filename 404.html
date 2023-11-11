@@ -32,7 +32,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JJK1PGDMGF"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-JJK1PGDMGF');
@@ -69,20 +69,20 @@
         'small-header': !isHeaderBig,
         'header-hidden': isHeaderHidden
       }">
-      <div class="container">
-        <!-- logo -->
-        <div class="logo" title="Priyank">
-          <h1><a href="/">Priyank</a></h1>
-        </div>
+        <div class="container">
+          <!-- logo -->
+          <div class="logo" title="Priyank">
+            <h1><a href="/">Priyank</a></h1>
+          </div>
 
-        <!-- options icons -->
-        <ul class="options-icons">
-          <!-- theme switcher button -->
-          <li class="theme-switcher">
-            <button :class="savedTheme" title="Change Mode" @click="changeAppTheme"></button>
-          </li>
-        </ul>
-      </div>
+          <!-- options icons -->
+          <ul class="options-icons">
+            <!-- theme switcher button -->
+            <li class="theme-switcher">
+              <button :class="savedTheme" title="Change Mode" @click="changeAppTheme"></button>
+            </li>
+          </ul>
+        </div>
       </header>
       <!-- end of header -->
 
@@ -115,7 +115,8 @@
             </div>
             <div class="col-lg-6">
               &copy; {{ copyrightDate }} Proudly Powered by
-              <a href="https://www.priyank-solanki.com/" target="_blank" rel="noopener">Priyank Solanki</a>
+              <a href="https://www.priyank-solanki.com/" target="_blank" rel="noopener" aria-label="Priyank Solanki">Priyank
+                Solanki</a>
             </div>
           </div>
         </div>
