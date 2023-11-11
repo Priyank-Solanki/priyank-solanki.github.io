@@ -36,7 +36,27 @@
 		</url>
 
 		<url>
-			<loc>https://www.priyank-solanki.com/single-portfolio.html</loc>
+			<loc>https://www.priyank-solanki.com/single-portfolio.html?id=1</loc>
+			<changefreq>daily</changefreq>
+		</url>
+
+		<url>
+			<loc>https://www.priyank-solanki.com/single-portfolio.html?id=2</loc>
+			<changefreq>daily</changefreq>
+		</url>
+
+		<url>
+			<loc>https://www.priyank-solanki.com/single-portfolio.html?id=3</loc>
+			<changefreq>daily</changefreq>
+		</url>
+
+		<url>
+			<loc>https://www.priyank-solanki.com/single-portfolio.html?id=4</loc>
+			<changefreq>daily</changefreq>
+		</url>
+
+		<url>
+			<loc>https://www.priyank-solanki.com/single-portfolio.html?id=5</loc>
 			<changefreq>daily</changefreq>
 		</url>
 
