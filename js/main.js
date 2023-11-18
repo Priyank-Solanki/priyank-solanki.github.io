@@ -107,6 +107,7 @@ AOS.init({
 			margin: 0,
 			animateOut: 'fadeOut',
 			animateIn: 'fadeIn',
+			center: true,
 			nav: false,
 			autoplayHoverPause: false,
 			items: 1,
@@ -120,6 +121,27 @@ AOS.init({
 				},
 				1000: {
 					items: 1
+				}
+			}
+		});
+		$('.testimonials-slider').owlCarousel({
+			loop: true,
+			autoplay: true,
+			margin: 16,
+			nav: false,
+			autoplayHoverPause: true,
+			items: 2,
+			center: true,
+			navText: ["<span class='ion-md-arrow-back'></span>", "<span class='ion-chevron-right'></span>"],
+			responsive: {
+				0: {
+					items: 1
+				},
+				600: {
+					items: 1
+				},
+				1000: {
+					items: 2
 				}
 			}
 		});

@@ -11815,6 +11815,11 @@ textarea.form-control {
 .about-author .desc h3 {
   font-size: 24px;
 }
+.about-author img {
+  width: 200px !important;
+  height: 200px !important;
+  margin: auto;
+}
 
 .ftco-section {
   padding: 7em 0;
@@ -12285,6 +12290,31 @@ textarea.form-control {
 .contact-section .contact-form {
   width: 100%;
 }
+
+.contact-section .contact-form .contact-error-section {
+  display: flex;
+  align-items: center;
+}
+
+.contact-section .contact-form span {
+  flex: 1;
+  text-align: center;
+}
+.contact-section .contact-form span.error-message {
+  background: #dc3545;
+  color: #ffffff;
+}
+.contact-section .contact-form span.sent-message {
+  background: #28a745;
+  color: #ffffff;
+}
+.testimonials-slider.owl-carousel .owl-dot {
+  display: none !important;
+}
+.testimonials-slider {
+  margin: auto;
+}
+
 @media (max-width: 767.98px) {
   .contact-section .contact-form .btn-primary {
     display: block;
