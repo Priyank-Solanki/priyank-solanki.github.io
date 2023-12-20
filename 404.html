@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="404 Page">
+
+  <!-- title of the browser tab -->
+  <title>Priyank Solanki - Full-Stack Developer</title>
+
+  <!-- favicon -->
+  <link rel="icon" href="assets/favicon.ico">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&family=Saira+Stencil+One&text=Nafie&display=swap">
+
+  <!-- css libraries file -->
+  <link rel="stylesheet" href="styles/libraries.min.css">
+
+  <!-- bootstrap css file -->
+  <link rel="stylesheet" href="styles/bootstrap.css">
+
+  <!-- main style file -->
+  <link rel="stylesheet" href="styles/main.css">
+  <meta name="google-site-verification" content="qdKbibKEFr5JSw4Woncuy8CVydLC9JNhuTIunAy4L04" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JJK1PGDMGF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-JJK1PGDMGF');
+  </script>
+</head>
+
+<body>
+  <div id="app">
+    <div id="app-inner" ref="appRef" :class="[savedTheme, {'enable-focus-style': isAnyFocus}]"
+      @click="isAnyFocus = false" @keyup.tab="isAnyFocus = true">
+
+      <div class="circle-cursor circle-cursor-outer" ref="circleCursorOuter"></div>
+      <div class="circle-cursor circle-cursor-inner" ref="circleCursorInner"></div>
+
+      <!-- start preloader-->
+      <div class="preloader" ref="preloader">
+        <div class="preloader-content">
+          <div class="logo">
+            <svg viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z" />
+            </svg>
+          </div>
+          <div class="loading-bar">
+            <span class="loading-bar-progress"></span>
+          </div>
+        </div>
+      </div>
+      <!-- end preloader-->
+
+      <!-- start of header -->
+      <header class="hide-in-preloading" :class="{
+        'big-header': isHeaderBig,
+        'small-header': !isHeaderBig,
+        'header-hidden': isHeaderHidden
+      }">
+        <div class="container">
+          <!-- logo -->
+          <div class="logo" title="Priyank">
+            <h1><a href="/">Priyank</a></h1>
+          </div>
+
+          <!-- options icons -->
+          <ul class="options-icons">
+            <!-- theme switcher button -->
+            <li class="theme-switcher">
+              <button :class="savedTheme" title="Change Mode" @click="changeAppTheme"></button>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <!-- end of header -->
+
+      <!-- start of 404 page -->
+      <div class="not-found-page page">
+        <div class="not-found-content">
+          <div class="container">
+            <div class="not-found-img">
+              <img width="" height="" src="assets/images/404.webp" alt="404">
+            </div>
+            <div class="not-found-text">
+              <h2 class="title">Oops! That page can’t be found</h2>
+              <p class="desc">We're sorry, we couldn't find the page you requested.</p>
+            </div>
+            <a href="/" class="btn btn-primary">Back to Home</a>
+          </div>
+        </div>
+      </div>
+      <!-- end of 404 page -->
+
+      <!-- start of footer -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <!-- logo -->
+              <div class="logo" title="Priyank">
+                <h1><a href="/">Priyank</a></h1>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              &copy; {{ copyrightDate }} Proudly Powered by
+              <a href="https://www.priyank-solanki.com/" target="_blank" rel="noopener" aria-label="Priyank Solanki">Priyank
+                Solanki</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end of footer -->
+
+      <!-- scroll to top button -->
+      <button class="scroll-to-top" ref="scrollTopBtn" title="Back To Top" data-show-at="50" @click="scrollToTop">
+        <svg width="100%" height="100%" viewBox="-1 -1 102 102">
+          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+      </button>
+
+      <!-- toast notifications -->
+      <ul class="notifications-container hide-in-preloading">
+        <transition-group name="notify">
+          <li v-for="notify of notifications" :key="notify.id" :id="notify.id"
+            :class="['notification', 'show', notify.className, notify.time && 'timer']">
+            {{ notify.msg }}
+            <i class="fa fa-times link-hover" aria-hidden="true" @click="dismissNotify(notify.id)"></i>
+            <span v-if="notify.time" class="disappearing-time"
+              :style="{ 'animation-duration': notify.time + 'ms' }"></span>
+          </li>
+        </transition-group>
+      </ul>
+
+      <!-- ajax loading -->
+      <div class="ajax-loading hide-in-preloading" v-show="isAjaxLoading">
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- js plugins file -->
+  <script src="scripts/plugins.min.js"></script>
+
+  <!-- main script file -->
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

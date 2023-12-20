@@ -1,1111 +1,740 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description"
-		content="Hi! I'm Priyank Solanki, a 4+ years experienced WebAPI & Frontend Developer. I'm passionate about creating intuitive and efficient solutions. Contact me to learn more.">
-	<!-- title of the browser tab -->
-	<title>Priyank Solanki - Technical Lead</title>
-	<!-- favicon -->
-	<link rel="icon" href="images/favicon.ico">
-	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<link rel="stylesheet" href="css/aos.css">
-	<link rel="stylesheet" href="css/ionicons.min.css">
-	<link rel="stylesheet" href="css/flaticon.css">
-	<link rel="stylesheet" href="css/icomoon.css">
-	<link rel="stylesheet" href="css/style.css">
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-JJK1PGDMGF"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Hi! I'm Priyank Solanki, a 4+ years experienced WebAPI & Frontend Developer. I'm passionate about creating intuitive and efficient solutions. Contact me to learn more.">
 
-		gtag('config', 'G-JJK1PGDMGF');
-	</script>
-	<script type="module">
-		// Import the functions you need from the SDKs you need
-		import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
-		import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
+  <!-- title of the browser tab -->
+  <title>Priyank Solanki - Full-Stack Developer</title>
 
-		const firebaseConfig = {
-			apiKey: "AIzaSyBVwqoGuJpflHYtT1IycTnaIaxMJqW0Pzg",
-			authDomain: "priyank-s-portfolio.firebaseapp.com",
-			projectId: "priyank-s-portfolio",
-			storageBucket: "priyank-s-portfolio.appspot.com",
-			messagingSenderId: "182045991167",
-			appId: "1:182045991167:web:41b5cd11423e319b4aecca"
-		};
-		const app = initializeApp(firebaseConfig);
-		const db = getFirestore();
+  <!-- favicon -->
+  <link rel="icon" href="assets/favicon.ico">
 
-		$(document).ready(function (event) {
-			const classForError = "error-message";
-			const classForSuccess = "sent-message";
-			$("#contact-me").on('click', async function (event) {
-				event.preventDefault();
-				$('#showError').text('');
-				$('#showError').addClass(classForSuccess);
-				$('#showError').removeClass(classForError);
-				$('#showError').hide();
-				let addData = true;
-				const alphaRegex = /^[a-zA-Z ]+$/;
-				const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-				const messageRegex = /^[a-zA-Z^<>()[\]\\.,;:\s@" ]+$/;
-				if ($('#contact_name').val() == '' || $('#contact_email').val() == '' || $('#contact_message').val() == '') {
-					$('#showError').text('Please enter valid data');
-					addData = false;
-				} else if (!alphaRegex.test($('#contact_name').val())) {
-					$('#showError').text('Please enter valid data for Name');
-					addData = false;
-				} else if (!emailRegex.test($('#contact_email').val())) {
-					$('#showError').text('Please enter valid data for Email address');
-					addData = false;
-				} else if (!messageRegex.test($('#contact_message').val())) {
-					$('#showError').text('Please enter valid data for Message');
-					addData = false;
-				}
-				if (addData) {
-					try {
-						const docRef = await addDoc(collection(db, "contact-me"), {
-							name: $('#contact_name').val(),
-							email: $('#contact_email').val(),
-							subject: $('#contact_subject').val(),
-							message: $('#contact_message').val()
-						});
-						$('#contact_name').val('');
-						$('#contact_email').val('');
-						$('#contact_message').val('');
-						$('#contact_subject').val('');
-						$('#showError').text('Thank you for contacting me.');
-						$('#showError').show();
-					} catch (e) {
-						$('#showError').text('Internal Server Error');
-					}
-				} else {
-					$('#showError').removeClass(classForSuccess);
-					$('#showError').addClass(classForError);
-					$('#showError').show();
-				}
-				setTimeout(function () {
-					$('#showError').hide();
-				}, 3000);
-			});
-		});
-	</script>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&family=Saira+Stencil+One&text=Nafie&display=swap">
+
+  <!-- css libraries file -->
+  <link rel="stylesheet" href="styles/libraries.min.css">
+
+  <!-- bootstrap css file -->
+  <link rel="stylesheet" href="styles/bootstrap.css">
+
+  <!-- main style file -->
+  <link rel="stylesheet" href="styles/main.css">
+  <meta name="google-site-verification" content="qdKbibKEFr5JSw4Woncuy8CVydLC9JNhuTIunAy4L04" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JJK1PGDMGF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-JJK1PGDMGF');
+  </script>
 </head>
 
-<body id="body" data-spy="scroll" data-target=".site-navbar-target" data-offset="100">
-	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-		<div class="container">
-			<a class="navbar-brand" href="index.html">Priyank</a>
-			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
-				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
-			</button>
-			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav nav ml-auto">
-					<li class="nav-item">
-						<a href="#home-section" class="nav-link">
-							<span>Home</span>
-						</a>
-					</li>
-					<li class="nav-item">
-						<a href="#about-section" class="nav-link">
-							<span>About</span>
-						</a>
-					</li>
-					<li class="nav-item">
-						<a href="#resume-section" class="nav-link">
-							<span>Resume</span>
-						</a>
-					</li>
-					<li class="nav-item">
-						<a href="#services-section" class="nav-link">
-							<span>Services</span>
-						</a>
-					</li>
-					<li class="nav-item">
-						<a href="#skills-section" class="nav-link">
-							<span>Skills</span>
-						</a>
-					</li>
-					<li class="nav-item">
-						<a href="#projects-section" class="nav-link">
-							<span>Projects</span>
-						</a>
-					</li>
-					<li class="nav-item">
-						<a href="#contact-section" class="nav-link">
-							<span>Contact</span>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<section id="home-section" class="hero">
-		<div class="home-slider  owl-carousel">
-			<div class="slider-item ">
-				<div class="overlay"></div>
-				<div class="container">
-					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
-						data-scrollax-parent="true">
-						<div class="one-third js-fullheight order-md-last img"
-							style="background-image:url(images/bg_1.webp);">
-							<div class="overlay"></div>
-						</div>
-						<div class="one-forth d-flex  align-items-center ftco-animate"
-							data-scrollax=" properties: { translateY: '70%' }">
-							<div class="text">
-								<span class="subheading">Hello!</span>
-								<h1 class="mb-4 mt-3">I'm <span>Priyank Solanki</span>
-								</h1>
-								<h2 class="mb-4">A Technical Lead</h2>
-								<p>
-									<a href="#" class="hire-me btn btn-primary py-3 px-4">Hire me</a>
-									<a href="#" class="my-work btn btn-white btn-outline-white py-3 px-4">My works</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="slider-item">
-				<div class="overlay"></div>
-				<div class="container">
-					<div class="row d-flex no-gutters slider-text align-items-end justify-content-end"
-						data-scrollax-parent="true">
-						<div class="one-third js-fullheight order-md-last img"
-							style="background-image:url(images/bg_2.webp);">
-							<div class="overlay"></div>
-						</div>
-						<div class="one-forth d-flex align-items-center ftco-animate"
-							data-scrollax=" properties: { translateY: '70%' }">
-							<div class="text">
-								<span class="subheading">Hello!</span>
-								<h1 class="mb-4 mt-3">I'm a <span>Full Stack Web Developer</span> based in India </h1>
-								<p>
-									<a href="#" class="hire-me btn btn-primary py-3 px-4">Hire me</a>
-									<a href="#" class="my-work btn btn-white btn-outline-white py-3 px-4">My works</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-		<div class="container">
-			<div class="row d-flex">
-				<div class="col-md-6 col-lg-5 d-flex">
-					<div class="img-about img d-flex align-items-stretch">
-						<div class="overlay"></div>
-						<div class="img d-flex align-self-stretch align-items-center"
-							style="background-image:url(images/bg_2.webp);"></div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-					<div class="row justify-content-start pb-3">
-						<div class="col-md-12 heading-section ftco-animate">
-							<h1 class="big">About</h1>
-							<h2 class="mb-4">About Me</h2>
-							<p>Hi! I am a dedicated developer with a passion for crafting streamlined WebAPI and Mobile
-								applications featuring intuitive functionality. I derive satisfaction from transforming
-								conceptual ideas into tangible reality through innovative solutions. My enthusiasm for
-								continuous improvement motivates me to explore and adopt new skills, tools, and
-								concepts. I bring valuable experience in collaborating with Agile teams, engaging in
-								daily stand-ups, fostering effective communication, managing source control, and
-								overseeing project management processes.</p>
-							<ul class="about-info mt-4 px-md-0 px-2">
-								<li class="d-flex">
-									<span>Name:</span>
-									<span>Priyank Solanki</span>
-								</li>
-								<li class="d-flex">
-									<span>Date of birth:</span>
-									<span>January 30, 1997</span>
-								</li>
-								<li class="d-flex">
-									<span>Address:</span>
-									<span>Near Fortune 5, Sun Pharma Rd, Vadodara, Gujarat</span>
-								</li>
-								<li class="d-flex">
-									<span>Zip code:</span>
-									<span>390012</span>
-								</li>
-								<li class="d-flex">
-									<span>Email:</span>
-									<span>priyanksolanki30197@gmail.com</span>
-								</li>
-								<li class="d-flex">
-									<span>Phone: </span>
-									<span>+91-9726868355</span>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="counter-wrap ftco-animate d-flex mt-md-3">
-						<div class="text">
-							<p class="mb-4">
-								<span class="number" data-number="6">0</span>
-								<span>Project complete</span>
-							</p>
-							<p>
-								<a href="https://docs.google.com/document/d/1A5IJKbuF_5WGXMiUEyxrVeJy7APOGxufX4IQZjaqZ_A/edit?usp=sharing"
-									class="btn btn-primary py-3 px-3" target="_blank">Download CV</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="ftco-section ftco-no-pb" id="resume-section">
-		<div class="container">
-			<div class="row justify-content-center pb-5">
-				<div class="col-md-10 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Resume</h1>
-					<h2 class="mb-4">Resume</h2>
-					<p>During my tenure, I have actively engaged in diverse projects encompassing payment method
-						migration, billing method migration, and the development of cross-platform application backends.
-						My professional experience extends to working at the company level, where I contributed to
-						Information Security Management System (ISMS) policy implementation and collaborated within
-						Agile frameworks tailored to project requirements and team dynamics.
-					</p>
-					<p>To augment my skill set, I have embarked on a journey of continuous learning, delving into
-						technologies such as Laravel, React, Angular, and Stencil, spanning both frontend and backend
-						development. Additionally, I am actively acquiring knowledge in deployment strategies and
-						cloud-based environments to stay abreast of industry best practices.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">FEB, 2022 - Present</span>
-						<h2>Consumer Sketch - Web Design & Mobile App Development Company, India</h2>
-						<span class="position">Full Stack Web Developer</span>
-						<p class="mt-4">I manage the code standards, evaluate code bugs, review code modulation, and
-							perform many other tasks as the Project Lead for projects. In addition, I manage the Jenkins
-							Pipeline for several projects that have SonarQube connections.</p>
-						<p class="mt-4">Being a PHP - Full Stack developer, I am a devoted resource for one of our
-							client's projects. In that capacity, I mainly work as a front-end developer, but I also work
-							as a back-end developer in some circumstances.</p>
-						<p class="mt-4">In some of my client's projects, I manage the requirements and other activities
-							assigned to me.</p>
-						<p class="mt-4">I work as a member of the research and development team and research some of the
-							research issues that benefit my organization. </p>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">JUL, 2019 - FEB, 2022</span>
-						<h2>Biztech Consulting & Solutions, India</h2>
-						<span class="position">Junior Software Engineer</span>
-						<p class="mt-4">Work both independently and as a member of a team on development projects and
-							work to provide quality solutions that meet specific business requirements using
-							business and technical knowledge to help prevent defects.</p>
-						<p class="mt-4">Independently create the design, coding, and testing of complex technical
-							solutions.</p>
-						<p class="mt-4">Applied software design skills to develop and maintain features using
-							object-oriented
-							methodologies.</p>
-						<p class="mt-4">Contributed to Research and Development related to technology.</p>
-						<p class="mt-4">Undertaken the testing and debugging of applications.</p>
-						<p class="mt-4">Solve issues given by QA and check their compliance.</p>
-						<p class="mt-4">Identify/escalate the risks and issues to the supervisor on a regular basis.</p>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">JUL, 2017 - JUL, 2019</span>
-						<h2>Master of Computer Applications</h2>
-						<span class="position">Charotar University of Science and Technology, Changa - IN</span>
-						<p class="mt-4">I have earned a notable 7.95 Cumulative Grade Point Average (CGPA) while
-							cultivating a diverse skill set, positioning myself for a successful transition into my
-							prospective career.</p>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">JUL, 2014 - JUL, 2017</span>
-						<h2>Bachelor of Computer Applications</h2>
-						<span class="position">Charotar University of Science and Technology, Changa - IN</span>
-						<p class="mt-4">I attained an academic achievement of an 6.75 Cumulative Grade Point Average
-							(CGPA), showcasing a diverse skill set that positions me well for my continued studies.</p>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">MAR, 2012 - MAR, 2014</span>
-						<h2>HSC</h2>
-						<span class="position">Gujarat Secondary and Higher Secondary Education Board</span>
-						<p class="mt-4">I attained an academic achievement of an 61.69%, showcasing a diverse skill set
-							that positions me well for my continued studies.</p>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">MAR, 2011 - MAR, 2012</span>
-						<h2>SSC</h2>
-						<span class="position">Gujarat Secondary and Higher Secondary Education Board</span>
-						<p class="mt-4">I attained an academic achievement of an 85%, showcasing a diverse skill set
-							that positions me well for my continuerd studies.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row justify-content-center mt-5">
-				<div class="col-md-6 text-center ftco-animate">
-					<p>
-						<a href="https://docs.google.com/document/d/1A5IJKbuF_5WGXMiUEyxrVeJy7APOGxufX4IQZjaqZ_A/edit?usp=sharing"
-							class="btn btn-primary py-4 px-5" target="_blank">Download CV</a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="ftco-section" id="services-section">
-		<div class="container">
-			<div class="row justify-content-center pb-5">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Services</h1>
-					<h2 class="mb-4">Services</h2>
-					<p>I am pleased to offer the services that I consistently manage on a daily basis. Please do not
-						hesitate to reach out to me for further assistance.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="#" class="services-1">
-						<span class="icon">
-							<i class="icon-web"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">WebSite Development</h3>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="#" class="services-1">
-						<span class="icon">
-							<i class="icon-mobile"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Application Development</h3>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="#" class="services-1">
-						<span class="icon">
-							<i class="icon-server"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">System & Server Setup</h3>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="#" class="services-1">
-						<span class="icon">
-							<i class="icon-code"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Code Management & Reviewing</h3>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="#" class="services-1">
-						<span class="icon">
-							<i class="icon-briefcase"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Team Management & Technical Lead</h3>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="#" class="services-1">
-						<span class="icon">
-							<i class="icon-gears"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">API & Third Party Integration</h3>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="ftco-section" id="skills-section">
-		<div class="container">
-			<div class="row justify-content-center pb-5">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Skills</h1>
-					<h2 class="mb-4">My Skills</h2>
-					<p>I specialize in crafting uncomplicated, user-friendly, and responsive user interfaces. My focus
-						is on creating an intuitive experience that empowers users to efficiently accomplish tasks,
-						reducing both effort and time. I leverage cutting-edge technologies to achieve these objectives.
-					</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>NextJS</h3>
-						<div class="progress">
-							<div class="progress-bar color-1" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-								aria-valuemax="100" style="width:60%">
-								<span>60%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>ReactJS</h3>
-						<div class="progress">
-							<div class="progress-bar color-2" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-								aria-valuemax="100" style="width:70%">
-								<span>70%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>AngularJS</h3>
-						<div class="progress">
-							<div class="progress-bar color-3" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-								aria-valuemax="100" style="width:60%">
-								<span>60%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Angular</h3>
-						<div class="progress">
-							<div class="progress-bar color-4" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-								aria-valuemax="100" style="width:60%">
-								<span>60%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Bootstrap</h3>
-						<div class="progress">
-							<div class="progress-bar color-5" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-								aria-valuemax="100" style="width:90%">
-								<span>90%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>SCSS</h3>
-						<div class="progress">
-							<div class="progress-bar color-6" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-								aria-valuemax="100" style="width:90%">
-								<span>90%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Laravel</h3>
-						<div class="progress">
-							<div class="progress-bar color-1" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-								aria-valuemax="100" style="width:60%">
-								<span>60%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>CakePHP</h3>
-						<div class="progress">
-							<div class="progress-bar color-2" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-								aria-valuemax="100" style="width:90%">
-								<span>90%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Core PHP</h3>
-						<div class="progress">
-							<div class="progress-bar color-3" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-								aria-valuemax="100" style="width:95%">
-								<span>95%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Flutter</h3>
-						<div class="progress">
-							<div class="progress-bar color-4" role="progressbar" aria-valuenow="50" aria-valuemin="0"
-								aria-valuemax="100" style="width:50%">
-								<span>50%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Jenkins</h3>
-						<div class="progress">
-							<div class="progress-bar color-5" role="progressbar" aria-valuenow="85" aria-valuemin="0"
-								aria-valuemax="100" style="width:85%">
-								<span>85%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>SonarQube</h3>
-						<div class="progress">
-							<div class="progress-bar color-6" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-								aria-valuemax="100" style="width:95%">
-								<span>95%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Git / GitHub / CodeCommit</h3>
-						<div class="progress">
-							<div class="progress-bar color-1" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-								aria-valuemax="100" style="width:95%">
-								<span>95%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Code Reviewing</h3>
-						<div class="progress">
-							<div class="progress-bar color-2" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-								aria-valuemax="100" style="width:95%">
-								<span>95%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Code Management Techniques</h3>
-						<div class="progress">
-							<div class="progress-bar color-3" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-								aria-valuemax="100" style="width:90%">
-								<span>90%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Deployment</h3>
-						<div class="progress">
-							<div class="progress-bar color-4" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-								aria-valuemax="100" style="width:80%">
-								<span>80%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Production Debugging</h3>
-						<div class="progress">
-							<div class="progress-bar color-5" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-								aria-valuemax="100" style="width:90%">
-								<span>90%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Server Management</h3>
-						<div class="progress">
-							<div class="progress-bar color-6" role="progressbar" aria-valuenow="30" aria-valuemin="0"
-								aria-valuemax="100" style="width:30%">
-								<span>30%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Agile Methodology</h3>
-						<div class="progress">
-							<div class="progress-bar color-1" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-								aria-valuemax="100" style="width:70%">
-								<span>70%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Project Leadership</h3>
-						<div class="progress">
-							<div class="progress-bar color-2" role="progressbar" aria-valuenow="85" aria-valuemin="0"
-								aria-valuemax="100" style="width:85%">
-								<span>85%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Quick Learning</h3>
-						<div class="progress">
-							<div class="progress-bar color-3" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-								aria-valuemax="100" style="width:95%">
-								<span>95%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>R&D for the Team and ourselves</h3>
-						<div class="progress">
-							<div class="progress-bar color-4" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-								aria-valuemax="100" style="width:90%">
-								<span>90%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Time Management</h3>
-						<div class="progress">
-							<div class="progress-bar color-5" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-								aria-valuemax="100" style="width:90%">
-								<span>90%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Photography</h3>
-						<div class="progress">
-							<div class="progress-bar color-6" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-								aria-valuemax="100" style="width:60%">
-								<span>60%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="ftco-section ftco-project" id="projects-section">
-		<div class="container">
-			<div class="row justify-content-center pb-5">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Projects</h1>
-					<h2 class="mb-4">Our Projects</h2>
-					<p>We specialize in the creation of high-quality websites designed for long-term effectiveness. Our
-						meticulous approach ensures well-documented, clean, and elegant interfaces, catering to the
-						needs of both technical and non-technical clients with ease. </p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/projects/charusat/charusat.webp);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3>
-								<a href="#">Branding &amp; Illustration Design</a>
-							</h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-8">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/projects/creative-informative/creative-informative.webp);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3>
-								<a href="#">Branding &amp; Illustration Design</a>
-							</h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+<body>
+  <div id="app">
+    <div id="app-inner" ref="appRef" :class="[savedTheme, {'enable-focus-style': isAnyFocus}]"
+      @click="isAnyFocus = false" @keyup.tab="isAnyFocus = true">
 
+      <div class="circle-cursor circle-cursor-outer" ref="circleCursorOuter"></div>
+      <div class="circle-cursor circle-cursor-inner" ref="circleCursorInner"></div>
 
-	<section class="ftco-section" id="blog-section">
-		<div class="container">
-			<div class="row justify-content-center pb-5">
-				<div class="col-md-7 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Feedback</h1>
-					<h2 class="mb-4">Testimonials</h2>
-					<p>Seeking feedback from colleagues to gain insight into perceptions of my professional qualities
-						and contributions.</p>
-				</div>
-			</div>
-			<div class="row justify-content-center testimonials-slider owl-carousel">
-				<div class="d-flex ftco-animate slider-item">
-					<div class="about-author p-4 bg-dark">
-						<div class="bio mr-5">
-							<img src="images/testimonials/ashish-bhanderi.webp" alt="Image placeholder" class="img-fluid mb-4">
-						</div>
-						<div class="desc">
-							<h3>Ashish Bhanderi</h3>
-							<p>He is a highly skilled full stack developer who possesses a deep understanding of both
-								front-end and back-end technologies. He consistently demonstrated his ability to build
-								and maintain complex web applications, from conception to deployment. His strong command
-								of programming languages such as JavaScript, HTML, CSS, PHP, and deployment enabled him
-								to deliver high-quality code that was both efficient and scalable.</p>
-						</div>
-					</div>
-				</div>
-				<div class="d-flex ftco-animate slider-item">
-					<div class="about-author p-4 bg-dark">
-						<div class="bio mr-5">
-							<img src="images/testimonials/chirag-ingde.webp" alt="Image placeholder" class="img-fluid mb-4">
-						</div>
-						<div class="desc">
-							<h3>Chirag Ingde</h3>
-							<p>very nice person and good in his field. quick learner and problem solving person.
-								thinking out of the box. #nevergiveup</p>
-						</div>
-					</div>
-				</div>
-				<div class="d-flex ftco-animate slider-item">
-					<div class="about-author p-4 bg-dark">
-						<div class="bio mr-5">
-							<img src="images/testimonials/dhaval-darji.webp" alt="Image placeholder" class="img-fluid mb-4">
-						</div>
-						<div class="desc">
-							<h3>Dhaval Darji</h3>
-							<p>Priyank is very hardworking, honest and creative. Always eager to learn new thing and
-								finds innovative way to solve challenge. Enjoyed working with him. Will definitely work
-								with him in future if there is opportunity.</p>
-						</div>
-					</div>
-				</div>
-				<div class="d-flex ftco-animate slider-item">
-					<div class="about-author p-4 bg-dark">
-						<div class="bio mr-5">
-							<img src="images/testimonials/divya-solanki.webp" alt="Image placeholder" class="img-fluid mb-4">
-						</div>
-						<div class="desc">
-							<h3>Divya Solanki</h3>
-							<p>He has good programming skill and good team player.</p>
-						</div>
-					</div>
-				</div>
-				<div class="d-flex ftco-animate slider-item">
-					<div class="about-author p-4 bg-dark">
-						<div class="bio mr-5">
-							<img src="images/testimonials/darshan-pandya.webp" alt="Image placeholder" class="img-fluid mb-4">
-						</div>
-						<div class="desc">
-							<h3>Darshan Pandya</h3>
-							<p>Has good grip on PHP frameworks and had been always there when team needs any help.</p>
-						</div>
-					</div>
-				</div>
-				<div class="d-flex ftco-animate slider-item">
-					<div class="about-author p-4 bg-dark">
-						<div class="bio mr-5">
-							<img src="images/testimonials/wasim-bakali.webp" alt="Image placeholder" class="img-fluid mb-4">
-						</div>
-						<div class="desc">
-							<h3>Wasim Bakali</h3>
-							<p>Good knowledge in PHP Frameworks and flutter. hardworking guy :-)</p>
-						</div>
-					</div>
-				</div>
-				<div class="d-flex ftco-animate slider-item">
-					<div class="about-author p-4 bg-dark">
-						<div class="bio mr-5">
-							<img src="images/testimonials/bharat-nagdev.webp" alt="Image placeholder" class="img-fluid mb-4">
-						</div>
-						<div class="desc">
-							<h3>Bharat Nagdev</h3>
-							<p>He is the most enthusiastic person in team. Works efficiently under pressure. Good at the
-								knowledge of technology. Apart from coding he has good photography skills too.</p>
-						</div>
-					</div>
-				</div>
-				<div class="d-flex ftco-animate slider-item">
-					<div class="about-author p-4 bg-dark">
-						<div class="bio mr-5">
-							<img src="images/testimonials/vedang-yagnik.webp" alt="Image placeholder" class="img-fluid mb-4">
-						</div>
-						<div class="desc">
-							<h3>Vedang Yagnik</h3>
-							<p>He is passionate person for technology with great learning abilities. He deep dives into
-								anything you give and he always get excited and have desire of accomplishment when given
-								challenging tasks. I had a pleasure of mentoring him.👍🏻</p>
-						</div>
-					</div>
-				</div>
-				<div class="d-flex ftco-animate slider-item">
-					<div class="about-author p-4 bg-dark">
-						<div class="bio mr-5">
-							<img src="images/testimonials/kumar-sahitya.webp" alt="Image placeholder" class="img-fluid mb-4">
-						</div>
-						<div class="desc">
-							<h3>Kumar Sahitya</h3>
-							<p>I had pleasure to work with Priyank. Hard working, game changer, goal achiever. Highly
-								recommended!</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+      <!-- start preloader-->
+      <div class="preloader" ref="preloader">
+        <div class="preloader-content">
+          <div class="logo">
+            <svg viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z" />
+            </svg>
+          </div>
+          <div class="loading-bar">
+            <span class="loading-bar-progress"></span>
+          </div>
+        </div>
+      </div>
+      <!-- end preloader-->
 
-	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-		<div class="container">
-			<div class="row d-md-flex align-items-center">
-				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18">
-						<div class="text">
-							<strong class="number" data-number="6">0</strong>
-							<span>Awards</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18">
-						<div class="text">
-							<strong class="number" data-number="6">0</strong>
-							<span>Complete Projects</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18">
-						<div class="text">
-							<strong class="number" data-number="8">0</strong>
-							<span>Feedback of Co-Worker</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_freelance.webp)">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-7 ftco-animate text-center">
-					<h2>I'm <span>Available</span> for freelancing </h2>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-3">
-				<div class="col-md-7 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Contact</h1>
-					<h2 class="mb-4">Contact Me</h2>
-					<p>Get in touch and let me know how I can help. Fill out the form and I’ll be in touch as soon as
-						possible.</p>
-				</div>
-			</div>
-			<div class="row d-flex contact-info mb-5">
-				<div class="col-md-8 col-lg-4 d-flex ftco-animate">
-					<div class="align-self-stretch box p-4 text-center">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-map-signs"></span>
-						</div>
-						<h3 class="mb-4">Address</h3>
-						<p>Aastha Vatika, Near Fortune 5, Sun Pharma Rd, Vadodara, Gujarat</p>
-					</div>
-				</div>
-				<div class="col-md-8 col-lg-4 d-flex ftco-animate">
-					<div class="align-self-stretch box p-4 text-center">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-phone2"></span>
-						</div>
-						<h3 class="mb-4">Contact Number</h3>
-						<p>
-							<a href="tel://+919726868355">+91-9726868355</a>
-						</p>
-					</div>
-				</div>
-				<div class="col-md-8 col-lg-4 d-flex ftco-animate">
-					<div class="align-self-stretch box p-4 text-center">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-paper-plane"></span>
-						</div>
-						<h3 class="mb-4">Email Address</h3>
-						<p>
-							<a href="mailto:priyanksolanki30197@gmail.com">priyanksolanki30197@gmail.com</a>
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="row no-gutters block-9">
-				<div class="col-md-6 order-md-last d-flex">
-					<form class="bg-light p-4 p-md-5 contact-form">
-						<div class="form-group">
-							<input type="text" class="form-control" id="contact_name" placeholder="Your Name">
-						</div>
-						<div class="form-group">
-							<input type="text" class="form-control" id="contact_email" placeholder="Your Email">
-						</div>
-						<div class="form-group">
-							<input type="text" class="form-control" id="contact_subject" placeholder="Subject">
-						</div>
-						<div class="form-group">
-							<textarea name="co" cols="30" rows="7" class="form-control" id="contact_message"
-								placeholder="Message"></textarea>
-						</div>
-						<div class="form-group contact-error-section">
-							<span id="showError"></span>
-						</div>
-						<div class="form-group">
-							<input type="submit" id="contact-me" value="Send Message" class="btn btn-primary py-3 px-5">
-						</div>
-					</form>
-				</div>
-				<div class="col-md-6 d-flex">
-					<div class="img" style="background-image: url(images/about.webp);"></div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<footer class="ftco-footer ftco-section">
-		<div class="container">
-			<div class="row mb-5">
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">About</h2>
-						<p>Hi!I am Priyank Solanki, a seasoned WebAPI and Frontend Developer with over 4 years of
-							professional experience. My passion lies in crafting intuitive and efficient solutions. I
-							welcome the opportunity to discuss how my skills and expertise can contribute to your
-							projects. Please feel free to reach out for further information.
-						</p>
-						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-							<li class="ftco-animate">
-								<a href="https://twitter.com/digo301971/">
-									<span class="icon-twitter"></span>
-								</a>
-							</li>
-							<li class="ftco-animate">
-								<a href="https://www.facebook.com/Pickachu007">
-									<span class="icon-facebook"></span>
-								</a>
-							</li>
-							<li class="ftco-animate">
-								<a href="https://www.instagram.com/click_a_world30/">
-									<span class="icon-instagram"></span>
-								</a>
-							</li>
-							<li class="ftco-animate">
-								<a href="https://github.com/Priyank-Solanki/">
-									<span class="icon-github"></span>
-								</a>
-							</li>
-							<li class="ftco-animate">
-								<a href="https://www.linkedin.com/in/priyank-solanki-technical-lead/">
-									<span class="icon-linkedin"></span>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">Have a Questions?</h2>
-						<div class="block-23 mb-3">
-							<ul>
-								<li>
-									<span class="icon icon-map-marker"></span>
-									<span class="text">Aastha Vatika, Near Fortune 5, Sun Pharma Rd, Vadodara,
-										Gujarat</span>
-								</li>
-								<li>
-									<a href="tel://+919726868355">
-										<span class="icon icon-phone"></span>
-										<span class="text">+91-9726868355</span>
-									</a>
-								</li>
-								<li>
-									<a href="mailto:priyanksolanki30197@gmail.com">
-										<span class="icon icon-envelope"></span>
-										<span class="text">priyanksolanki30197@gmail.com</span>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<p>
-						Copyright
-						&copy;
-						<script>
-							document.write(new Date().getFullYear());
-						</script> All rights reserved | This template is made with <i class="icon-heart color-danger"
-							aria-hidden="true"></i> by <a href="https://www.priyank-solanki.com" target="_blank">Priyank
-							Solanki</a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- loader -->
-	<div id="ftco-loader" class="show fullscreen">
-		<svg class="circular" width="48px" height="48px">
-			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-				stroke="#F96D00" />
-		</svg>
-	</div>
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery-migrate-3.0.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.stellar.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/aos.js"></script>
-	<script src="js/jquery.animateNumber.min.js"></script>
-	<script src="js/scrollax.min.js"></script>
-	<script src="js/main.js"></script>
+      <!-- start of header -->
+      <header class="hide-in-preloading" :class="{
+          'big-header': isHeaderBig,
+          'small-header': !isHeaderBig,
+          'header-hidden': isHeaderHidden
+        }">
+        <div class="container">
+          <!-- logo -->
+          <div class="logo" title="Priyank">
+            <h1><a href="/">Priyank</a></h1>
+          </div>
+
+          <!-- nav links -->
+          <nav :class="{'menu-open': isNavMenuOpen}" ref="headerNav">
+
+            <!-- nav menu links -->
+            <ul class="nav-links">
+              <li v-for="link in navLinks" :key="link.url">
+                <a :href="link.url" @click="closeNavMenu">
+                  {{ link.title.en }}
+                </a>
+              </li>
+            </ul>
+
+            <!-- menu content in big devices (hidden in mobile/tablet) -->
+            <div class="desktop-menu-content" tabindex="-1">
+              <div class="container">
+
+                <!-- about us -->
+                <div class="about-us">
+                  <p>
+                    {{ desktopCoverDetails.tagLine }}
+                  </p>
+                  <h4 class="block-title custom-font-size">
+                    {{ desktopCoverDetails.description }}
+                  </h4>
+                </div>
+
+                <!-- contact info -->
+                <ul class="contact-info row">
+                  <li class="col-lg-4">
+                    <h4 class="block-title">Email</h4>
+                    <ul>
+                      <li><a :href="profileData.personalEmailLink">Professional : {{ profileData.personalEmail }}</a>
+                      </li>
+                      <li><a :href="profileData.freelancerEmailLink">Freelance : {{ profileData.freelancerEmail }}</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="col-lg-4">
+                    <h4 class="block-title">Address</h4>
+                    <ul>
+                      <li>
+                        {{ profileData.addressLine1 }}<br />
+                        {{ profileData.addressLine2 }}<br />
+                        {{ profileData.addressLine3 }}<br />
+                        {{ profileData.addressLine4 }}
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="col-lg-4">
+                    <h4 class="block-title">Phone</h4>
+                    <ul>
+                      <li><a :href="profileData.phoneNumberLink">{{ profileData.phoneNumber }}</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <!-- options icons -->
+          <ul class="options-icons">
+            <!-- theme switcher button -->
+            <li class="theme-switcher">
+              <button :class="savedTheme" title="Change Mode" @click="changeAppTheme"></button>
+            </li>
+
+            <!-- hamburger button -->
+            <li class="hamburger-btn" :class="{'open': isNavMenuOpen}">
+              <button @click="toggleNavMenu" title="Toggle Side Menu" aria-label="Toggle Side Menu"
+                ref="navMenuToggleBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <!-- end of header -->
+
+      <!-- start of hero section -->
+      <div id="hero" class="hero-section hide-in-preloading" data-paneffect="true" ref="heroSection">
+        <div class="hero-img">
+          <div class="layer" v-clone>
+            <img width="" height="" src="/assets/images/hero-img.webp" alt="Priyank Solanki" />
+          </div>
+        </div>
+
+        <div class="hero-text">
+          <h2>
+            Full-Stack Developer
+            <br>
+            Photographer
+          </h2>
+          <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+
+        <div class="social">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/Pickachu007" target="_blank" rel="noreferrer"
+                v-tooltip="{text: 'Facebook', dir: 'right'}" aria-label="Facebook">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/digo301971/" target="_blank" rel="noreferrer"
+                v-tooltip="{text: 'Twitter', dir: 'right'}" aria-label="Twitter">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/priyank-solanki-technical-lead/" target="_blank" rel="noreferrer"
+                v-tooltip="{text: 'LinkedIn', dir: 'right'}" aria-label="LinkedIn">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/click_a_world30/" target="_blank" rel="noreferrer"
+                v-tooltip="{text: 'Instagram', dir: 'right'}" aria-label="Instagram">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Priyank-Solanki/" target="_blank" rel="noreferrer"
+                v-tooltip="{text: 'GitHub', dir: 'right'}" aria-label="GitHub">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="scroll-down">
+          <a href="#about" title="Scroll Down">Scroll</a>
+        </div>
+      </div>
+      <!-- end of hero section -->
+
+      <!-- start of statistics section -->
+      <div id="statistics" class="statistics-section section">
+        <div class="section-content">
+          <div class="container">
+            <ul class="statistics-items row">
+              <li class="col-sm-12 col-md-6 col-lg-4">
+                <a href="#experience">
+                  <div class="icon">
+                    <img width="" height="" src="assets/images/icons/emblem.webp" alt="Years of Experience" />
+                  </div>
+                  <div class="text">
+                    <h3>{{ experienceYears }}+</h3>
+                    <strong>Years of Experience</strong>
+                  </div>
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="col-sm-12 col-md-6 col-lg-4">
+                <a href="#portfolio">
+                  <div class="icon">
+                    <img width="" height="" src="assets/images/icons/check-mark.webp"
+                      alt="Completed Projects" />
+                  </div>
+                  <div class="text">
+                    <h3>{{ countOfProject }}+</h3>
+                    <strong>Project Works</strong>
+                  </div>
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="col-sm-12 col-md-6 col-lg-4">
+                <a href="#testimonials">
+                  <div class="icon">
+                    <img width="" height="" src="assets/images/icons/happy.webp" alt="Co-Workers's Review" />
+                  </div>
+                  <div class="text">
+                    <h3>{{ countOfTestimonials }}+</h3>
+                    <strong>Co-Workers's Review</strong>
+                  </div>
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- end of statistics section -->
+
+      <!-- start of about section -->
+      <div id="about" class="about-section section" tabindex="-1" ref="aboutSection">
+        <div class="container">
+          <div class="section-content row">
+
+            <!-- about image -->
+            <div class="about-img col-lg-6">
+              <div class="layer" v-clone>
+                <img width="" height="" src="/assets/images/about-img.webp" alt="Priyank Solanki" />
+              </div>
+            </div>
+
+            <!-- text box -->
+            <div class="about-text col-lg-6">
+              <div class="text-box-inline">
+                <span class="subtitle">about me</span>
+                <h2>
+                  Need a Creative Product?
+                  <br>
+                  I can Help You!
+                </h2>
+                <p>
+                  Hi! I’m Priyank Solanki, a developer who is passionate about building clean WebAPI & Mobile
+                  applications with intuitive functionality. I enjoy the process of turning ideas into reality using
+                  creative solutions. I’m always curious about learning new skills, tools, and concepts. I have worked
+                  with Agile teams, which involves daily stand-ups and communications, source control, project
+                  management, etc.
+                </p>
+                <div class="btns-container">
+                  <a href="#contact" class="btn btn-primary">Hire Me</a>
+                  <a href="https://docs.google.com/document/d/1A5IJKbuF_5WGXMiUEyxrVeJy7APOGxufX4IQZjaqZ_A/edit?usp=sharing"
+                    class="btn btn-outline-light" target="_blank">Download CV</a>
+                </div>
+                <!-- <div class="btns-container">
+                  <a download href="/assets/documents/Cover_Letter.pdf" class="btn btn-outline-light">Download Cover Letter</a>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of about section -->
+
+      <!-- start of skills section -->
+      <div id="skills" class="skills-section section" tabindex="-1">
+        <div class="container">
+          <div class="section-content row">
+
+            <!-- text box -->
+            <div class="skills-text col-lg-6">
+              <div class="text-box-inline">
+                <span class="subtitle">my skills</span>
+                <h2>
+                  What My Programming
+                  <br>
+                  Skills Included?
+                </h2>
+                <p>
+                  I develop simple, intuitive and responsive user interface that helps users get things done with less
+                  effort and time with those technologies.
+                </p>
+                <div ref="skillsSwitchBtn" class="toggle-switch-btn">
+                  <input id="skills-list" type="radio" value="skills" v-model="skillsType" checked>
+                  <label for="skills-list" class="link-hover">Skills</label>
+                  <input id="tools-list" type="radio" value="tools" v-model="skillsType">
+                  <label for="tools-list" class="link-hover">Tools</label>
+                  <span class="switcher-toggle" style="width: calc((100% - 8px) / 2);"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- skills items -->
+            <div class="skills-items col-lg-6">
+
+              <!-- skills list -->
+              <ul v-staggerdelay="50" v-show="skillsType === 'skills'">
+                <li tabindex="0" v-for="skill in skillsItems" :key="skill.title"
+                  v-tooltip="{text: skill.title, dir: 'top'}">
+                  <div class="skill-icon">
+                    <img width="" height="" :src="skill.imgUrl" :alt="skill.title" />
+                  </div>
+                </li>
+              </ul>
+
+              <!-- tools list -->
+              <ul v-staggerdelay="50" v-show="skillsType === 'tools'">
+                <li tabindex="0" v-for="tool in toolsItems" :key="tool.title"
+                  v-tooltip="{text: tool.title, dir: 'top'}">
+                  <div class="skill-icon">
+                    <img width="" height="" :src="tool.imgUrl" :alt="tool.title" />
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of skills section -->
+
+      <!-- start of experience section -->
+      <div id="experience" class="experience-section section" tabindex="-1">
+        <div class="container">
+          <div class="section-content row">
+
+            <!-- timeline -->
+            <div class="col-lg-6">
+              <div class="experience-timeline">
+                <div class="timepath" ref="experienceTimepath">
+                  <span class="line"></span>
+                  <template v-for="line in experienceChunks">
+                    <span class="semicircle"></span>
+                    <span class="line"></span>
+                  </template>
+                </div>
+
+                <ul class="timeline-items">
+                  <li class="has-ultimate-tooltip" tabindex="0" v-for="item in experienceItems">
+                    <template v-if="Object.keys(item).length > 0">
+                      <h3>{{ item.date }}</h3>
+                      <div class="ultimate-tooltip">
+                        <h4 class="ultimate-tooltip-title">{{ item.companyName.en }}</h4>
+                        <h5 class="ultimate-tooltip-subtitle">{{ item.jobTitle.en }}</h5>
+                        <p>{{ item.desc.en }}</p>
+                      </div>
+                      <div class="ultimate-tooltip-arrow"></div>
+                    </template>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- text box -->
+            <div class="experience-text col-lg-6">
+              <div class="text-box-inline">
+                <span class="subtitle">experience</span>
+                <h2>
+                  {{ experienceYears }}+ Years of Experience
+                  <br>
+                  With Great Knowledge!
+                </h2>
+                <p>
+                  I worked with different types of projects which contain payment method migration, billing method
+                  migration, and backend of the cross-platform application. At company level experience, I worked with
+                  the ISMS policy, the Agile based on the project and teamwork. I started new learning like Laravel,
+                  React, Angular and Stencil likewise frontend and backend related languages. Also, started learning of
+                  deployment and cloud based enviroment.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of experience section -->
+
+      <!-- start of portfolio section -->
+      <div id="portfolio" class="portfolio-section section" tabindex="-1">
+        <div class="container">
+          <div class="section-content">
+
+            <!-- portfolio items -->
+            <ul class="portfolio-items has-works" ref="portfolioItems" data-no-works-msg="No works to load">
+              <li>
+                <!-- text box -->
+                <div class="text-box-inline">
+                  <span class="subtitle">my works</span>
+                  <h2>
+                    See My Works Which
+                    <br>
+                    Will Amaze You!
+                  </h2>
+                  <p>
+                    We develop the best quality website that serves for the long-term. Well-documented, clean, easy and
+                    elegant interface helps any non-technical clients.
+                  </p>
+                  <ul class="works-filter">
+                    <li v-for="filter in filters" :key="filter">
+                      <button :class="{'active': currentFilter === filter}" @click="filterPortfolioItems(filter)">
+                        {{ filter }}
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <!-- start items list -->
+              <li class="portfolio-item" v-for="work in filteredPortfolioItems" :key="work.title.en">
+                <a :href="work.url" target="_blank" rel="noopener">
+                  <div class="item-img">
+                    <img width="" height="" :src="work.imgUrl" :alt="work.title.en" />
+                  </div>
+                  <div class="item-details">
+                    <h3 class="title">{{ work.title.en }}</h3>
+                    <div class="date">{{ work.date.en }}</div>
+                  </div>
+                </a>
+              </li>
+              <!-- end items list -->
+
+              <li>
+                <button class="more" @click="getPortfolioItems">Load more works</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- end of portfolio section -->
+
+      <!-- start of testimonials section -->
+      <div id="testimonials" class="testimonials-section section" tabindex="-1" ref="testimonialsSection">
+        <div class="container">
+          <div class="section-title">
+            <span class="subtitle">testimonials</span>
+            <h2 class="title">
+              Check What's My Co-Worker
+              <br>
+              Say About Me
+            </h2>
+          </div>
+        </div>
+
+        <div class="section-content">
+          <ul class="testimonials-items" v-staggerdelay="500">
+            <li class="has-ultimate-tooltip" tabindex="0" v-for="item in testimonialsItems" :key="item.quoteAuthor.en">
+              <div class="testimonials-item">
+                <div class="testimonial-author-img">
+                  <img width="" height="" :src="item.imgUrl || 'assets/images/testimonials/anonymous-user.webp'"
+                    :alt="item.quoteAuthor.en" />
+                </div>
+                <div class="ultimate-tooltip">
+                  <p>{{ item.quoteContent.en }}</p>
+                  <h4 class="ultimate-tooltip-title">{{ item.quoteAuthor.en }}</h4>
+                  <h5 class="ultimate-tooltip-subtitle">{{ item.jobTitle.en }}</h5>
+                </div>
+                <div class="ultimate-tooltip-arrow"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- end of testimonials section -->
+
+      <!-- start of contact section -->
+      <div id="contact" class="contact-section section" tabindex="-1">
+        <div class="container">
+          <div class="section-content row">
+
+            <!-- text box -->
+            <div class="contact-text col-lg-6">
+              <div class="text-box-inline">
+                <span class="subtitle">contact</span>
+                <h2>
+                  Have You Any Project?
+                  <br>
+                  Please Drop a Message
+                </h2>
+                <p>
+                  Get in touch and let me know how i can help. Fill out the form and i’ll be in touch as soon as
+                  possible.
+                </p>
+              </div>
+
+              <!-- contact info -->
+              <ul class="contact-info">
+                <li>
+                  <img width="" height="" src="assets/images/icons/address.webp" alt="Address" />
+                  <div>
+                    <strong>Address:</strong>
+                    {{ profileData.addressLine1 }}<br />
+                    {{ profileData.addressLine2 }}<br />
+                    {{ profileData.addressLine3 }}<br />
+                    {{ profileData.addressLine4 }}
+                  </div>
+                </li>
+                <li>
+                  <img width="" height="" src="assets/images/icons/phone.webp" alt="Phone" />
+                  <div>
+                    <strong>Phone:</strong>
+                    <ul>
+                      <li><a :href="profileData.phoneNumberLink" class="ltr-dir">{{ profileData.phoneNumber }}</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <img width="" height="" src="assets/images/icons/email.webp" alt="Email" />
+                  <div>
+                    <strong>Email:</strong>
+                    <ul>
+                      <li>
+                        <a :href="profileData.personalEmailLink">Professional : {{ profileData.personalEmail }}</a>
+                      </li>
+                      <li>
+                        <a :href="profileData.freelancerEmailLink">Freelance : {{ profileData.freelancerEmail }}</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+
+              <!-- social links -->
+              <ul class="social">
+                <li>
+                  <a href="https://www.facebook.com/Pickachu007" target="_blank" rel="noreferrer"
+                    v-tooltip="{text: 'Facebook', dir: 'bottom'}" aria-label="Facebook">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/digo301971/" target="_blank" rel="noreferrer"
+                    v-tooltip="{text: 'Twitter', dir: 'bottom'}" aria-label="Twitter">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/priyank-solanki-technical-lead/" target="_blank" rel="noreferrer"
+                    v-tooltip="{text: 'LinkedIn', dir: 'bottom'}" aria-label="LinkedIn">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/click_a_world30/" target="_blank" rel="noreferrer"
+                    v-tooltip="{text: 'Instagram', dir: 'bottom'}" aria-label="Instagram">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/Priyank-Solanki/" target="_blank" rel="noreferrer"
+                    v-tooltip="{text: 'GitHub', dir: 'bottom'}" aria-label="GitHub">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- contact form -->
+            <div class="col-lg-6">
+              <form ref="contactForm" class="contact-form form-styled" data-success-msg="Message sent successfully!"
+                data-err-msg="Oops! something went wrong, please try again.">
+                <div class="group">
+                  <label>Name</label>
+                  <div class="control has-prefix-icon">
+                    <input type="text" name="name" placeholder="e.g. Firstname Lastname" minlength="3" required
+                      id="contact_name">
+                    <i class="fa fa-user-circle prefix-icon" aria-hidden="true"></i>
+
+                    <!-- validation errors messages -->
+                    <div class="errors-msgs">
+                      <input class="required" type="hidden" value="Name is required">
+                      <input class="minLength" type="hidden" value="Name must be at least 3 characters">
+                    </div>
+                  </div>
+                </div>
+                <div class="group">
+                  <label>Email</label>
+                  <div class="control has-prefix-icon">
+                    <input class="ltr-dir" type="email" inputmode="email" name="email"
+                      placeholder="e.g. example@example.com" required id="contact_email">
+                    <i class="fa fa-envelope prefix-icon" aria-hidden="true"></i>
+
+                    <!-- validation errors messages -->
+                    <div class="errors-msgs">
+                      <input class="required" type="hidden" value="Email is required">
+                      <input class="invalid" type="hidden" value="Please enter a valid email address">
+                    </div>
+                  </div>
+                </div>
+                <div class="group phone-number">
+                  <label>Phone <span class="optional">(Optional)</span></label>
+                  <div class="control has-prefix-icon">
+                    <input type="tel" inputmode="tel" name="phone" placeholder="e.g. +919876543210" id="contact_number">
+                    <i class="fa fa-phone prefix-icon" aria-hidden="true"></i>
+
+                    <!-- validation errors messages -->
+                    <div class="errors-msgs">
+                      <input class="invalid" type="hidden" value="Please enter a valid Phone Number">
+                    </div>
+                  </div>
+                </div>
+                <div class="group">
+                  <label>Message</label>
+                  <div class="control has-prefix-icon">
+                    <textarea name="message" placeholder="Write message..." required id="contact_message"></textarea>
+                    <i class="fa fa-comments prefix-icon" aria-hidden="true"></i>
+
+                    <!-- validation errors messages -->
+                    <div class="errors-msgs">
+                      <input class="required" type="hidden" value="Message is required">
+                    </div>
+                  </div>
+                </div>
+                <div class="group">
+                  <div class="control">
+                    <button class="submit-btn btn btn-dark" type="button" @click="contactFormValidation"
+                      id="contact-me">Send</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of contact section -->
+
+      <!-- start of footer -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <!-- logo -->
+              <div class="logo" title="Priyank">
+                <h1><a href="/">Priyank</a></h1>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              &copy; {{ copyrightDate }} Proudly Powered by
+              <a href="https://www.priyank-solanki.com/" target="_blank" rel="noopener"
+                aria-label="Priyank Solanki">Priyank
+                Solanki</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end of footer -->
+
+      <!-- scroll to top button -->
+      <button class="scroll-to-top" ref="scrollTopBtn" title="Back To Top" data-show-at="50" @click="scrollToTop">
+        <svg width="100%" height="100%" viewBox="-1 -1 102 102">
+          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+      </button>
+
+      <!-- toast notifications -->
+      <ul class="notifications-container hide-in-preloading">
+        <transition-group name="notify">
+          <li v-for="notify of notifications" :key="notify.id" :id="notify.id"
+            :class="['notification', 'show', notify.className, notify.time && 'timer']">
+            {{ notify.msg }}
+            <i class="fa fa-times link-hover" aria-hidden="true" @click="dismissNotify(notify.id)"></i>
+            <span v-if="notify.time" class="disappearing-time"
+              :style="{ 'animation-duration': notify.time + 'ms' }"></span>
+          </li>
+        </transition-group>
+      </ul>
+
+      <!-- ajax loading -->
+      <div class="ajax-loading hide-in-preloading" v-show="isAjaxLoading">
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+    import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBVwqoGuJpflHYtT1IycTnaIaxMJqW0Pzg",
+      authDomain: "priyank-s-portfolio.firebaseapp.com",
+      projectId: "priyank-s-portfolio",
+      storageBucket: "priyank-s-portfolio.appspot.com",
+      messagingSenderId: "182045991167",
+      appId: "1:182045991167:web:41b5cd11423e319b4aecca"
+    };
+    const app = initializeApp(firebaseConfig);
+    window.firebaseDb = getFirestore();
+    window.firebaseAddDoc = addDoc;
+    window.firebaseCollection = collection;
+  </script>
+
+  <!-- js plugins file -->
+  <script src="scripts/plugins.min.js"></script>
+
+  <!-- main script file -->
+  <script src="scripts/main.js"></script>
 </body>
 
 </html>
