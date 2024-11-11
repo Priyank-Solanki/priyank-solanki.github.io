@@ -2,41 +2,44 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-    content="Hi! I'm Priyank Solanki, a 4+ years experienced WebAPI & Frontend Developer. I'm passionate about creating intuitive and efficient solutions. Contact me to learn more.">
+    content="Hi! I'm Priyank Solanki, a experienced WebAPI & Frontend Developer. I'm passionate about creating intuitive and efficient solutions. Contact me to learn more." />
 
   <!-- title of the browser tab -->
   <title>Priyank Solanki - Full-Stack Developer</title>
 
   <!-- favicon -->
-  <link rel="icon" href="assets/favicon.ico">
+  <link rel="icon" href="assets/favicon.ico" />
 
   <!-- fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&family=Saira+Stencil+One&text=Nafie&display=swap">
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&family=Saira+Stencil+One&text=Nafie&display=swap" />
 
   <!-- css libraries file -->
-  <link rel="stylesheet" href="styles/libraries.min.css">
+  <link rel="stylesheet" href="styles/libraries.min.css" />
 
   <!-- bootstrap css file -->
-  <link rel="stylesheet" href="styles/bootstrap.css">
+  <link rel="stylesheet" href="styles/bootstrap.css" />
 
   <!-- main style file -->
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/main.css" />
   <meta name="google-site-verification" content="qdKbibKEFr5JSw4Woncuy8CVydLC9JNhuTIunAy4L04" />
+
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JJK1PGDMGF"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F0BSN3Z89N"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    gtag('config', 'G-JJK1PGDMGF');
+    gtag("config", "G-F0BSN3Z89N");
   </script>
 </head>
 
@@ -44,7 +47,6 @@
   <div id="app">
     <div id="app-inner" ref="appRef" :class="[savedTheme, {'enable-focus-style': isAnyFocus}]"
       @click="isAnyFocus = false" @keyup.tab="isAnyFocus = true">
-
       <div class="circle-cursor circle-cursor-outer" ref="circleCursorOuter"></div>
       <div class="circle-cursor circle-cursor-inner" ref="circleCursorInner"></div>
 
@@ -78,7 +80,6 @@
 
           <!-- nav links -->
           <nav :class="{'menu-open': isNavMenuOpen}" ref="headerNav">
-
             <!-- nav menu links -->
             <ul class="nav-links">
               <li v-for="link in navLinks" :key="link.url">
@@ -91,12 +92,9 @@
             <!-- menu content in big devices (hidden in mobile/tablet) -->
             <div class="desktop-menu-content" tabindex="-1">
               <div class="container">
-
                 <!-- about us -->
                 <div class="about-us">
-                  <p>
-                    {{ desktopCoverDetails.tagLine }}
-                  </p>
+                  <p>{{ desktopCoverDetails.tagLine }}</p>
                   <h4 class="block-title custom-font-size">
                     {{ desktopCoverDetails.description }}
                   </h4>
@@ -107,9 +105,11 @@
                   <li class="col-lg-4">
                     <h4 class="block-title">Email</h4>
                     <ul>
-                      <li><a :href="profileData.personalEmailLink">Professional : {{ profileData.personalEmail }}</a>
+                      <li>
+                        <a :href="profileData.personalEmailLink">Professional : {{ profileData.personalEmail }}</a>
                       </li>
-                      <li><a :href="profileData.freelancerEmailLink">Freelance : {{ profileData.freelancerEmail }}</a>
+                      <li>
+                        <a :href="profileData.freelancerEmailLink">Freelance : {{ profileData.freelancerEmail }}</a>
                       </li>
                     </ul>
                   </li>
@@ -127,7 +127,9 @@
                   <li class="col-lg-4">
                     <h4 class="block-title">Phone</h4>
                     <ul>
-                      <li><a :href="profileData.phoneNumberLink">{{ profileData.phoneNumber }}</a></li>
+                      <li>
+                        <a :href="profileData.phoneNumberLink">{{ profileData.phoneNumber }}</a>
+                      </li>
                     </ul>
                   </li>
                 </ul>
@@ -167,7 +169,7 @@
         <div class="hero-text">
           <h2>
             Full-Stack Developer
-            <br>
+            <br />
             Photographer
           </h2>
           <a href="#contact" class="btn">Get In Touch</a>
@@ -188,7 +190,7 @@
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/priyank-solanki-technical-lead/" target="_blank" rel="noreferrer"
+              <a href="https://www.linkedin.com/in/priyank-solanki-00b13a28a/" target="_blank" rel="noreferrer"
                 v-tooltip="{text: 'LinkedIn', dir: 'right'}" aria-label="LinkedIn">
                 <i class="fa fa-linkedin" aria-hidden="true"></i>
               </a>
@@ -234,8 +236,7 @@
               <li class="col-sm-12 col-md-6 col-lg-4">
                 <a href="#portfolio">
                   <div class="icon">
-                    <img width="" height="" src="assets/images/icons/check-mark.webp"
-                      alt="Completed Projects" />
+                    <img width="" height="" src="assets/images/icons/check-mark.webp" alt="Completed Projects" />
                   </div>
                   <div class="text">
                     <h3>{{ countOfProject }}+</h3>
@@ -266,7 +267,6 @@
       <div id="about" class="about-section section" tabindex="-1" ref="aboutSection">
         <div class="container">
           <div class="section-content row">
-
             <!-- about image -->
             <div class="about-img col-lg-6">
               <div class="layer" v-clone>
@@ -280,24 +280,27 @@
                 <span class="subtitle">about me</span>
                 <h2>
                   Need a Creative Product?
-                  <br>
+                  <br />
                   I can Help You!
                 </h2>
                 <p>
-                  Hi! I’m Priyank Solanki, a developer who is passionate about building clean WebAPI & Mobile
-                  applications with intuitive functionality. I enjoy the process of turning ideas into reality using
-                  creative solutions. I’m always curious about learning new skills, tools, and concepts. I have worked
-                  with Agile teams, which involves daily stand-ups and communications, source control, project
-                  management, etc.
+                  Hi! I’m Priyank Solanki, a Full Stack Web Engineer with {{ experienceYears }}+ years of experience in
+                  website and app
+                  development, specializing in technologies like ReactJS, Angular, Laravel, CakePHP, Jenkins, SonarQube,
+                  and GIT. Proven ability to manage multiple projects, optimize code quality, and enhance front-end
+                  performance, with a focus on maintaining high standards and a 98% database uptime. Demonstrated
+                  leadership as a Tech Lead, driving on-time project delivery and improving client satisfaction by 40%.
                 </p>
                 <div class="btns-container">
-                  <a href="#contact" class="btn btn-primary">Hire Me</a>
-                  <a href="https://docs.google.com/document/d/1A5IJKbuF_5WGXMiUEyxrVeJy7APOGxufX4IQZjaqZ_A/edit?usp=sharing"
-                    class="btn btn-outline-light" target="_blank">Download CV</a>
+                  <a download href="/assets/documents/Priyank-Solanki.pdf" class="btn btn-outline-light"
+                    target="_blank">
+                    Download CV
+                  </a>
+                  <a download href="/assets/documents/Priyank-Solanki-Cover-Letter.pdf" class="btn btn-outline-light"
+                    target="_blank">
+                    Download Cover Letter
+                  </a>
                 </div>
-                <!-- <div class="btns-container">
-                  <a download href="/assets/documents/Cover_Letter.pdf" class="btn btn-outline-light">Download Cover Letter</a>
-                </div> -->
               </div>
             </div>
           </div>
@@ -309,33 +312,32 @@
       <div id="skills" class="skills-section section" tabindex="-1">
         <div class="container">
           <div class="section-content row">
-
             <!-- text box -->
             <div class="skills-text col-lg-6">
               <div class="text-box-inline">
                 <span class="subtitle">my skills</span>
                 <h2>
                   What My Programming
-                  <br>
+                  <br />
                   Skills Included?
                 </h2>
                 <p>
-                  I develop simple, intuitive and responsive user interface that helps users get things done with less
-                  effort and time with those technologies.
+                  I design and develop simple, intuitive, and responsive user interfaces that empower users to
+                  accomplish tasks more efficiently, saving both time and effort, through the use of cutting-edge
+                  technologies.
                 </p>
                 <div ref="skillsSwitchBtn" class="toggle-switch-btn">
-                  <input id="skills-list" type="radio" value="skills" v-model="skillsType" checked>
+                  <input id="skills-list" type="radio" value="skills" v-model="skillsType" checked />
                   <label for="skills-list" class="link-hover">Skills</label>
-                  <input id="tools-list" type="radio" value="tools" v-model="skillsType">
+                  <input id="tools-list" type="radio" value="tools" v-model="skillsType" />
                   <label for="tools-list" class="link-hover">Tools</label>
-                  <span class="switcher-toggle" style="width: calc((100% - 8px) / 2);"></span>
+                  <span class="switcher-toggle" style="width: calc((100% - 8px) / 2)"></span>
                 </div>
               </div>
             </div>
 
             <!-- skills items -->
             <div class="skills-items col-lg-6">
-
               <!-- skills list -->
               <ul v-staggerdelay="50" v-show="skillsType === 'skills'">
                 <li tabindex="0" v-for="skill in skillsItems" :key="skill.title"
@@ -365,7 +367,6 @@
       <div id="experience" class="experience-section section" tabindex="-1">
         <div class="container">
           <div class="section-content row">
-
             <!-- timeline -->
             <div class="col-lg-6">
               <div class="experience-timeline">
@@ -382,8 +383,12 @@
                     <template v-if="Object.keys(item).length > 0">
                       <h3>{{ item.date }}</h3>
                       <div class="ultimate-tooltip">
-                        <h4 class="ultimate-tooltip-title">{{ item.companyName.en }}</h4>
-                        <h5 class="ultimate-tooltip-subtitle">{{ item.jobTitle.en }}</h5>
+                        <h4 class="ultimate-tooltip-title">
+                          {{ item.companyName.en }}
+                        </h4>
+                        <h5 class="ultimate-tooltip-subtitle">
+                          {{ item.jobTitle.en }}
+                        </h5>
                         <p>{{ item.desc.en }}</p>
                       </div>
                       <div class="ultimate-tooltip-arrow"></div>
@@ -399,15 +404,21 @@
                 <span class="subtitle">experience</span>
                 <h2>
                   {{ experienceYears }}+ Years of Experience
-                  <br>
+                  <br />
                   With Great Knowledge!
                 </h2>
                 <p>
-                  I worked with different types of projects which contain payment method migration, billing method
-                  migration, and backend of the cross-platform application. At company level experience, I worked with
-                  the ISMS policy, the Agile based on the project and teamwork. I started new learning like Laravel,
-                  React, Angular and Stencil likewise frontend and backend related languages. Also, started learning of
-                  deployment and cloud based enviroment.
+                  I manage up to 5-6 projects simultaneously as Project Lead, overseeing code quality, bug analysis, and
+                  development processes to meet deadlines and standards. I optimize the Jenkins Pipeline with SonarQube
+                  integration, reducing pipeline failures by 80%. As a PHP Full Stack Developer, I enhance front-end
+                  performance by 60% and reduce page load times by 40%, while maintaining 98% database uptime. I ensure
+                  100% on-time milestone delivery by coordinating project requirements and tasks. In R&D, I identify
+                  solutions that reduce operational bottlenecks by 10%. Previously, as Tech Lead, I improved client
+                  satisfaction by 40% and delivered on-time results for all team members. I reduce defects by 85% and
+                  improve performance by 70% through advanced software design principles. Additionally, I drive
+                  technological innovation, improving efficiency by 20%, and resolve 95% of issues on the first attempt.
+                  I ensure 100% compliance with QA standards and proactively mitigate 80% of potential risks, preventing
+                  project delays.
                 </p>
               </div>
             </div>
@@ -420,7 +431,6 @@
       <div id="portfolio" class="portfolio-section section" tabindex="-1">
         <div class="container">
           <div class="section-content">
-
             <!-- portfolio items -->
             <ul class="portfolio-items has-works" ref="portfolioItems" data-no-works-msg="No works to load">
               <li>
@@ -429,12 +439,13 @@
                   <span class="subtitle">my works</span>
                   <h2>
                     See My Works Which
-                    <br>
+                    <br />
                     Will Amaze You!
                   </h2>
                   <p>
-                    We develop the best quality website that serves for the long-term. Well-documented, clean, easy and
-                    elegant interface helps any non-technical clients.
+                    We develop high-quality websites designed for long-term success. Our solutions feature
+                    well-documented, clean code and an intuitive, elegant interface that ensures a seamless experience
+                    for non-technical clients.
                   </p>
                   <ul class="works-filter">
                     <li v-for="filter in filters" :key="filter">
@@ -461,7 +472,9 @@
               <!-- end items list -->
 
               <li>
-                <button class="more" @click="getPortfolioItems">Load more works</button>
+                <button class="more" @click="getPortfolioItems">
+                  Load more works
+                </button>
               </li>
             </ul>
           </div>
@@ -476,7 +489,7 @@
             <span class="subtitle">testimonials</span>
             <h2 class="title">
               Check What's My Co-Worker
-              <br>
+              <br />
               Say About Me
             </h2>
           </div>
@@ -492,8 +505,12 @@
                 </div>
                 <div class="ultimate-tooltip">
                   <p>{{ item.quoteContent.en }}</p>
-                  <h4 class="ultimate-tooltip-title">{{ item.quoteAuthor.en }}</h4>
-                  <h5 class="ultimate-tooltip-subtitle">{{ item.jobTitle.en }}</h5>
+                  <h4 class="ultimate-tooltip-title">
+                    {{ item.quoteAuthor.en }}
+                  </h4>
+                  <h5 class="ultimate-tooltip-subtitle">
+                    {{ item.jobTitle.en }}
+                  </h5>
                 </div>
                 <div class="ultimate-tooltip-arrow"></div>
               </div>
@@ -507,19 +524,18 @@
       <div id="contact" class="contact-section section" tabindex="-1">
         <div class="container">
           <div class="section-content row">
-
             <!-- text box -->
             <div class="contact-text col-lg-6">
               <div class="text-box-inline">
                 <span class="subtitle">contact</span>
                 <h2>
                   Have You Any Project?
-                  <br>
+                  <br />
                   Please Drop a Message
                 </h2>
                 <p>
-                  Get in touch and let me know how i can help. Fill out the form and i’ll be in touch as soon as
-                  possible.
+                  Get in touch and let me know how i can help. Fill out the
+                  form and i’ll be in touch as soon as possible.
                 </p>
               </div>
 
@@ -540,7 +556,9 @@
                   <div>
                     <strong>Phone:</strong>
                     <ul>
-                      <li><a :href="profileData.phoneNumberLink" class="ltr-dir">{{ profileData.phoneNumber }}</a></li>
+                      <li>
+                        <a :href="profileData.phoneNumberLink" class="ltr-dir">{{ profileData.phoneNumber }}</a>
+                      </li>
                     </ul>
                   </div>
                 </li>
@@ -575,7 +593,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/priyank-solanki-technical-lead/" target="_blank" rel="noreferrer"
+                  <a href="https://www.linkedin.com/in/priyank-solanki-00b13a28a/" target="_blank" rel="noreferrer"
                     v-tooltip="{text: 'LinkedIn', dir: 'bottom'}" aria-label="LinkedIn">
                     <i class="fa fa-linkedin" aria-hidden="true"></i>
                   </a>
@@ -603,13 +621,13 @@
                   <label>Name</label>
                   <div class="control has-prefix-icon">
                     <input type="text" name="name" placeholder="e.g. Firstname Lastname" minlength="3" required
-                      id="contact_name">
+                      id="contact_name" />
                     <i class="fa fa-user-circle prefix-icon" aria-hidden="true"></i>
 
                     <!-- validation errors messages -->
                     <div class="errors-msgs">
-                      <input class="required" type="hidden" value="Name is required">
-                      <input class="minLength" type="hidden" value="Name must be at least 3 characters">
+                      <input class="required" type="hidden" value="Name is required" />
+                      <input class="minLength" type="hidden" value="Name must be at least 3 characters" />
                     </div>
                   </div>
                 </div>
@@ -617,25 +635,26 @@
                   <label>Email</label>
                   <div class="control has-prefix-icon">
                     <input class="ltr-dir" type="email" inputmode="email" name="email"
-                      placeholder="e.g. example@example.com" required id="contact_email">
+                      placeholder="e.g. example@example.com" required id="contact_email" />
                     <i class="fa fa-envelope prefix-icon" aria-hidden="true"></i>
 
                     <!-- validation errors messages -->
                     <div class="errors-msgs">
-                      <input class="required" type="hidden" value="Email is required">
-                      <input class="invalid" type="hidden" value="Please enter a valid email address">
+                      <input class="required" type="hidden" value="Email is required" />
+                      <input class="invalid" type="hidden" value="Please enter a valid email address" />
                     </div>
                   </div>
                 </div>
                 <div class="group phone-number">
                   <label>Phone <span class="optional">(Optional)</span></label>
                   <div class="control has-prefix-icon">
-                    <input type="tel" inputmode="tel" name="phone" placeholder="e.g. +919876543210" id="contact_number">
+                    <input type="tel" inputmode="tel" name="phone" placeholder="e.g. +919876543210"
+                      id="contact_number" />
                     <i class="fa fa-phone prefix-icon" aria-hidden="true"></i>
 
                     <!-- validation errors messages -->
                     <div class="errors-msgs">
-                      <input class="invalid" type="hidden" value="Please enter a valid Phone Number">
+                      <input class="invalid" type="hidden" value="Please enter a valid Phone Number" />
                     </div>
                   </div>
                 </div>
@@ -647,14 +666,16 @@
 
                     <!-- validation errors messages -->
                     <div class="errors-msgs">
-                      <input class="required" type="hidden" value="Message is required">
+                      <input class="required" type="hidden" value="Message is required" />
                     </div>
                   </div>
                 </div>
                 <div class="group">
                   <div class="control">
                     <button class="submit-btn btn btn-dark" type="button" @click="contactFormValidation"
-                      id="contact-me">Send</button>
+                      id="contact-me">
+                      Send
+                    </button>
                   </div>
                 </div>
               </form>
@@ -676,9 +697,8 @@
             </div>
             <div class="col-lg-6">
               &copy; {{ copyrightDate }} Proudly Powered by
-              <a href="https://www.priyank-solanki.com/" target="_blank" rel="noopener"
-                aria-label="Priyank Solanki">Priyank
-                Solanki</a>
+              <a href="https://priyank-solanki.vercel.app/" target="_blank" rel="noopener"
+                aria-label="Priyank Solanki">Priyank Solanki</a>
             </div>
           </div>
         </div>
@@ -714,7 +734,11 @@
 
   <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
-    import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
+    import {
+      getFirestore,
+      collection,
+      addDoc,
+    } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
 
     const firebaseConfig = {
       apiKey: "AIzaSyBVwqoGuJpflHYtT1IycTnaIaxMJqW0Pzg",
@@ -722,7 +746,7 @@
       projectId: "priyank-s-portfolio",
       storageBucket: "priyank-s-portfolio.appspot.com",
       messagingSenderId: "182045991167",
-      appId: "1:182045991167:web:41b5cd11423e319b4aecca"
+      appId: "1:182045991167:web:41b5cd11423e319b4aecca",
     };
     const app = initializeApp(firebaseConfig);
     window.firebaseDb = getFirestore();

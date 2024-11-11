@@ -465,9 +465,9 @@
           personalEmailLink: 'mailto:priyanksolanki30197@gmail.com',
           freelancerEmail: 'priyanksolanki2410@gmail.com',
           freelancerEmailLink: 'mailto:priyanksolanki2410@gmail.com',
-          addressLine1: 'B-12 Pragati Society, Near Prime arcade,',
-          addressLine2: 'Opp. Rai Apartment, New Rander Road,',
-          addressLine3: 'Adajan,Surat-395009',
+          addressLine1: 'G-304, Aastha Vatika, Beside Fortune - V,',
+          addressLine2: 'Sun Pharma Road, Tandalja,',
+          addressLine3: 'Vadodara - 390012',
           addressLine4: 'Gujarat, India.',
           phoneNumber: '(+91) 9726868355',
           phoneNumberLink: 'tel:+919726868355'
