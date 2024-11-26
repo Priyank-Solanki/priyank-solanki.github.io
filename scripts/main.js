@@ -1679,51 +1679,21 @@
 
         this.startLoading(); // send post request
         try {
-          // await window.firebaseAddDoc(window.firebaseCollection(window.firebaseDb, "contact-me"), savingData);
+          await window.firebaseAddDoc(
+            window.firebaseCollection(window.firebaseDb, "contact-me"),
+            savingData
+          );
           // Looking to send emails in production? Check out our Email API/SMTP product!
-          const xhttp = new XMLHttpRequest();
-          xhttp.onload = function () {
-            this.setNotify({
-              className: "success",
-              msg: form.getAttribute("data-success-msg"),
-              time: 5000,
-            });
-            form.reset(); // remove inputs valid classes
+          this.setNotify({
+            className: "success",
+            msg: form.getAttribute("data-success-msg"),
+            time: 5000,
+          });
+          form.reset(); // remove inputs valid classes
 
-            form
-              .querySelectorAll(".valid")
-              .forEach((el) => el.classList.remove("valid"));
-          };
-          xhttp.open("POST", "https://sandbox.api.mailtrap.io/api/send/3251779");
-          xhttp.setRequestHeader(
-            "Content-type",
-            "application/json"
-          );
-          xhttp.setRequestHeader(
-            "Authorization",
-            "Bearer 02ad0dcebeb66fa8d3c7a4c459b8dff6"
-          );
-          xhttp.send(JSON.stringify(savingData));
-          // $.ajax({
-          //   method: "POST",
-          //   url: "https://sandbox.api.mailtrap.io/api/send/3251779",
-          //   data: savingData,
-          //   headers: {
-          //     Authorization: "Bearer 02ad0dcebeb66fa8d3c7a4c459b8dff6",
-          //     "Content-Type": "application/json",
-          //   },
-          // }).done(function (msg) {
-          //   this.setNotify({
-          //     className: "success",
-          //     msg: form.getAttribute("data-success-msg"),
-          //     time: 5000,
-          //   });
-          //   form.reset(); // remove inputs valid classes
-
-          //   form
-          //     .querySelectorAll(".valid")
-          //     .forEach((el) => el.classList.remove("valid"));
-          // });
+          form
+            .querySelectorAll(".valid")
+            .forEach((el) => el.classList.remove("valid"));
         } catch (error) {
           console.log(error);
           this.setNotify({
