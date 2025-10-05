@@ -10,12 +10,14 @@ interface SEOHeadProps {
 }
 
 export function SEOHead({
-  title = "Priyank Solanki - Full Stack Software Engineer & Technical Lead",
-  description = "Experienced Full Stack Developer with 6+ years in React.js, Next.js, NestJS, PostgreSQL, and AWS. Building scalable web & mobile applications.",
-  keywords = "Full Stack Developer, React.js, Next.js, NestJS, PostgreSQL, AWS, Software Engineer, Technical Lead, Web Development, Mobile Development",
-  author = "Priyank Solanki",
-  url = "https://priyanksolanki.dev",
-  image = "https://priyanksolanki.dev/og-image.jpg"
+  title= "Priyank Solanki - Full Stack Software Engineer & Technical Lead",
+  description=
+    "Experienced Full Stack Developer with 6+ years of hands-on experience in React.js, Next.js, NestJS, PostgreSQL, and AWS. Skilled in building scalable, high-performance web and mobile applications with CI/CD, Docker, and cloud deployments.",
+  keywords=
+    "Full Stack Developer, React.js, Next.js, NestJS, PostgreSQL, AWS, Software Engineer, Technical Lead, Web Development, Mobile Development, DevOps, Jenkins, SonarQube, Docker, Cloud Deployment, Agile",
+  author= "Priyank Solanki",
+  url= "https://priyank-solanki.interasol.com",
+  image= "https://priyank-solanki.interasol.com/og-image.jpg",
 }: SEOHeadProps) {
   useEffect(() => {
     // Guard against SSR
@@ -76,8 +78,8 @@ export function SEOHead({
       "url": url,
       "image": image,
       "sameAs": [
-        "https://linkedin.com/in/priyanksolanki",
-        "https://github.com/priyanksolanki"
+        "https://www.linkedin.com/in/priyank-solanki-00b13a28a/",
+        "https://github.com/Priyank-Solanki"
       ],
       "knowsAbout": [
         "React.js",

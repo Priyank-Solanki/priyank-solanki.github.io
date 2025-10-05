@@ -1,64 +1,83 @@
-import { motion, AnimatePresence } from 'motion/react';
-import { useEffect, useState, useCallback } from 'react';
-import { Card, CardContent } from './ui/card';
-import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
-import { Button } from './ui/button';
-import { Quote, Star, ChevronLeft, ChevronRight, Play, Pause } from 'lucide-react';
+import { motion, AnimatePresence } from "motion/react";
+import { useEffect, useState, useCallback } from "react";
+import { Card, CardContent } from "./ui/card";
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import { Button } from "./ui/button";
+import {
+  Quote,
+  Star,
+  ChevronLeft,
+  ChevronRight,
+  Play,
+  Pause,
+} from "lucide-react";
 
 export function TestimonialsSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
-  
+
   const testimonials = [
     {
-      name: 'Sarah Chen',
-      role: 'Senior Product Manager',
-      company: 'TechCorp Solutions',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612d1c6?w=400&h=400&fit=crop&crop=face',
-      content: 'Priyank is an exceptional technical leader who consistently delivers high-quality solutions. His ability to break down complex problems and guide the team through challenging projects is remarkable. Working with him has been a game-changer for our development velocity and product quality.',
-      rating: 5
+      name: "Darshan Pandya",
+      role: "Software Engineer (javascript)",
+      company: "Biztech Consulting & Solutions",
+      image:
+        "https://images.unsplash.com/photo-1494790108755-2616b612d1c6?w=400&h=400&fit=crop&crop=face",
+      content:
+        "Priyank has a strong command of PHP frameworks and is always there to help the team when needed.",
+      rating: 5,
     },
     {
-      name: 'Michael Rodriguez',
-      role: 'Frontend Developer',
-      company: 'InnovateLabs',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face',
-      content: 'As a junior developer, I learned so much from Priyank\'s mentorship. He has this amazing ability to explain complex concepts in simple terms and always makes time for code reviews that actually help you grow. His technical expertise is matched by his patience and leadership skills.',
-      rating: 5
+      name: "Kumar Sahitya",
+      role: "Senior Software Engineer",
+      company: "Biztech Consulting & Solutions",
+      image:
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+      content:
+        "I had the pleasure of working with Priyank. He’s hardworking, a true game changer, and a consistent goal achiever. Highly recommended!",
+      rating: 5,
     },
     {
-      name: 'Emily Watson',
-      role: 'DevOps Engineer',
-      company: 'CloudFirst Technologies',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face',
-      content: 'Priyank\'s full-stack expertise made our deployment processes incredibly efficient. He understands both frontend and backend architecture deeply, which helped us create robust CI/CD pipelines. His collaborative approach and system thinking made cross-team integration seamless.',
-      rating: 5
+      name: "Wasim Bakali",
+      role: "Senior Software Engineer",
+      company: "Biztech Consulting & Solutions",
+      image:
+        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
+      content:
+        "He has solid knowledge of PHP frameworks and Flutter. A hardworking and reliable professional.",
+      rating: 5,
     },
     {
-      name: 'David Kim',
-      role: 'Senior Backend Engineer',
-      company: 'DataDrive Systems',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face',
-      content: 'Working alongside Priyank on complex microservices architectures, I was consistently impressed by his system design thinking and code quality standards. He always considers scalability and maintainability from day one. His code reviews are thorough, constructive, and educational.',
-      rating: 5
+      name: "Bharat Nagdev",
+      role: "Ionic Developer | Angular Developer",
+      company: "Biztech Consulting & Solutions",
+      image:
+        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+      content:
+        "He is one of the most enthusiastic members of the team. Works well under pressure and has a strong grasp of technology. Besides coding, he’s also skilled in photography.",
+      rating: 5,
     },
     {
-      name: 'Lisa Thompson',
-      role: 'Lead UX Designer',
-      company: 'DesignForward',
-      image: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&h=400&fit=crop&crop=face',
-      content: 'Priyank bridges the gap between design and development beautifully. He understands user experience principles and translates designs into pixel-perfect, responsive interfaces. His attention to detail and constructive feedback during the design process significantly improved our final products.',
-      rating: 5
+      name: "Vedang Yagnik",
+      role: "Software Engineer",
+      company: "Biztech Consulting & Solutions",
+      image:
+        "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&h=400&fit=crop&crop=face",
+      content:
+        "He’s a passionate technologist with great learning abilities. He dives deep into every task, stays excited about challenges, and is always driven to achieve results. I had the pleasure of mentoring him. 👍🏻",
+      rating: 5,
     },
     {
-      name: 'James Miller',
-      role: 'Chief Technology Officer',
-      company: 'StartupVenture Inc.',
-      image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=face',
-      content: 'Priyank joined our team during a critical scaling phase and immediately made an impact. His technical leadership helped us refactor our architecture for better performance and maintainability. He\'s the kind of engineer every startup needs - skilled, adaptable, and results-driven with excellent problem-solving abilities.',
-      rating: 5
-    }
+      name: "Divya Tailor",
+      role: "Developer for Ionic | Angular | Flutter | React Native",
+      company: "Biztech Consulting & Solutions",
+      image:
+        "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=face",
+      content:
+        "He has excellent programming skills and is a great team player.",
+      rating: 5,
+    },
   ];
 
   // Group testimonials into slides of 2
@@ -67,15 +86,15 @@ export function TestimonialsSection() {
   for (let i = 0; i < testimonials.length; i += testimonialsPerSlide) {
     slides.push(testimonials.slice(i, i + testimonialsPerSlide));
   }
-  
+
   const totalSlides = slides.length;
 
   const nextSlide = useCallback(() => {
-    setCurrentSlide(prev => (prev + 1) % totalSlides);
+    setCurrentSlide((prev) => (prev + 1) % totalSlides);
   }, [totalSlides]);
 
   const prevSlide = useCallback(() => {
-    setCurrentSlide(prev => (prev - 1 + totalSlides) % totalSlides);
+    setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
   }, [totalSlides]);
 
   const goToSlide = useCallback((slideIndex: number) => {
@@ -86,7 +105,7 @@ export function TestimonialsSection() {
   // Auto-rotate every 8 seconds
   useEffect(() => {
     if (isHovered || !isAutoPlaying || totalSlides <= 1) return;
-    
+
     const interval = setInterval(() => {
       nextSlide();
     }, 8000);
@@ -97,17 +116,17 @@ export function TestimonialsSection() {
   // Keyboard navigation
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'ArrowLeft') {
+      if (event.key === "ArrowLeft") {
         prevSlide();
         setIsAutoPlaying(false);
-      } else if (event.key === 'ArrowRight') {
+      } else if (event.key === "ArrowRight") {
         nextSlide();
         setIsAutoPlaying(false);
       }
     };
 
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
   }, [nextSlide, prevSlide]);
 
   const containerVariants = {
@@ -116,9 +135,9 @@ export function TestimonialsSection() {
       opacity: 1,
       transition: {
         duration: 0.6,
-        staggerChildren: 0.1
-      }
-    }
+        staggerChildren: 0.1,
+      },
+    },
   };
 
   const itemVariants = {
@@ -126,17 +145,20 @@ export function TestimonialsSection() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.5, ease: "easeOut" }
-    }
+      transition: { duration: 0.5, ease: "easeOut" },
+    },
   };
 
   const handleContactClick = () => {
-    const contactSection = document.getElementById('contact');
-    contactSection?.scrollIntoView({ behavior: 'smooth' });
+    const contactSection = document.getElementById("contact");
+    contactSection?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <section id="testimonials" className="py-20 lg:py-32 relative overflow-hidden">
+    <section
+      id="testimonials"
+      className="py-20 lg:py-32 relative overflow-hidden"
+    >
       {/* Background decorations */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-blue-400/10 to-purple-400/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 right-10 w-80 h-80 bg-gradient-to-r from-green-400/10 to-blue-400/10 rounded-full blur-3xl"></div>
@@ -161,7 +183,9 @@ export function TestimonialsSection() {
               What Colleagues Say
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Authentic feedback from colleagues, team members, and industry professionals I've had the privilege of working with across various projects and companies
+              Authentic feedback from colleagues, team members, and industry
+              professionals I've had the privilege of working with across
+              various projects and companies
             </p>
           </motion.div>
         </motion.div>
@@ -191,7 +215,7 @@ export function TestimonialsSection() {
             >
               <ChevronLeft className="w-5 h-5" />
             </Button>
-            
+
             <Button
               variant="outline"
               size="icon"
@@ -232,7 +256,10 @@ export function TestimonialsSection() {
                         {/* Rating Stars */}
                         <div className="flex items-center justify-center mb-4">
                           {[...Array(testimonial.rating)].map((_, i) => (
-                            <Star key={i} className="w-4 h-4 text-yellow-400 fill-current mx-0.5" />
+                            <Star
+                              key={i}
+                              className="w-4 h-4 text-yellow-400 fill-current mx-0.5"
+                            />
                           ))}
                         </div>
 
@@ -247,13 +274,16 @@ export function TestimonialsSection() {
                         {/* Author Info */}
                         <div className="flex flex-col items-center space-y-3 mt-auto">
                           <Avatar className="w-12 h-12 ring-2 ring-blue-100 dark:ring-blue-900/30 group-hover:ring-blue-200 dark:group-hover:ring-blue-800/50 transition-all duration-300">
-                            <AvatarImage 
-                              src={testimonial.image} 
+                            <AvatarImage
+                              src={testimonial.image}
                               alt={testimonial.name}
                               className="object-cover"
                             />
                             <AvatarFallback className="bg-blue-100 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400">
-                              {testimonial.name.split(' ').map(n => n[0]).join('')}
+                              {testimonial.name
+                                .split(" ")
+                                .map((n) => n[0])
+                                .join("")}
                             </AvatarFallback>
                           </Avatar>
                           <div className="text-center">
@@ -292,7 +322,7 @@ export function TestimonialsSection() {
                 <ChevronLeft className="w-4 h-4 mr-1" />
                 Previous
               </Button>
-              
+
               <Button
                 variant="outline"
                 size="sm"
@@ -318,22 +348,24 @@ export function TestimonialsSection() {
                     key={index}
                     onClick={() => goToSlide(index)}
                     className={`h-2 rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 ${
-                      currentSlide === index 
-                        ? 'bg-blue-600 w-8' 
-                        : 'bg-muted-foreground/30 hover:bg-blue-400 w-2'
+                      currentSlide === index
+                        ? "bg-blue-600 w-8"
+                        : "bg-muted-foreground/30 hover:bg-blue-400 w-2"
                     }`}
                     aria-label={`Go to slide ${index + 1} of ${totalSlides}`}
                   />
                 ))}
               </div>
-              
+
               <div className="flex items-center space-x-4">
                 <Button
                   variant="ghost"
                   size="icon"
                   onClick={() => setIsAutoPlaying(!isAutoPlaying)}
                   className="w-8 h-8 text-muted-foreground hover:text-foreground transition-colors"
-                  aria-label={isAutoPlaying ? 'Pause autoplay' : 'Start autoplay'}
+                  aria-label={
+                    isAutoPlaying ? "Pause autoplay" : "Start autoplay"
+                  }
                 >
                   {isAutoPlaying ? (
                     <Pause className="w-4 h-4" />
@@ -341,7 +373,7 @@ export function TestimonialsSection() {
                     <Play className="w-4 h-4" />
                   )}
                 </Button>
-                
+
                 <span className="text-sm text-muted-foreground">
                   {currentSlide + 1} / {totalSlides}
                 </span>

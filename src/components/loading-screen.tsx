@@ -239,7 +239,7 @@ export function LoadingScreen() {
               fontFamily: "'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif"
             }}
           >
-            Welcome
+            Welcome to my portfolio
           </motion.p>
         </motion.div>
       </div>
