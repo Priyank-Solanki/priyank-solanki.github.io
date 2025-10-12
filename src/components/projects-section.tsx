@@ -1,15 +1,46 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { motion, useInView, useAnimation } from 'motion/react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
-import { ExternalLink, Github, Star } from 'lucide-react';
+import { Star, Eye } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import { ProjectModal } from './project-modal';
+import { Images } from "../assets/assets";
+
+interface Project {
+  title: string;
+  description: string;
+  image: string;
+  technologies: string[];
+  github: string;
+  demo: string;
+  demoButtonText: string;
+  featured: boolean;
+  fullDescription?: string;
+  features?: string[];
+  duration?: string;
+  teamSize?: string;
+  role?: string;
+  challenges?: string[];
+  outcomes?: string[];
+}
 
 export function ProjectsSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, threshold: 0.1 });
   const controls = useAnimation();
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleProjectClick = (project: Project) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setTimeout(() => setSelectedProject(null), 300);
+  };
 
   useEffect(() => {
     if (isInView) {
@@ -37,60 +68,160 @@ export function ProjectsSection() {
     }
   };
 
-  const projects = [
+  const projects: Project[] = [
     {
       title: 'Personal Document Vault',
       description: 'A secure, cloud-based document management system with advanced search capabilities, version control, and role-based access control.',
-      image: 'https://images.unsplash.com/photo-1699570044128-b61ef113b72e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkb2N1bWVudCUyMG1hbmFnZW1lbnQlMjBzeXN0ZW18ZW58MXx8fHwxNzU4NjE0ODIyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      technologies: ['React.js', 'NestJS', 'PostgreSQL', 'AWS S3', 'Docker'],
+      fullDescription: 'A comprehensive document management system designed to securely store, organize, and share documents in the cloud. Features enterprise-grade security with encryption at rest and in transit, advanced full-text search, automatic version control, and granular role-based access control. The system includes real-time collaboration features, automated backup systems, and compliance with industry standards.',
+      image: Images.PersonalInformationHolder || '',
+      technologies: ['React.js', 'NestJS', 'PostgreSQL', 'AWS S3', 'Docker', 'Redis', 'Elasticsearch'],
       github: '#',
-      demo: '#',
-      featured: true
+      demo: 'https://www.figma.com/design/QHERyfyPSjHU2M7CfEWcmw/Personal-Document-Vault?node-id=409-220&t=9igQNlroSQGhSC9c-1',
+      demoButtonText: 'View Design',
+      featured: true,
+      duration: '6 months',
+      teamSize: '4 members',
+      role: 'Full Stack Lead Developer',
+      features: [
+        'End-to-end encryption for all documents',
+        'Advanced full-text search with filters and facets',
+        'Automatic version control with diff viewer',
+        'Role-based access control with custom permissions',
+        'Real-time collaboration and document sharing',
+        'Automated backup and disaster recovery',
+        'Compliance dashboard for audit trails'
+      ],
+      challenges: [
+        'Implemented efficient file chunking for large document uploads, reducing upload time by 60%',
+        'Designed scalable search architecture using Elasticsearch for sub-second query responses',
+        'Built robust version control system with efficient storage using delta compression'
+      ],
+      outcomes: [
+        'Successfully deployed to production serving 500+ active users',
+        'Reduced document retrieval time by 75% compared to legacy system',
+        'Achieved 99.9% uptime with automated monitoring and alerts'
+      ]
     },
     {
-      title: 'Creative Informative Platform',
+      title: 'Creative Informative Platform - QuickSupport',
       description: 'A comprehensive content management platform for creative professionals with portfolio showcase, client management, and project tracking.',
-      image: 'https://images.unsplash.com/photo-1610989001873-03968eed0f08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMG1vY2t1cHxlbnwxfHx8fDE3NTg2NTgxOTh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      technologies: ['Next.js', 'TypeScript', 'Prisma', 'MySQL', 'Tailwind CSS'],
+      fullDescription: 'An all-in-one platform for creative professionals to manage their portfolio, clients, and projects. Built with modern web technologies, it offers a beautiful, responsive interface with drag-and-drop functionality, real-time updates, and seamless integration with popular creative tools. The platform includes advanced analytics, automated invoicing, and client communication features.',
+      image: Images.QuickSupport || '',
+      technologies: ['Next.js', 'TypeScript', 'Prisma', 'MySQL', 'Tailwind CSS', 'Stripe', 'SendGrid'],
       github: '#',
-      demo: '#',
-      featured: true
+      demo: 'https://quick-support.interasol.com',
+      demoButtonText: 'Live Demo',
+      featured: true,
+      duration: '8 months',
+      teamSize: '5 members',
+      role: 'Technical Lead & Frontend Architect',
+      features: [
+        'Drag-and-drop portfolio builder with live preview',
+        'Client portal for project collaboration and feedback',
+        'Integrated time tracking and project management',
+        'Automated invoicing with Stripe integration',
+        'Custom domain support for portfolio websites',
+        'Analytics dashboard for portfolio views and engagement',
+        'Email automation for client communications'
+      ],
+      challenges: [
+        'Created flexible drag-and-drop system supporting complex layouts and responsive design',
+        'Optimized image delivery with Next.js Image component and CDN, improving load times by 70%',
+        'Implemented real-time collaboration using WebSockets for instant updates'
+      ],
+      outcomes: [
+        'Platform adopted by 1,000+ creative professionals in first 3 months',
+        '95% user satisfaction rating based on feedback surveys',
+        'Generated $50K+ in processed invoices through the platform'
+      ]
     },
     {
       title: 'Personal Card Holder',
       description: 'A mobile-first application for digitizing and organizing business cards with OCR text extraction and contact management.',
-      image: 'https://images.unsplash.com/photo-1658953229625-aad99d7603b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzU4NjQ5MjQ3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      technologies: ['Flutter', 'Firebase', 'OCR API', 'SQLite'],
+      fullDescription: 'A smart mobile application that digitizes business cards using advanced OCR technology, automatically extracting and organizing contact information. The app syncs across devices, integrates with popular contact management systems, and includes features like smart search, automatic categorization, and follow-up reminders.',
+      image: Images.PersonalCardHolder || '',
+      technologies: ['Flutter', 'Firebase', 'OCR API', 'SQLite', 'Cloud Functions'],
       github: '#',
       demo: '#',
-      featured: false
+      demoButtonText: '#',
+      featured: false,
+      duration: '4 months',
+      teamSize: '2 members',
+      role: 'Mobile Developer',
+      features: [
+        'Camera-based business card scanning with OCR',
+        'Automatic contact information extraction',
+        'Cloud sync across all devices',
+        'Smart search and filtering',
+        'Export to VCF and CSV formats',
+        'Follow-up reminders and notes',
+        'Integration with phone contacts'
+      ],
+      challenges: [
+        'Achieved 95% accuracy in OCR text extraction through preprocessing and ML optimization',
+        'Implemented offline-first architecture with seamless sync when connection restored'
+      ],
+      outcomes: [
+        'Downloaded 10,000+ times on iOS and Android',
+        '4.5 star average rating on app stores',
+        'Featured in "Best Productivity Apps" category'
+      ]
     },
     {
       title: 'Counseling Management System',
       description: 'A comprehensive platform for educational counselors to manage student applications, track progress, and generate reports.',
-      image: 'https://images.unsplash.com/photo-1719400471588-575b23e27bd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMG1vY2t1cHxlbnwxfHx8fDE3NTg2NTgxOTh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      technologies: ['Laravel', 'Vue.js', 'MySQL', 'Chart.js', 'Bootstrap'],
+      fullDescription: 'A specialized platform designed for educational counseling centers to streamline student application management, track academic progress, and automate administrative tasks. Features include document management, automated reminders, progress tracking, reporting tools, and parent communication portal.',
+      image: Images.CounselingManagementSystemForCharusat || '',
+      technologies: ['Laravel', 'Vue.js', 'MySQL', 'Chart.js', 'Bootstrap', 'Redis Queue'],
       github: '#',
       demo: '#',
-      featured: false
+      demoButtonText: '#',
+      featured: false,
+      duration: '5 months',
+      teamSize: '3 members',
+      role: 'Backend Developer',
+      features: [
+        'Student profile management with document storage',
+        'Application tracking with customizable workflows',
+        'Automated email reminders and notifications',
+        'Interactive analytics dashboard',
+        'Parent portal for progress monitoring',
+        'Document template generator',
+        'Bulk operations for efficiency'
+      ],
+      outcomes: [
+        'Reduced administrative workload by 50%',
+        'Serving 15+ counseling centers with 2,000+ students',
+        'Improved application completion rate by 35%'
+      ]
     },
     {
       title: 'Leave Management System',
       description: 'An enterprise-grade leave management solution with automated approval workflows, calendar integration, and analytics dashboard.',
-      image: 'https://images.unsplash.com/photo-1610989001873-03968eed0f08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMG1vY2t1cHxlbnwxfHx8fDE3NTg2NTgxOTh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      technologies: ['Angular', 'NestJS', 'PostgreSQL', 'Redis', 'Docker'],
+      fullDescription: 'A robust leave management system for organizations to handle employee leave requests, approvals, and tracking. Includes multi-level approval workflows, calendar integration, automated balance calculations, and comprehensive reporting. The system supports various leave types, customizable policies, and integration with HR systems.',
+      image: Images.LeaveManagementSystemForGsecl || '',
+      technologies: ['Angular', 'NestJS', 'PostgreSQL', 'Redis', 'Docker', 'TypeORM'],
       github: '#',
       demo: '#',
-      featured: false
-    },
-    {
-      title: 'E-Commerce Analytics Dashboard',
-      description: 'A real-time analytics dashboard for e-commerce platforms with sales tracking, customer insights, and inventory management.',
-      image: 'https://images.unsplash.com/photo-1719400471588-575b23e27bd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMG1vY2t1cHxlbnwxfHx8fDE3NTg2NTgxOTh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      technologies: ['React.js', 'D3.js', 'Node.js', 'MongoDB', 'Socket.io'],
-      github: '#',
-      demo: '#',
-      featured: false
+      demoButtonText: '#',
+      featured: false,
+      duration: '7 months',
+      teamSize: '4 members',
+      role: 'Full Stack Developer',
+      features: [
+        'Multi-level approval workflow engine',
+        'Calendar integration (Google, Outlook)',
+        'Automated leave balance calculations',
+        'Customizable leave policies and types',
+        'Team availability calendar view',
+        'Email and SMS notifications',
+        'Comprehensive analytics and reports'
+      ],
+      outcomes: [
+        'Deployed across 5 departments with 300+ employees',
+        'Reduced leave processing time from 2 days to 2 hours',
+        '98% employee adoption rate within first month'
+      ]
     }
   ];
 
@@ -195,33 +326,19 @@ export function ProjectsSection() {
                     ))}
                   </div>
                   
-                  <div className="flex space-x-3 pt-2">
+                  <div className="space-y-2 pt-2">
                     <motion.div
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="flex-1"
-                    >
-                      <Button 
-                        variant="outline" 
-                        size="sm" 
-                        className="w-full border-2 hover:bg-gray-50 dark:hover:bg-gray-800/50"
-                      >
-                        <Github className="w-4 h-4 mr-2" />
-                        Code
-                      </Button>
-                    </motion.div>
-                    
-                    <motion.div
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="flex-1"
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
+                      className="w-full"
                     >
                       <Button 
                         size="sm" 
                         className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-lg"
+                        onClick={() => handleProjectClick(project)}
                       >
-                        <ExternalLink className="w-4 h-4 mr-2" />
-                        Live Demo
+                        <Eye className="w-4 h-4 mr-2" />
+                        View Details
                       </Button>
                     </motion.div>
                   </div>
@@ -295,33 +412,18 @@ export function ProjectsSection() {
                       )}
                     </div>
                     
-                    <div className="flex space-x-2">
+                    <div className="space-y-2">
                       <motion.div
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        className="flex-1"
-                      >
-                        <Button 
-                          variant="outline" 
-                          size="sm" 
-                          className="w-full text-xs"
-                        >
-                          <Github className="w-3 h-3 mr-1" />
-                          Code
-                        </Button>
-                      </motion.div>
-                      
-                      <motion.div
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        className="flex-1"
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
                       >
                         <Button 
                           size="sm" 
                           className="w-full bg-blue-600 hover:bg-blue-700 text-xs"
+                          onClick={() => handleProjectClick(project)}
                         >
-                          <ExternalLink className="w-3 h-3 mr-1" />
-                          Demo
+                          <Eye className="w-3 h-3 mr-1" />
+                          View Details
                         </Button>
                       </motion.div>
                     </div>
@@ -332,6 +434,13 @@ export function ProjectsSection() {
           </motion.div>
         </motion.div>
       </div>
+
+      {/* Project Detail Modal */}
+      <ProjectModal 
+        project={selectedProject}
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+      />
     </section>
   );
 }

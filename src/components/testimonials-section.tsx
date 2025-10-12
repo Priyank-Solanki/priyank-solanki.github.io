@@ -11,6 +11,7 @@ import {
   Play,
   Pause,
 } from "lucide-react";
+import { Images } from "../assets/assets";
 
 export function TestimonialsSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -22,8 +23,7 @@ export function TestimonialsSection() {
       name: "Darshan Pandya",
       role: "Software Engineer (javascript)",
       company: "Biztech Consulting & Solutions",
-      image:
-        "https://images.unsplash.com/photo-1494790108755-2616b612d1c6?w=400&h=400&fit=crop&crop=face",
+      image: Images.DarshanPandya || "",
       content:
         "Priyank has a strong command of PHP frameworks and is always there to help the team when needed.",
       rating: 5,
@@ -32,8 +32,7 @@ export function TestimonialsSection() {
       name: "Kumar Sahitya",
       role: "Senior Software Engineer",
       company: "Biztech Consulting & Solutions",
-      image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+      image: Images.KumarSahitya || "",
       content:
         "I had the pleasure of working with Priyank. He’s hardworking, a true game changer, and a consistent goal achiever. Highly recommended!",
       rating: 5,
@@ -42,8 +41,7 @@ export function TestimonialsSection() {
       name: "Wasim Bakali",
       role: "Senior Software Engineer",
       company: "Biztech Consulting & Solutions",
-      image:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
+      image: Images.WasimBakali || "",
       content:
         "He has solid knowledge of PHP frameworks and Flutter. A hardworking and reliable professional.",
       rating: 5,
@@ -52,8 +50,7 @@ export function TestimonialsSection() {
       name: "Bharat Nagdev",
       role: "Ionic Developer | Angular Developer",
       company: "Biztech Consulting & Solutions",
-      image:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+      image: Images.BharatNagdev || "",
       content:
         "He is one of the most enthusiastic members of the team. Works well under pressure and has a strong grasp of technology. Besides coding, he’s also skilled in photography.",
       rating: 5,
@@ -62,8 +59,7 @@ export function TestimonialsSection() {
       name: "Vedang Yagnik",
       role: "Software Engineer",
       company: "Biztech Consulting & Solutions",
-      image:
-        "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&h=400&fit=crop&crop=face",
+      image: Images.VedangYagnik || "",
       content:
         "He’s a passionate technologist with great learning abilities. He dives deep into every task, stays excited about challenges, and is always driven to achieve results. I had the pleasure of mentoring him. 👍🏻",
       rating: 5,
@@ -72,8 +68,7 @@ export function TestimonialsSection() {
       name: "Divya Tailor",
       role: "Developer for Ionic | Angular | Flutter | React Native",
       company: "Biztech Consulting & Solutions",
-      image:
-        "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=face",
+      image: Images.DivyaTailor || "",
       content:
         "He has excellent programming skills and is a great team player.",
       rating: 5,

@@ -1,0 +1,29 @@
+import DarshanPandya from './images/testimonials/darshan-pandya.webp';
+import KumarSahitya from './images/testimonials/kumar-sahitya.webp'; 
+import BharatNagdev from './images/testimonials/bharat-nagdev.webp';
+import DivyaTailor from './images/testimonials/divya-tailor.webp';
+import VedangYagnik from './images/testimonials/vedang-yagnik.webp';
+import WasimBakali from './images/testimonials/wasim-bakali.webp'; 
+
+import QuickSupport from './images/portfolio/creative-informative/quick-support.webp';
+import PersonalInformationHolder from './images/portfolio/personal-information-holder/personal-information-holder.webp';
+import PersonalCardHolder from './images/portfolio/personal-cards/personal-cards.webp';
+import LeaveManagementSystemForGsecl from  './images/portfolio/gsecl/gsecl.webp';
+import CounselingManagementSystemForCharusat from './images/portfolio/charusat/charusat.webp';
+
+export const Images = {
+    DarshanPandya,
+    KumarSahitya,
+    BharatNagdev,
+    DivyaTailor,
+    VedangYagnik,
+    WasimBakali,
+    QuickSupport,
+    PersonalInformationHolder,
+    PersonalCardHolder,
+    LeaveManagementSystemForGsecl,
+    CounselingManagementSystemForCharusat,
+};
+
+export const Documents = {
+};
