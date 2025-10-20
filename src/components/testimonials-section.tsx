@@ -76,7 +76,7 @@ export function TestimonialsSection() {
   ];
 
   // Group testimonials into slides of 2
-  const testimonialsPerSlide = 2;
+  const testimonialsPerSlide = window.innerWidth < 768 ? 1 : 2;
   const slides = [];
   for (let i = 0; i < testimonials.length; i += testimonialsPerSlide) {
     slides.push(testimonials.slice(i, i + testimonialsPerSlide));

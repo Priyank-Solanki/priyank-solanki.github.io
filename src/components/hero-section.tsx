@@ -10,6 +10,7 @@ import {
   Rocket,
 } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { Images } from "../assets/assets";
 
 export function HeroSection() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -267,7 +268,7 @@ export function HeroSection() {
                   transition={{ duration: 0.8, delay: 0.4 }}
                 >
                   <ImageWithFallback
-                    src="https://images.unsplash.com/photo-1731951039706-0e793240bb32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMG1vY2t1cHxlbnwxfHx8fDE3NTg2NTgxOTh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                    src={Images.PriyankSolanki}
                     alt="Priyank Solanki - Full Stack Software Engineer & Technical Lead"
                     className="w-full h-full object-cover"
                   />

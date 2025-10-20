@@ -4,6 +4,7 @@ import BharatNagdev from './images/testimonials/bharat-nagdev.webp';
 import DivyaTailor from './images/testimonials/divya-tailor.webp';
 import VedangYagnik from './images/testimonials/vedang-yagnik.webp';
 import WasimBakali from './images/testimonials/wasim-bakali.webp'; 
+import PriyankSolanki from './images/testimonials/priyank-solanki.webp'; 
 
 import QuickSupport from './images/portfolio/creative-informative/quick-support.webp';
 import PersonalInformationHolder from './images/portfolio/personal-information-holder/personal-information-holder.webp';
@@ -18,6 +19,7 @@ export const Images = {
     DivyaTailor,
     VedangYagnik,
     WasimBakali,
+    PriyankSolanki,
     QuickSupport,
     PersonalInformationHolder,
     PersonalCardHolder,

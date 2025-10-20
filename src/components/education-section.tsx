@@ -17,38 +17,45 @@ export function EducationSection() {
   const education = [
     {
       degree: 'Master of Computer Applications (MCA)',
-      institution: 'CHARUSAT University',
-      location: 'Gujarat, India',
+      institution: 'Charotar University of Science and Technology (CHARUSAT)',
+      location: 'Nadiad, Gujarat, India',
       duration: '2017 - 2019',
       description: 'Focused on advanced software development, database management systems, and modern programming paradigms. Completed thesis on web application security and performance optimization.',
       achievements: [
-        'Graduated with distinction',
-        'Led university coding club activities',
-        'Completed major project on e-commerce platform development'
+        'Achieved 7.95 CGPA with First Class with Distinction',
+        'Successfully completed industry-based project on web application development',
+        'Served as Senior Committee member for all technical events in the department',
+        'Led and organized multiple technical workshops and coding competitions'
       ],
       type: 'Masters'
     },
     {
       degree: 'Bachelor of Computer Applications (BCA)',
-      institution: 'CHARUSAT University',
-      location: 'Gujarat, India',
+      institution: 'Charotar University of Science and Technology (CHARUSAT)',
+      location: 'Nadiad, Gujarat, India',
       duration: '2014 - 2017',
       description: 'Comprehensive study of computer science fundamentals including programming languages, data structures, algorithms, and software engineering principles.',
       achievements: [
-        'Consistent academic performance',
-        'Active participation in technical events',
-        'Completed internship at local software company'
+        'Graduated with 6.75 CGPA, securing First Class',
+        'Active member of the college\'s coding club, participating in various coding challenges',
+        'Volunteered in organizing college tech fests and events',
+        'Successfully completed industry-based project on Mobile Application Development',
+        'Developed multiple projects showcasing mobile app development skills'
       ],
       type: 'Bachelors'
     }
   ];
 
   const certifications = [
-    'AWS Certified Solutions Architect',
-    'Google Cloud Professional Developer',
-    'MongoDB Certified Developer',
-    'Docker Certified Associate',
-    'Scrum Master Certification'
+    'Mai Hoon Na Award - Q2, 2025',
+    'Employee of the Month Award - September 2025',
+    'Best Performer of the Year Award In PHP Team - 2022-23',
+    'Senior Committee Member in Ignite - February, 2018',
+    'Volunteer in Equal Opportunity Cell - July, 2018',
+    'Attended Youth Parliament of India - July, 2018',
+    'Participated in Quick Page, Let\'s Click, Ignite - January, 2016',
+    'Volunteer in Equal Opportunity Cell - September, 2016',
+    'Attended National Network Security Championship - February, 2015',
   ];
 
   const containerVariants = {
