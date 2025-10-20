@@ -10,7 +10,7 @@ import {
   Rocket,
 } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-import { Images } from "../assets/assets";
+import { Documents, Images } from "../assets/assets";
 
 export function HeroSection() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -175,7 +175,14 @@ export function HeroSection() {
                 <Button
                   size="lg"
                   className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-lg hover:shadow-xl transition-all duration-300"
-                  onClick={() => window.open("#", "_blank")}
+                  onClick={() => {
+                    const link = document.createElement("a");
+                    link.href = Documents.PriyankSolankiCV;
+                    link.download = "PriyankSolankiCV.pdf";
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                  }}
                 >
                   <Download className="mr-2 h-4 w-4" />
                   Download Resume

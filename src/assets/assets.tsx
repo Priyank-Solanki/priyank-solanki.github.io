@@ -12,6 +12,8 @@ import PersonalCardHolder from './images/portfolio/personal-cards/personal-cards
 import LeaveManagementSystemForGsecl from  './images/portfolio/gsecl/gsecl.webp';
 import CounselingManagementSystemForCharusat from './images/portfolio/charusat/charusat.webp';
 
+import PriyankSolankiCV from './documents/PRIYANK-SOLANKI.pdf';
+
 export const Images = {
     DarshanPandya,
     KumarSahitya,
@@ -28,4 +30,5 @@ export const Images = {
 };
 
 export const Documents = {
+    PriyankSolankiCV,
 };
