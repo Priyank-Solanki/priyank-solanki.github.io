@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "motion/react";
-import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
@@ -14,6 +13,7 @@ import {
   Send,
   CheckCircle,
   Zap,
+  XCircle,
 } from "lucide-react";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../services/firebase";
@@ -22,6 +22,9 @@ export function ContactSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, threshold: 0.2 });
   const controls = useAnimation();
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isErrorFormMessage, setIsErrorFormMessage] = useState(false);
+  const [formMessage, setFormMessage] = useState("");
 
   useEffect(() => {
     if (isInView) {
@@ -44,18 +47,30 @@ export function ContactSection() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitted(true);
     // Handle form submission here
     try {
       await addDoc(collection(db, "contact-from-website"), {
         ...formData,
         createdAt: new Date(),
       });
-      console.log("Contact form submitted:", formData);
+      setFormMessage("Your message has been sent successfully!");
     } catch (error) {
-      console.error("Error adding contact form:", error);
+      setIsErrorFormMessage(true);
+      setFormMessage("Failed to submit the form. Please try again later.");
     }
     // Reset form
-    setFormData({ name: "", email: "", subject: "", message: "" });
+    setTimeout(() => {
+      setIsSubmitted(false);
+      setFormMessage("");
+      setIsErrorFormMessage(false);
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+    }, 5000);
   };
 
   const contactInfo = [
@@ -193,6 +208,7 @@ export function ContactSection() {
                         onChange={handleInputChange}
                         className="border-2 focus:border-blue-500 transition-colors"
                         required
+                        disabled={isSubmitted}
                       />
                     </motion.div>
 
@@ -216,6 +232,7 @@ export function ContactSection() {
                         onChange={handleInputChange}
                         className="border-2 focus:border-blue-500 transition-colors"
                         required
+                        disabled={isSubmitted}
                       />
                     </motion.div>
                   </div>
@@ -240,6 +257,7 @@ export function ContactSection() {
                       onChange={handleInputChange}
                       className="border-2 focus:border-blue-500 transition-colors"
                       required
+                      disabled={isSubmitted}
                     />
                   </motion.div>
 
@@ -262,8 +280,45 @@ export function ContactSection() {
                       value={formData.message}
                       onChange={handleInputChange}
                       required
+                      disabled={isSubmitted}
                     />
                   </motion.div>
+
+                  {formMessage && (
+                    <motion.div
+                      className={`mt-6 p-4 bg-gradient-to-r from-${
+                        isErrorFormMessage ? "red" : "green"
+                      }-50 to-purple-50 dark:from-${
+                        isErrorFormMessage ? "red" : "green"
+                      }-900/20 dark:to-purple-900/20 rounded-xl border border-${
+                        isErrorFormMessage ? "red" : "green"
+                      }-200 dark:border-${
+                        isErrorFormMessage ? "red" : "green"
+                      }-700`}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 0.8 }}
+                    >
+                      <div className="flex items-start space-x-3">
+                        {!isErrorFormMessage ? (
+                          <CheckCircle className="w-5 h-5 text-green-600 dark:text-green-400 mt-0.5 flex-shrink-0" />
+                        ) : (
+                          <XCircle className="w-5 h-5 text-red-600 dark:text-red-400 mt-0.5 flex-shrink-0" />
+                        )}
+                        <div>
+                          <p
+                            className={`text-sm text-${
+                              isErrorFormMessage ? "red" : "green"
+                            }-600 dark:text-${
+                              isErrorFormMessage ? "red" : "green"
+                            }-400`}
+                          >
+                            <strong>{formMessage}</strong>
+                          </p>
+                        </div>
+                      </div>
+                    </motion.div>
+                  )}
 
                   <motion.div
                     whileHover={{ scale: 1.02 }}
@@ -273,9 +328,10 @@ export function ContactSection() {
                       type="submit"
                       className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-lg hover:shadow-xl transition-all duration-300"
                       size="lg"
+                      disabled={isSubmitted}
                     >
                       <Send className="w-4 h-4 mr-2" />
-                      Send Message
+                      {isSubmitted ? "Sending..." : "Send Message"}
                     </Button>
                   </motion.div>
                 </form>
