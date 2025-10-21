@@ -48,7 +48,7 @@ export function EducationSection() {
 
   const certifications = [
     'Mai Hoon Na Award - Q2, 2025',
-    'Employee of the Month Award - September 2025',
+    'Employee of the Month Award - August, 2025',
     'Best Performer of the Year Award In PHP Team - 2022-23',
     'Senior Committee Member in Ignite - February, 2018',
     'Volunteer in Equal Opportunity Cell - July, 2018',
