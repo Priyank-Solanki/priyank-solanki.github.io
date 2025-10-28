@@ -62,6 +62,6 @@ export default defineConfig({
   },
   preview: {
     port: 3500,
-    allowedHosts: ["priyank-solanki.interasol.com", "127.0.0.1", "localhost"],
+    allowedHosts: ["priyank-solanki.interasol.in", "127.0.0.1", "localhost"],
   },
 });
