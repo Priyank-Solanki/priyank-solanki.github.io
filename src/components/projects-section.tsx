@@ -113,7 +113,7 @@ export function ProjectsSection() {
       image: Images.QuickSupport || "",
       technologies: ["React.JS", "JSON", "Tailwind CSS"],
       github: "#",
-      demo: "https://quick-support.interasol.com",
+      demo: "https://quick-support.interasol.in",
       demoButtonText: "Live Demo",
       featured: true,
       duration: "--",

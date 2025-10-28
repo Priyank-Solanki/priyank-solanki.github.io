@@ -16,8 +16,8 @@ export function SEOHead({
   keywords=
     "Full Stack Developer, React.js, Next.js, NestJS, PostgreSQL, AWS, Software Engineer, Technical Lead, Web Development, Mobile Development, DevOps, Jenkins, SonarQube, Docker, Cloud Deployment, Agile",
   author= "Priyank Solanki",
-  url= "https://priyank-solanki.interasol.com",
-  image= "https://priyank-solanki.interasol.com/og-image.jpg",
+  url= "https://priyank-solanki.interasol.in",
+  image= "https://priyank-solanki.interasol.in/og-image.jpg",
 }: SEOHeadProps) {
   useEffect(() => {
     // Guard against SSR
